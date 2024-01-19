@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.xyz/"/>
-  <updated>2024-01-17T08:43:51.179Z</updated>
+  <updated>2024-01-19T08:52:54.110Z</updated>
   <id>https://blog.hiyoung.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.hiyoung.xyz/2024/01/15/83ffcc251cb7/"/>
     <id>https://blog.hiyoung.xyz/2024/01/15/83ffcc251cb7/</id>
     <published>2024-01-15T07:12:57.000Z</published>
-    <updated>2024-01-17T08:43:51.179Z</updated>
+    <updated>2024-01-19T08:52:54.110Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;部分内容复习&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#部分内容复习&quot;&gt;¶&lt;/a&gt;部分内容复习&lt;/h2&gt;</summary>
@@ -97,7 +97,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v3&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -124,7 +124,7 @@
     <updated>2023-10-26T03:37:22.783Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v3&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v3&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v4&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;操作系统的基本概念&lt;/li&gt;
@@ -160,7 +160,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v7&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -229,7 +229,7 @@
     <updated>2023-10-26T03:38:09.143Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v4&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v5&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其四，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的CPU相关内容介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CPU的功能和基本结构&lt;/li&gt;
@@ -261,7 +261,7 @@
     <updated>2023-10-26T03:38:54.146Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v5&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v8&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其三，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的指令系统介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;指令格式的基本内容&lt;/li&gt;
@@ -292,7 +292,7 @@
     <updated>2023-10-26T03:38:21.180Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v7&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v7&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v6&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其二，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机内部和外部的存储介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;存储器的分类与层次化的存储器基本结构&lt;/li&gt;
