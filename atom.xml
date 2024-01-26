@@ -24,7 +24,7 @@
     <updated>2024-01-19T08:52:54.110Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;部分内容复习&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#部分内容复习&quot;&gt;¶&lt;/a&gt;部分内容复习&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;部分内容复习&quot;&gt;&lt;a href=&quot;#部分内容复习&quot; class=&quot;headerlink&quot; title=&quot;部分内容复习&quot;&gt;&lt;/a&gt;部分内容复习&lt;/h2&gt;</summary>
     
     
     
@@ -51,7 +51,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;配置外部编辑器&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;配置外部编辑器&quot;&gt;&lt;a href=&quot;#配置外部编辑器&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -74,7 +74,7 @@
     <updated>2023-11-11T08:46:41.938Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;记录一下QuantumultX的使用教程和一些规则&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#记录一下QuantumultX的使用教程和一些规则&quot;&gt;¶&lt;/a&gt;记录一下QuantumultX的使用教程和一些规则&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;记录一下QuantumultX的使用教程和一些规则&quot;&gt;&lt;a href=&quot;#记录一下QuantumultX的使用教程和一些规则&quot; class=&quot;headerlink&quot; title=&quot;记录一下QuantumultX的使用教程和一些规则&quot;&gt;&lt;/a&gt;记录一下QuantumultX的使用教程和一些规则&lt;/h2&gt;</summary>
     
     
     
@@ -97,7 +97,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v3&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -124,16 +124,14 @@
     <updated>2023-10-26T03:37:22.783Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v4&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
-&lt;p&gt;操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;操作系统的基本概念&lt;/li&gt;
 &lt;li&gt;操作系统发展历程&lt;/li&gt;
 &lt;li&gt;程序运行环境&lt;/li&gt;
 &lt;li&gt;操作系统结构&lt;/li&gt;
 &lt;li&gt;操作系统引导&lt;/li&gt;
-&lt;li&gt;虚拟机&lt;/li&gt;
-&lt;/ul&gt;</summary>
+&lt;li&gt;虚拟机</summary>
     
     
     
@@ -160,7 +158,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v7&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -187,7 +185,7 @@
     <updated>2023-07-01T03:47:37.043Z</updated>
     
     
-    <summary type="html">&lt;p&gt;记录一下平常会用到的一些Hexo指令，在指定文件夹下Git Bash here输入命令即可&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;记录一下平常会用到的一些Hexo指令，在指定文件夹下Git Bash here输入命令即可&lt;br&gt;</summary>
     
     
     
@@ -208,7 +206,7 @@
     <updated>2023-06-30T16:04:17.239Z</updated>
     
     
-    <summary type="html">&lt;p&gt;记录一下可能会用到非Markdown基础语法包含的实用技巧&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;记录一下可能会用到非Markdown基础语法包含的实用技巧&lt;br&gt;</summary>
     
     
     
@@ -229,8 +227,7 @@
     <updated>2023-10-26T03:38:09.143Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v5&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
-&lt;p&gt;计算机组成原理系列其四，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的CPU相关内容介绍，主要包含以下几点：&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;计算机组成原理系列其四，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的CPU相关内容介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CPU的功能和基本结构&lt;/li&gt;
 &lt;li&gt;指令的执行过程&lt;/li&gt;
@@ -261,8 +258,7 @@
     <updated>2023-10-26T03:38:54.146Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v8&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
-&lt;p&gt;计算机组成原理系列其三，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的指令系统介绍，主要包含以下几点：&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;计算机组成原理系列其三，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的指令系统介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;指令格式的基本内容&lt;/li&gt;
 &lt;li&gt;指令格式&lt;/li&gt;
@@ -292,8 +288,7 @@
     <updated>2023-10-26T03:38:21.180Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v6&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
-&lt;p&gt;计算机组成原理系列其二，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机内部和外部的存储介绍，主要包含以下几点：&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;计算机组成原理系列其二，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机内部和外部的存储介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;存储器的分类与层次化的存储器基本结构&lt;/li&gt;
 &lt;li&gt;主存与外(辅)存&lt;/li&gt;
@@ -323,15 +318,13 @@
     <updated>2023-10-26T03:38:39.746Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v9&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v9&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
-&lt;p&gt;计算机组成原理系列其一，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容主要包含以下几点：&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;计算机组成原理系列其一，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;数制的表示&lt;/li&gt;
 &lt;li&gt;计算机的内部编码&lt;/li&gt;
 &lt;li&gt;定点数和浮点数&lt;/li&gt;
 &lt;li&gt;C语言中的数据表示&lt;/li&gt;
-&lt;li&gt;数据的计算&lt;/li&gt;
-&lt;/ul&gt;</summary>
+&lt;li&gt;&lt;p&gt;数据的计算&lt;/p&gt;</summary>
     
     
     
@@ -358,8 +351,7 @@
     <updated>2023-04-09T11:50:29.667Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;前情提要&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#前情提要&quot;&gt;¶&lt;/a&gt;前情提要&lt;/h2&gt;
-&lt;p&gt;最近回家用TG贴纸下载机器人的时候发现太大的贴纸包无法下载，无奈只好自己搭建一个，正好在网上看到一个不错的，于是正好写这篇教程记录一下&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;前情提要&quot;&gt;&lt;a href=&quot;#前情提要&quot; class=&quot;headerlink&quot; title=&quot;前情提要&quot;&gt;&lt;/a&gt;前情提要&lt;/h2&gt;&lt;p&gt;最近回家用TG贴纸下载机器人的时候发现太大的贴纸包无法下载，无奈只好自己搭建一个，正好在网上看到一个不错的，于是正好写这篇教程记录一下&lt;br&gt;</summary>
     
     
     
@@ -378,7 +370,7 @@
     <updated>2024-01-17T08:09:20.526Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;C的指针和C-中引用和函数参数类型&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#C的指针和C-中引用和函数参数类型&quot;&gt;¶&lt;/a&gt;C的指针和C++中引用和函数参数类型&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;C的指针和C-中引用和函数参数类型&quot;&gt;&lt;a href=&quot;#C的指针和C-中引用和函数参数类型&quot; class=&quot;headerlink&quot; title=&quot;C的指针和C++中引用和函数参数类型&quot;&gt;&lt;/a&gt;C的指针和C++中引用和函数参数类型&lt;/h2&gt;</summary>
     
     
     
@@ -399,11 +391,8 @@
     <updated>2022-11-19T08:13:43.467Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v2&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v2&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;定义&lt;br&gt;
-正则表达式是由普通字符（例如字符 a 到 z）以及特殊字符（称为&amp;quot;元字符&amp;quot;）组成的文字模式。正则表达式作为一个模板，将某个字符模式与所搜索的字符串进行匹配&lt;/li&gt;
-&lt;/ol&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;定义&lt;br&gt;正则表达式是由普通字符（例如字符 a 到 z）以及特殊字符（称为”元字符”）组成的文字模式。正则表达式作为一个模板，将某个字符模式与所搜索的字符串进行匹配</summary>
     
     
     
@@ -422,8 +411,7 @@
     <updated>2023-03-19T16:21:43.508Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;1-冲突&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#1-冲突&quot;&gt;¶&lt;/a&gt;1. 冲突&lt;/h2&gt;
-&lt;p&gt;冲突是游戏故事的燃料，也是游戏玩法的燃料，冲突就是故事的核心。 “故事就是冲突（的集合）”&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;1-冲突&quot;&gt;&lt;a href=&quot;#1-冲突&quot; class=&quot;headerlink&quot; title=&quot;1. 冲突&quot;&gt;&lt;/a&gt;1. 冲突&lt;/h2&gt;&lt;p&gt;冲突是游戏故事的燃料，也是游戏玩法的燃料，冲突就是故事的核心。 “故事就是冲突（的集合）”&lt;br&gt;</summary>
     
     
     
@@ -443,7 +431,7 @@
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;装机软件下载网址&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;个人常用软件列表，重装系统下软件真的麻烦…&lt;/p&gt;</summary>
+&lt;p&gt;个人常用软件列表，重装系统下软件真的麻烦…&lt;br&gt;</summary>
     
     
     
@@ -464,9 +452,7 @@
     <updated>2022-09-13T13:00:21.057Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#前言&quot;&gt;¶&lt;/a&gt;前言&lt;/h2&gt;
-&lt;p&gt;本地本子存太多了，突发奇想想搭建一个在线看漫画的服务，遂找到了Komga。&lt;br&gt;
-下面记录一下如何在服务器的docker上部署&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本地本子存太多了，突发奇想想搭建一个在线看漫画的服务，遂找到了Komga。&lt;br&gt;下面记录一下如何在服务器的docker上部署&lt;br&gt;</summary>
     
     
     
@@ -485,9 +471,8 @@
     <updated>2023-04-17T10:39:59.081Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
-&lt;p&gt;浮点数是我们在程序里常用的数据类型，它在内存中到底是怎么样的形式存在的呢？&lt;/p&gt;
-&lt;p&gt;现代计算机中，一般都以IEEE 754标准存储浮点数，IEEE标准用: V=(-1)^s x M x 2^E 来表示一个浮点数&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;浮点数是我们在程序里常用的数据类型，它在内存中到底是怎么样的形式存在的呢？&lt;/p&gt;
+&lt;p&gt;现代计算机中，一般都以IEEE 754标准存储浮点数，IEEE标准用: V=(-1)^s x M x 2^E 来表示一个浮点数&lt;br&gt;</summary>
     
     
     
@@ -508,9 +493,7 @@
     <updated>2022-09-09T09:16:36.806Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;安装Java&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#安装Java&quot;&gt;¶&lt;/a&gt;安装Java&lt;/h2&gt;
-&lt;p&gt;安装最新版(最新版VsCode安装jdk1.8会弹窗警告，所以不如使用最新版)&lt;br&gt;
-下载地址：&lt;a href=&quot;https://www.oracle.com/java/technologies/downloads/#jdk18-windows&quot;&gt;Java&lt;/a&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;安装Java&quot;&gt;&lt;a href=&quot;#安装Java&quot; class=&quot;headerlink&quot; title=&quot;安装Java&quot;&gt;&lt;/a&gt;安装Java&lt;/h2&gt;&lt;p&gt;安装最新版(最新版VsCode安装jdk1.8会弹窗警告，所以不如使用最新版)&lt;br&gt;下载地址：&lt;a href=&quot;https://www.oracle.com/java/technologies/downloads/#jdk18-windows&quot;&gt;Java&lt;/a&gt;&lt;br&gt;</summary>
     
     
     
