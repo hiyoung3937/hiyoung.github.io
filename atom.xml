@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.xyz/"/>
-  <updated>2024-03-02T12:18:58.207Z</updated>
+  <updated>2024-03-13T12:12:15.690Z</updated>
   <id>https://blog.hiyoung.xyz/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>unity脚本</title>
+    <link href="https://blog.hiyoung.xyz/2024/03/13/d11c2f40712b/"/>
+    <id>https://blog.hiyoung.xyz/2024/03/13/d11c2f40712b/</id>
+    <published>2024-03-13T12:11:44.000Z</published>
+    <updated>2024-03-13T12:12:15.690Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script type=&quot;text&amp;#x2F;javascript&quot; src=&quot;https://unpkg.com/kity@2.0.4/dist/kity.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text&amp;#x2F;javascript&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="游戏制作" scheme="https://blog.hiyoung.xyz/categories/%E6%B8%B8%E6%88%8F%E5%88%B6%E4%BD%9C/"/>
+    
+    
+    <category term="unity" scheme="https://blog.hiyoung.xyz/tags/unity/"/>
+    
+    <category term="笔记" scheme="https://blog.hiyoung.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="游戏脚本" scheme="https://blog.hiyoung.xyz/tags/%E6%B8%B8%E6%88%8F%E8%84%9A%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
     <title>unity笔记</title>
     <link href="https://blog.hiyoung.xyz/2024/03/02/e65bf046fb61/"/>
     <id>https://blog.hiyoung.xyz/2024/03/02/e65bf046fb61/</id>
     <published>2024-03-02T11:14:02.000Z</published>
-    <updated>2024-03-02T12:18:58.207Z</updated>
+    <updated>2024-03-13T12:10:47.791Z</updated>
     
     
       
@@ -489,28 +518,6 @@
     
     
     <category term="comic,Komga" scheme="https://blog.hiyoung.xyz/tags/comic-Komga/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IEEE浮点表示(IEEE 754)</title>
-    <link href="https://blog.hiyoung.xyz/2022/09/12/240736e386b5/"/>
-    <id>https://blog.hiyoung.xyz/2022/09/12/240736e386b5/</id>
-    <published>2022-09-12T13:01:05.000Z</published>
-    <updated>2023-04-17T10:39:59.081Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;浮点数是我们在程序里常用的数据类型，它在内存中到底是怎么样的形式存在的呢？&lt;/p&gt;
-&lt;p&gt;现代计算机中，一般都以IEEE 754标准存储浮点数，IEEE标准用: V=(-1)^s x M x 2^E 来表示一个浮点数&lt;br&gt;</summary>
-    
-    
-    
-    <category term="学习笔记" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="计算机组成原理" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
-    
-    
-    <category term="IEEE，浮点数" scheme="https://blog.hiyoung.xyz/tags/IEEE%EF%BC%8C%E6%B5%AE%E7%82%B9%E6%95%B0/"/>
     
   </entry>
   
