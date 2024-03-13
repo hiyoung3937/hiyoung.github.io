@@ -1,11 +1,11 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>计算机组成原理-数据的表示和计算 | Hiyoung'blog</title><meta name="author" content="Hiyoung"><meta name="copyright" content="Hiyoung"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="简介计算机组成原理系列其一，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容主要包含以下几点：  数制的表示 计算机的内部编码 定点数和浮点数 C语言中的数据表示 数据的计算">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>计算机组成原理-数据的表示和计算 | Hiyoung'blog</title><meta name="author" content="Hiyoung"><meta name="copyright" content="Hiyoung"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="¶简介 计算机组成原理系列其一，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容主要包含以下几点：  数制的表示 计算机的内部编码 定点数和浮点数 C语言中的数据表示 数据的计算">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机组成原理-数据的表示和计算">
 <meta property="og:url" content="https://blog.hiyoung.xyz/2023/04/16/644b687ff221/">
 <meta property="og:site_name" content="Hiyoung&#39;blog">
-<meta property="og:description" content="简介计算机组成原理系列其一，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容主要包含以下几点：  数制的表示 计算机的内部编码 定点数和浮点数 C语言中的数据表示 数据的计算">
+<meta property="og:description" content="¶简介 计算机组成原理系列其一，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容主要包含以下几点：  数制的表示 计算机的内部编码 定点数和浮点数 C语言中的数据表示 数据的计算">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/257.nv4547f8c5c.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/65047754_p0.7gkotm0lwuo0.webp">
 <meta property="article:published_time" content="2023-04-16T13:08:47.000Z">
 <meta property="article:modified_time" content="2023-10-26T03:38:39.746Z">
 <meta property="article:author" content="Hiyoung">
@@ -14,7 +14,7 @@
 <meta property="article:tag" content="浮点数">
 <meta property="article:tag" content="补码">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/257.nv4547f8c5c.webp"><link rel="shortcut icon" href="/img/favicon-32x32-next.png"><link rel="canonical" href="https://blog.hiyoung.xyz/2023/04/16/644b687ff221/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-MX8PNPLLB0"></script><script>window.dataLayer = window.dataLayer || [];
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/65047754_p0.7gkotm0lwuo0.webp"><link rel="shortcut icon" href="/img/favicon-32x32-next.png"><link rel="canonical" href="https://blog.hiyoung.xyz/2023/04/16/644b687ff221/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-MX8PNPLLB0"></script><script>window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-MX8PNPLLB0');
@@ -170,35 +170,43 @@ gtag('config', 'G-MX8PNPLLB0');
     }
     detectApple()
     })(window)</script><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Hiyoung'blog" type="application/atom+xml">
-</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">37</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">54</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/257.nv4547f8c5c.webp')"><nav id="nav"><span id="blog-info"><a href="/" title="Hiyoung'blog"><span class="site-name">Hiyoung'blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">计算机组成原理-数据的表示和计算</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-04-16T13:08:47.000Z" title="发表于 2023-04-16 21:08:47">2023-04-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-26T03:38:39.746Z" title="更新于 2023-10-26 11:38:39">2023-10-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">5.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>17分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机组成原理-数据的表示和计算"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>计算机组成原理系列其一，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容主要包含以下几点：</p>
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">37</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">54</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/65047754_p0.7gkotm0lwuo0.webp')"><nav id="nav"><span id="blog-info"><a href="/" title="Hiyoung'blog"><span class="site-name">Hiyoung'blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">计算机组成原理-数据的表示和计算</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-04-16T13:08:47.000Z" title="发表于 2023-04-16 21:08:47">2023-04-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-26T03:38:39.746Z" title="更新于 2023-10-26 11:38:39">2023-10-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">5.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>17分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机组成原理-数据的表示和计算"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="简介-v8"><a class="header-anchor" href="#简介-v8">¶</a>简介</h2>
+<p>计算机组成原理系列其一，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容主要包含以下几点：</p>
 <ul>
 <li>数制的表示</li>
 <li>计算机的内部编码</li>
 <li>定点数和浮点数</li>
 <li>C语言中的数据表示</li>
-<li><p>数据的计算</p>
+<li>数据的计算</li>
+</ul>
 <span id="more"></span>
-<h2 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h2><p><strong>重点内容会使用黑色加粗表示</strong></p>
-</li>
-<li><p>数据的表示和计算</p>
+<h2 id="大纲-v6"><a class="header-anchor" href="#大纲-v6">¶</a>大纲</h2>
+<p><strong>重点内容会使用黑色加粗表示</strong></p>
 <ul>
-<li>前置知识<ul>
+<li>数据的表示和计算
+<ul>
+<li>前置知识
+<ul>
 <li>数值转换</li>
 <li><strong>计算机运算速度</strong></li>
 <li><strong>CPU执行时间</strong></li>
 </ul>
 </li>
-<li>数制<ul>
-<li>进位计数法<ul>
+<li>数制
+<ul>
+<li>进位计数法
+<ul>
 <li>r位进位计数法</li>
 <li>不同进制数相互转换方法</li>
 </ul>
 </li>
-<li>定点数的表示<ul>
+<li>定点数的表示
+<ul>
 <li>真值和机器数</li>
 <li>机器数的定点表示</li>
 <li><strong>原码、补码、反码、移码</strong></li>
-<li>定点数的移位<ul>
+<li>定点数的移位
+<ul>
 <li><strong>算术位移</strong></li>
 <li>逻辑位移</li>
 <li>循环位移</li>
@@ -210,32 +218,39 @@ gtag('config', 'G-MX8PNPLLB0');
 </li>
 </ul>
 </li>
-<li><strong>浮点数</strong><ul>
+<li><strong>浮点数</strong>
+<ul>
 <li>一般浮点数的表示</li>
 <li>IEEE 754标准</li>
 </ul>
 </li>
-<li><strong>C语言中的数据类型及强制类型转换</strong><ul>
+<li><strong>C语言中的数据类型及强制类型转换</strong>
+<ul>
 <li>整数类型的转换</li>
 <li>包含浮点数的转换</li>
-<li>数据的存储和排列<ul>
+<li>数据的存储和排列
+<ul>
 <li>大端法</li>
 <li>小端法</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>拓展<ul>
+<li>拓展
+<ul>
 <li>乘2取整法</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><ol>
-<li>数值转换<ul>
+<h2 id="前情提要-v2"><a class="header-anchor" href="#前情提要-v2">¶</a>前情提要</h2>
+<ol>
+<li>数值转换
+<ul>
 <li>计算机进行数据处理时，一次存取、加工和传送的数据长度称为字，对于不同的品牌CPU 1Word(一个字)通常由一个或多个（一般是字节的整数位）字节构成</li>
-<li><strong>在描述存储容量和文件大小时，K、M、G、T常用2次幂表示</strong><ul>
+<li><strong>在描述存储容量和文件大小时，K、M、G、T常用2次幂表示</strong>
+<ul>
 <li>1Byte = 8bit</li>
 <li>1KB = $ 2^{10} $ B = $ 8\times2^{10} $ bit</li>
 <li>1MB = $ 2^{20} $ B = $ 8\times2^{20} $ bit</li>
@@ -243,7 +258,8 @@ gtag('config', 'G-MX8PNPLLB0');
 <li>1TB = $ 2^{40} $ B = $ 8\times2^{40} $ bit</li>
 </ul>
 </li>
-<li><strong>在描述速率、频率时，K、M、G、T常用10次幂表示</strong><ul>
+<li><strong>在描述速率、频率时，K、M、G、T常用10次幂表示</strong>
+<ul>
 <li>1K = $ 10 ^{3} $</li>
 <li>1M = $ 10 ^{6} $</li>
 <li>1G = $ 10 ^{9} $</li>
@@ -253,185 +269,249 @@ gtag('config', 'G-MX8PNPLLB0');
 </li>
 </ul>
 </li>
-<li>常见秒单位：<table>
- <tr>
-     <th colspan="3">分数</th>
-     <td rowspan="14"></td>
-     <th colspan="3">倍数</th>
- </tr>
- <tr>
-     <th>值</th>
-     <th>符号</th>
-     <th>名称</th>
-     <th>值</th>
-     <th>符号</th>
-     <th>名称</th>
- </tr>
- <tr>
-     <td>10<sup>−1</sup> s</td>
-     <td>ds</td>
-     <td>分秒</td>
-     <td>10<sup>1</sup> s</td>
-     <td>das</td>
-     <td>十秒</td>
- </tr>
- <tr>
-     <td>10<sup>−2</sup> s</td>
-     <td>cs</td>
-     <td>厘秒</td>
-     <td>10<sup>2</sup> s</td>
-     <td>hs</td>
-     <td>百秒</td>
- </tr>
- <tr>
-     <td>10<sup>−3</sup> s</td>
-     <td><b>ms</b></td>
-     <td><b>毫秒</b></td>
-     <td>10<sup>3</sup> s</td>
-     <td>ks</td>
-     <td>千秒</td>
- </tr>
- <tr>
-     <td>10<sup>−6</sup> s</td>
-     <td><b>µs</b></td>
-     <td><b>微秒</b></td>
-     <td>10<sup>6</sup> s</td>
-     <td>Ms</td>
-     <td>兆秒</td>
- </tr>
- <tr>
-     <td>10<sup>−9</sup> s</td>
-     <td><b>ns</b></td>
-     <td><b>纳秒</b></td>
-     <td>10<sup>9</sup> s</td>
-     <td>Gs</td>
-     <td>吉秒</td>
- </tr>
- <tr>
-     <td colspan="20">常用单位以粗体表示</td>
- </tr>
-</table>
-
-</li>
+<li>常见秒单位：</li>
 </ol>
-<h2 id="计算机的性能指标"><a href="#计算机的性能指标" class="headerlink" title="计算机的性能指标"></a>计算机的性能指标</h2><h3 id="几种字长区别"><a href="#几种字长区别" class="headerlink" title="几种字长区别"></a>几种字长区别</h3><p>参见<a href="https://blog.hiyoung.xyz/2023/05/27/65aa9fb0b19f/?highlight=%E5%AD%97%E9%95%BF#%E6%8C%87%E4%BB%A4%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F">计算机组成原理 - 指令系统</a></p>
-<h3 id="数据通路带宽"><a href="#数据通路带宽" class="headerlink" title="数据通路带宽"></a>数据通路带宽</h3><p>数据通路带宽是指数据总线一次所能并行传送信息的位数。这里所指的数据通路宽度是指外部数据总线的宽度，它与CPU内部的数据总线宽度（内部寄存器的大小）可能不同</p>
-<p><a href="https://blog.hiyoung.xyz/2023/06/24/524b2effcffb/?highlight=%E6%95%B0%E6%8D%AE%E9%80%9A%E8%B7%AF#CPU%E5%86%85%E7%9A%84%E6%95%B0%E6%8D%AE%E9%80%9A%E8%B7%AF">CPU内部的数据通路</a><br><a href="https://blog.hiyoung.xyz/2023/07/02/820a4a133c49/?highlight=%E6%80%BB%E7%BA%BF%E5%B8%A6%E5%AE%BD#%E6%80%BB%E7%BA%BF%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87">外部数据总线带宽</a></p>
-<h3 id="运算速度"><a href="#运算速度" class="headerlink" title="运算速度"></a>运算速度</h3><ol>
-<li>计算机运算速度<ol>
+<table>
+    <tr>
+        <th colspan="3">分数</th>
+        <td rowspan="14"></td>
+        <th colspan="3">倍数</th>
+    </tr>
+    <tr>
+        <th>值</th>
+        <th>符号</th>
+        <th>名称</th>
+        <th>值</th>
+        <th>符号</th>
+        <th>名称</th>
+    </tr>
+    <tr>
+        <td>10<sup>−1</sup> s</td>
+        <td>ds</td>
+        <td>分秒</td>
+        <td>10<sup>1</sup> s</td>
+        <td>das</td>
+        <td>十秒</td>
+    </tr>
+    <tr>
+        <td>10<sup>−2</sup> s</td>
+        <td>cs</td>
+        <td>厘秒</td>
+        <td>10<sup>2</sup> s</td>
+        <td>hs</td>
+        <td>百秒</td>
+    </tr>
+    <tr>
+        <td>10<sup>−3</sup> s</td>
+        <td><b>ms</b></td>
+        <td><b>毫秒</b></td>
+        <td>10<sup>3</sup> s</td>
+        <td>ks</td>
+        <td>千秒</td>
+    </tr>
+    <tr>
+        <td>10<sup>−6</sup> s</td>
+        <td><b>µs</b></td>
+        <td><b>微秒</b></td>
+        <td>10<sup>6</sup> s</td>
+        <td>Ms</td>
+        <td>兆秒</td>
+    </tr>
+    <tr>
+        <td>10<sup>−9</sup> s</td>
+        <td><b>ns</b></td>
+        <td><b>纳秒</b></td>
+        <td>10<sup>9</sup> s</td>
+        <td>Gs</td>
+        <td>吉秒</td>
+    </tr>
+    <tr>
+        <td colspan="20">常用单位以粗体表示</td>
+    </tr>
+</table>
+<h2 id="计算机的性能指标"><a class="header-anchor" href="#计算机的性能指标">¶</a>计算机的性能指标</h2>
+<h3 id="几种字长区别"><a class="header-anchor" href="#几种字长区别">¶</a>几种字长区别</h3>
+<p>参见<a href="https://blog.hiyoung.xyz/2023/05/27/65aa9fb0b19f/?highlight=%E5%AD%97%E9%95%BF#%E6%8C%87%E4%BB%A4%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F">计算机组成原理 - 指令系统</a></p>
+<h3 id="数据通路带宽"><a class="header-anchor" href="#数据通路带宽">¶</a>数据通路带宽</h3>
+<p>数据通路带宽是指数据总线一次所能并行传送信息的位数。这里所指的数据通路宽度是指外部数据总线的宽度，它与CPU内部的数据总线宽度（内部寄存器的大小）可能不同</p>
+<p><a href="https://blog.hiyoung.xyz/2023/06/24/524b2effcffb/?highlight=%E6%95%B0%E6%8D%AE%E9%80%9A%E8%B7%AF#CPU%E5%86%85%E7%9A%84%E6%95%B0%E6%8D%AE%E9%80%9A%E8%B7%AF">CPU内部的数据通路</a><br>
+<a href="https://blog.hiyoung.xyz/2023/07/02/820a4a133c49/?highlight=%E6%80%BB%E7%BA%BF%E5%B8%A6%E5%AE%BD#%E6%80%BB%E7%BA%BF%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87">外部数据总线带宽</a></p>
+<h3 id="运算速度"><a class="header-anchor" href="#运算速度">¶</a>运算速度</h3>
+<ol>
+<li>计算机运算速度
+<ol>
 <li><strong>CPU时钟周期</strong>。 通常为主频的倒数，是CPU中最小的时间单位，执行指令的每个动作至少需要1个时钟周期</li>
 <li><strong>主频</strong>（CPU时钟频率）。 机器内部的主时钟的频率，是衡量机器速度的重要参数，以Hz为单位。</li>
 <li><strong>CPI</strong>（Cycle Per Instruction），执行一条指令所需的时钟周期数。（不同指令的时钟周期数可能不同，CPI通常是一个平均值）</li>
 </ol>
 </li>
-<li><strong>CPU执行时间</strong>，指运行一个程序所花费的时间<br> CPU执行时间 = $ \frac {CPU时钟周期}{主频} $ = $\frac {(指令条数\times CPI)}{主频}$</li>
-<li><strong>MIPS</strong>（Million Instruction Per Second），每秒执行多少百万条指令<br> MIPS = $ \frac {指令条数}{执行时间 \times 10^{6}} $ = $\frac {主频}{CPI \times 10^{6}}$<h2 id="数制"><a href="#数制" class="headerlink" title="数制"></a>数制</h2><h3 id="进制计数法"><a href="#进制计数法" class="headerlink" title="进制计数法"></a>进制计数法</h3><ol>
-<li>一个r进制数($ K_n K_{n-1} K_{n-2} …… K_{0} K_{-1} …… K_{-m} $)可以表示为：<br>$ K_n r^n + K_{n-1}r^{n-1} + …… K_{0}r^{0} $ $+ K_{-1}r^{-1} + …… K_{-m}r^{-m} = \sum_{i=n}^{-m} K_ir^i $  其中r是基数，$r^i$ 是第i位的位权（整数位最低位规定为第0位），$K_i$的取值可以是0，1，…… r-1共r个数码中的任意一个</li>
+<li><strong>CPU执行时间</strong>，指运行一个程序所花费的时间<br>
+CPU执行时间 = $ \frac {CPU时钟周期}{主频} $ = $\frac {(指令条数\times CPI)}{主频}$</li>
+<li><strong>MIPS</strong>（Million Instruction Per Second），每秒执行多少百万条指令<br>
+MIPS = $ \frac {指令条数}{执行时间 \times 10^{6}} $ = $\frac {主频}{CPI \times 10^{6}}$</li>
 </ol>
-</li>
-</ol>
+<h2 id="数制"><a class="header-anchor" href="#数制">¶</a>数制</h2>
+<h3 id="进制计数法"><a class="header-anchor" href="#进制计数法">¶</a>进制计数法</h3>
 <ol>
-<li>不同进制数之间的互相转换<ol>
+<li>
+<p>一个r进制数($ K_n K_{n-1} K_{n-2} …… K_{0} K_{-1} …… K_{-m} $)可以表示为：<br>
+$ K_n r^n + K_{n-1}r^{n-1} + …… K_{0}r^{0} $ $+ K_{-1}r^{-1} + …… K_{-m}r^{-m} = \sum_{i=n}^{-m} K_ir^i $  其中r是基数，$r^i$ 是第i位的位权（整数位最低位规定为第0位），$K_i$的取值可以是0，1，…… r-1共r个数码中的任意一个</p>
+</li>
+<li>
+<p>不同进制数之间的互相转换</p>
+<ol>
 <li>二进制与八进制和十六进制可以很方便的互相转换</li>
-<li>任意进制转换为十进制数:将任意进制数的各位数码与他们的权值相乘，再将乘积相加即可<br> 例如：$ (11011.1)_2 = 1\times 2^4 + 1\times 2^3 + 0\times 2^2 + 1\times 2^1 + 1\times 2^0 + 1\times 2^{-1} = 27.5 $</li>
-<li>十进制转换为任意进制数:<br> <img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计算机组成原理-数据的表示和计算_1.2mqt5bo8h940.webp" alt="计算机组成原理-数据的表示和计算_1"></li>
+<li>任意进制转换为十进制数:将任意进制数的各位数码与他们的权值相乘，再将乘积相加即可<br>
+例如：$ (11011.1)_2 = 1\times 2^4 + 1\times 2^3 + 0\times 2^2 + 1\times 2^1 + 1\times 2^0 + 1\times 2^{-1} = 27.5 $</li>
+<li>十进制转换为任意进制数:<br>
+<img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_1.2mqt5bo8h940.webp" alt="计算机组成原理-数据的表示和计算_1"></li>
 </ol>
 </li>
 </ol>
-<h3 id="定点数的编码表示"><a href="#定点数的编码表示" class="headerlink" title="定点数的编码表示"></a>定点数的编码表示</h3><h4 id="真值和机器数"><a href="#真值和机器数" class="headerlink" title="真值和机器数"></a>真值和机器数</h4><ul>
+<h3 id="定点数的编码表示"><a class="header-anchor" href="#定点数的编码表示">¶</a>定点数的编码表示</h3>
+<h4 id="真值和机器数"><a class="header-anchor" href="#真值和机器数">¶</a>真值和机器数</h4>
+<ul>
 <li>真值：日常生活中使用正负号表示的数字，例如：-19、20。真值是计算器所代表的实际值</li>
 <li>机器数：计算机中通常把数的符号和数值部分一起编码，通常用“0”表示正、“1”表负。这种把符号和数值一起编码的数称为机器数。常用的有原码、补码、反码、移码。例如：0,101（这里的“,”仅区分符号位和数值位）表示+5</li>
 </ul>
-<h4 id="机器数的定点表示"><a href="#机器数的定点表示" class="headerlink" title="机器数的定点表示"></a>机器数的定点表示</h4><p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计算机组成原理-数据的表示和计算_2.22ukywznz7pc.webp" alt="计算机组成原理-数据的表示和计算_2"></p>
-<h4 id="原码、补码、反码、移码"><a href="#原码、补码、反码、移码" class="headerlink" title="原码、补码、反码、移码"></a>原码、补码、反码、移码</h4><p>对于这几种码的相互转换、适用范围、原码和补码的表示范围、补码原码的加减运算等要重点关注</p>
+<h4 id="机器数的定点表示"><a class="header-anchor" href="#机器数的定点表示">¶</a>机器数的定点表示</h4>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_2.22ukywznz7pc.webp" alt="计算机组成原理-数据的表示和计算_2"></p>
+<h4 id="原码、补码、反码、移码"><a class="header-anchor" href="#原码、补码、反码、移码">¶</a>原码、补码、反码、移码</h4>
+<p>对于这几种码的相互转换、适用范围、原码和补码的表示范围、补码原码的加减运算等要重点关注</p>
 <ol>
-<li>用机器数的最高位表示符号位(单符号位)，其余各位表示数的绝对值<br> 例如：$ x_1 = +0.1101， x_2 = -0.1101 $，字长为8位，其原码表示为$ [x_1]_原$ = <strong>0</strong>，1101000 ， $ [x_2]_原$ = <strong>1</strong>，1101000，其中最高位为符号位</li>
-<li>原码中的真值零有正零和负零两种形式，$ [+0]_原$ = <strong>0</strong>，0000和 $ [-0]_原$ = <strong>1</strong>，0000，而补码的零是唯一的</li>
-<li>双符号位表示: 00表示正，11表示负，其中第一位数字表示真正的符号，第二位数字可以用于溢出判断，即01、10表示发生溢出需要进行右移保持符号位不变</li>
-<li><p>四种码的相互转换<br> <img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计算机组成原理-数据的表示和计算_3.5y7wwxczfg80.webp" alt="计算机组成原理-数据的表示和计算_3"></p>
-<p> <img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计算机组成原理-数据的表示和计算_6.4bcyvq5qy7i0.webp" alt="计算机组成原理-数据的表示和计算_6"></p>
-<p> <img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计算机组成原理-数据的表示和计算_4.70ci39aa6ds0.webp" alt="计算机组成原理-数据的表示和计算_4"></p>
-<p> <img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计算机组成原理-数据的表示和计算_5.4kng8opzhgg0.webp" alt="计算机组成原理-数据的表示和计算_5"></p>
+<li>
+<p>用机器数的最高位表示符号位(单符号位)，其余各位表示数的绝对值<br>
+例如：$ x_1 = +0.1101， x_2 = -0.1101 $，字长为8位，其原码表示为$ [x_1]_原$ = <strong>0</strong>，1101000 ， $ [x_2]_原$ = <strong>1</strong>，1101000，其中最高位为符号位</p>
+</li>
+<li>
+<p>原码中的真值零有正零和负零两种形式，$ [+0]_原$ = <strong>0</strong>，0000和 $ [-0]_原$ = <strong>1</strong>，0000，而补码的零是唯一的</p>
+</li>
+<li>
+<p>双符号位表示: 00表示正，11表示负，其中第一位数字表示真正的符号，第二位数字可以用于溢出判断，即01、10表示发生溢出需要进行右移保持符号位不变</p>
+</li>
+<li>
+<p>四种码的相互转换<br>
+<img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_3.5y7wwxczfg80.webp" alt="计算机组成原理-数据的表示和计算_3"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_6.4bcyvq5qy7i0.webp" alt="计算机组成原理-数据的表示和计算_6"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_4.70ci39aa6ds0.webp" alt="计算机组成原理-数据的表示和计算_4"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_5.4kng8opzhgg0.webp" alt="计算机组成原理-数据的表示和计算_5"></p>
 </li>
 </ol>
-<h4 id="定点数的移位"><a href="#定点数的移位" class="headerlink" title="定点数的移位"></a>定点数的移位</h4><p>定点数的移位主要包括：算数移位、逻辑移位、循环移位</p>
+<h4 id="定点数的移位"><a class="header-anchor" href="#定点数的移位">¶</a>定点数的移位</h4>
+<p>定点数的移位主要包括：算数移位、逻辑移位、循环移位</p>
 <ol>
-<li><p>算术移位：算术移位的操作对象是有符号数，其在移位过程中的符号位要保持不变(只移动数值位，其右添补0或1看符号位，左移添补0或1)，左移一位相当于乘以2;右移一位相当于除以2</p>
+<li>
+<p>算术移位：算术移位的操作对象是有符号数，其在移位过程中的符号位要保持不变(只移动数值位，其右添补0或1看符号位，左移添补0或1)，左移一位相当于乘以2;右移一位相当于除以2</p>
 <ul>
 <li>对于正数由于$ [ x]_原 $ = $ [ x]_补 $ = $ [ x]_反 $ = 真值，因此对于移位(左移和右移)后的空位均添0补充</li>
-<li>对于负数：<ul>
+<li>对于负数：
+<ul>
 <li>原码表示：左移和右移均添0补充</li>
 <li>补码表示：左移添0补充，右移添1补充（对于补码来说，其由低向高位找到的第一个“1”，在此“1”的左边各位均与对应的反码相同，在此“1”右边(包括此“1”)均与对应的原码相同）</li>
 <li>反码表示：左移和右移均添1补充</li>
-<li>误差分析：<ul>
+<li>误差分析：
+<ul>
 <li>对于正数、负数原码，左移时高位丢1，结果出错；右移时低位丢1，影响精度</li>
 <li>对于负数补码，左移时高位丢0，结果出错；右移时，地位丢1，影响精度</li>
-<li>负数反码，左移时高位丢0，结果出错；右移时低位丢0，影响精度<br><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计算机组成原理-数据的表示和计算_7.chlpqzilg74.webp" alt="计算机组成原理-数据的表示和计算_7"></li>
+<li>负数反码，左移时高位丢0，结果出错；右移时低位丢0，影响精度<br>
+<img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_7.chlpqzilg74.webp" alt="计算机组成原理-数据的表示和计算_7"></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>逻辑移位：逻辑移位将操作数视作无符号数，其左移或右移时均添0补充</p>
+<li>
+<p>逻辑移位：逻辑移位将操作数视作无符号数，其左移或右移时均添0补充</p>
 </li>
-<li>循环移位：将移出的数位又移入数据中，循环移位适合将数据的低字节数据和高字节数据互换<br> <img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计算机组成原理-数据的表示和计算_8.3es5wrkoezk0.webp" alt="计算机组成原理-数据的表示和计算_8"></li>
+<li>
+<p>循环移位：将移出的数位又移入数据中，循环移位适合将数据的低字节数据和高字节数据互换<br>
+<img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_8.3es5wrkoezk0.webp" alt="计算机组成原理-数据的表示和计算_8"></p>
+</li>
 </ol>
-<h4 id="定点数的加减法，乘除（此处不做重点说明）"><a href="#定点数的加减法，乘除（此处不做重点说明）" class="headerlink" title="定点数的加减法，乘除（此处不做重点说明）"></a>定点数的加减法，乘除（此处不做重点说明）</h4><ul>
-<li>补码的加减运算规则：<ul>
+<h4 id="定点数的加减法，乘除（此处不做重点说明）"><a class="header-anchor" href="#定点数的加减法，乘除（此处不做重点说明）">¶</a>定点数的加减法，乘除（此处不做重点说明）</h4>
+<ul>
+<li>补码的加减运算规则：
+<ul>
 <li>按二进制运算规则运算</li>
 <li>若做加法，直接两数补码相加；若做减法，则先将减数转化为对于的负数再与被减数相加</li>
 <li><strong>符号位与数值位一起运算</strong>，加、减结果的符号位也在运算中直接得出</li>
 <li>最终的运算结果的高位丢弃，保持位数不变，运算结果也为补码</li>
 </ul>
 </li>
-<li>例子：<br>  <img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计算机组成原理-数据的表示和计算_9.165chj9dvdmk.webp" alt="计算机组成原理-数据的表示和计算_9"></li>
+<li>例子：<br>
+<img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_9.165chj9dvdmk.webp" alt="计算机组成原理-数据的表示和计算_9"></li>
 </ul>
-<h4 id="溢出的判别方法"><a href="#溢出的判别方法" class="headerlink" title="溢出的判别方法"></a>溢出的判别方法</h4><p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计组-数据的表示和计算_10.4a8i0a8tf160.webp" alt="计组-数据的表示和计算_10"></p>
-<h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><p>对于浮点数的学习可以类比十进制的科学计数法来比较学习</p>
-<h3 id="一般浮点数的表示"><a href="#一般浮点数的表示" class="headerlink" title="一般浮点数的表示"></a>一般浮点数的表示</h3><ol>
-<li><p>表示格式：$ N=(-1)^S \times M \times R^E $</p>
+<h4 id="溢出的判别方法"><a class="header-anchor" href="#溢出的判别方法">¶</a>溢出的判别方法</h4>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%BB%84-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_10.4a8i0a8tf160.webp" alt="计组-数据的表示和计算_10"></p>
+<h2 id="浮点数"><a class="header-anchor" href="#浮点数">¶</a>浮点数</h2>
+<p>对于浮点数的学习可以类比十进制的科学计数法来比较学习</p>
+<h3 id="一般浮点数的表示"><a class="header-anchor" href="#一般浮点数的表示">¶</a>一般浮点数的表示</h3>
+<ol>
+<li>
+<p>表示格式：$ N=(-1)^S \times M \times R^E $</p>
 <ul>
 <li>S取值为0或1，用来决定浮点数的符号</li>
 <li>M是一个二进制定点小数，称为尾数，一般使用定点原码小数表示，尾数的位数反映了浮点数的精度</li>
 <li>E是一个二进制定点整数，称为阶码，常用移码表示。阶码的值反映了浮点数小数点的实际位置，阶码的位数反映了浮点数的表示范围</li>
-<li><p>R是基数，一般是隐含的，可以取值为2、4、8等</p>
-<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计组-数据的表示和计算_11.2qg14rvxh4s0.webp" alt="计组-数据的表示和计算_11"></p>
-</li>
+<li>R是基数，一般是隐含的，可以取值为2、4、8等</li>
 </ul>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%BB%84-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_11.2qg14rvxh4s0.webp" alt="计组-数据的表示和计算_11"></p>
 </li>
-<li><p>浮点数的规格化<br>浮点数的尾数位数决定了浮点数的有效位数，有效位越多，数据的精度越高，浮点数的规格化就是为了使得尾数保留更多的有效位数。规格化的操作是通过调整一个非规格化的浮点数的尾数和阶码的大小，使得非零的浮点数在尾数的最高数位上保证是一个有效值（即值为1）</p>
+<li>
+<p>浮点数的规格化<br>
+浮点数的尾数位数决定了浮点数的有效位数，有效位越多，数据的精度越高，浮点数的规格化就是为了使得尾数保留更多的有效位数。规格化的操作是通过调整一个非规格化的浮点数的尾数和阶码的大小，使得非零的浮点数在尾数的最高数位上保证是一个有效值（即值为1）</p>
 <ol>
-<li><p>规格化操作 </p>
+<li>
+<p>规格化操作</p>
 <ul>
 <li>左规：当运算结果的尾数最高数位不是有效位时，即$ \pm0.0……01XXX  $的形式时需要进行左规，左规时，尾数每左移一位、阶码减1(以基数为2，下同)。左规可能需要多次</li>
 <li>右规：当运算结果的尾数的有效位进位到小数点前时，需要右规。尾数右移一位、阶码加1。右规需要进行一次</li>
-<li>为何只需要进行一次？ 当浮点数运算的结果使尾数溢出（即使用双符号位表示时为01或10）时，Example：<blockquote>
-<p>$ a = +2^2 \times 00.1100 $<br>   $ b = +2^2 \times 00.1000 $<br>   $ a+b = 2^2 \times(00.1100+00.1000) = 2^2 \times 01.0100$<br>$ \mathtt{=&gt;^{右规} 2^3 \times 00.1010} $</p>
+<li>为何只需要进行一次？ 当浮点数运算的结果使尾数溢出（即使用双符号位表示时为01或10）时，Example：
+<blockquote>
+<p>$ a = +2^2 \times 00.1100 $<br>
+$ b = +2^2 \times 00.1000 $<br>
+$ a+b = 2^2 \times(00.1100+00.1000) = 2^2 \times 01.0100$<br>
+$ \mathtt{=&gt;^{右规} 2^3 \times 00.1010} $</p>
 </blockquote>
 </li>
 </ul>
 </li>
-<li><p>用原码表示的规格化尾数（基数为2）的形式如下：</p>
+<li>
+<p>用原码表示的规格化尾数（基数为2）的形式如下：</p>
 <ol>
-<li>正数为0.1xx……xx的形式，最大值表示为0.11……1，最小值为0.100……0 </li>
+<li>正数为0.1xx……xx的形式，最大值表示为0.11……1，最小值为0.100……0</li>
 <li>负数为1.1xx……xx的形式，最大值表示为1.10……0，最小值表示为1.11……1</li>
 </ol>
 </li>
 </ol>
 </li>
-<li><p>浮点数的加减运算<br>浮点数的运算特点是阶码运算和尾数运算分开进行，加减运算分为以下几步</p>
+<li>
+<p>浮点数的加减运算<br>
+浮点数的运算特点是阶码运算和尾数运算分开进行，加减运算分为以下几步</p>
 <ol>
-<li>对阶<br>对阶的目的是使两个操作数的小数点位置对⻬，即使得两个数的阶码相等。为此，先求阶差，然后以小阶向大阶看⻬的原则，将阶码小的尾数右移一位(基数为2)，阶加1，直到两个数的阶码相等为止。尾数右移时，舍弃掉有效位会产生误差，影响精度<br>（类比科学计数法将$ 98.11 \times 10^2 + 8.11 \times 10^3 $转变为$ 9.811 \times 10^3 + 8.11 \times 10^3$）</li>
-<li>尾数求和<br>将对阶后的尾数按定点数加(减)运算规则运算。运算后的尾数不一定是规格化的，因此，浮点数的加减运算需要进一步进行规格化处理。</li>
-<li>规格化<br>参照上方规格化规则，对于IEEE 754规格化的尾数形式为$ \pm 1.xxxx $，因为IEEE 754尾数的最高位默认隐含为1所以规格化时的主要区别就是要将有效位移到小数点左边一位（即小数点左边只能为1）</li>
-<li>舍入<br>在对阶和尾数右规时，可能会对尾数进行右移，为保证运算精度，一般将低位移出的两位保留下来，参加中间过程的运算，最后将运算结果进行舍入，还原表示成IEEE 754格式。<br>常见的舍入方法有:<ul>
+<li>对阶<br>
+对阶的目的是使两个操作数的小数点位置对⻬，即使得两个数的阶码相等。为此，先求阶差，然后以小阶向大阶看⻬的原则，将阶码小的尾数右移一位(基数为2)，阶加1，直到两个数的阶码相等为止。尾数右移时，舍弃掉有效位会产生误差，影响精度<br>
+（类比科学计数法将$ 98.11 \times 10^2 + 8.11 \times 10^3 $转变为$ 9.811 \times 10^3 + 8.11 \times 10^3$）</li>
+<li>尾数求和<br>
+将对阶后的尾数按定点数加(减)运算规则运算。运算后的尾数不一定是规格化的，因此，浮点数的加减运算需要进一步进行规格化处理。</li>
+<li>规格化<br>
+参照上方规格化规则，对于IEEE 754规格化的尾数形式为$ \pm 1.xxxx $，因为IEEE 754尾数的最高位默认隐含为1所以规格化时的主要区别就是要将有效位移到小数点左边一位（即小数点左边只能为1）</li>
+<li>舍入<br>
+在对阶和尾数右规时，可能会对尾数进行右移，为保证运算精度，一般将低位移出的两位保留下来，参加中间过程的运算，最后将运算结果进行舍入，还原表示成IEEE 754格式。<br>
+常见的舍入方法有:</li>
+</ol>
+<ul>
 <li>舍1入法:类似于十进制的“四舍五入”法。运算结果保留位的最高数位为0，则舍去;最高数位为1，则在尾数的末位加1。这样可能会使尾数溢出，此时需再做一次右规。</li>
 <li>恒置1法:不论丢掉的最高数位是0还是1，都把右移后的尾数末位恒置1</li>
 <li>截断法:直接截取所需位数，丢弃后面的所有位，这种舍入处理最简单</li>
 </ul>
-</li>
-<li>溢出判断<br>在尾数规格化和尾数舍入时，可能会对阶码执行加/减运算。因此，必须考虑指数溢出的问题。<br>若一个正指数超过了最大允许值(127或1023)，则发生指数上滥，产生异常<br>若一个负指数超过了最小允许值(-126或-1022)，则发生指数下溢，通常把结果按机器零处理。<ul>
+<ol start="5">
+<li>溢出判断<br>
+在尾数规格化和尾数舍入时，可能会对阶码执行加/减运算。因此，必须考虑指数溢出的问题。<br>
+若一个正指数超过了最大允许值(127或1023)，则发生指数上滥，产生异常<br>
+若一个负指数超过了最小允许值(-126或-1022)，则发生指数下溢，通常把结果按机器零处理。
+<ul>
 <li>右规和尾数舍入。数值很大的尾数舍入时，可能因为末位加1而发生尾数溢出，此时需要通过右规来调整尾数和阶。右规时阶加1，导致阶增大，因此需要判断是否发生了指数上溢。当调整前的阶码为11111110时，加1后，会变成11111111而发生指数上滥。</li>
 <li>左规。左规时阶减1，导致阶减小，因此需要判断是否发生了指数下溢。其判断规则与指数上溢类似，左规一次，阶码减1，然后判断阶码是否为全0来确定是否指数下滥。</li>
 <li>由此可见，浮点数的溢出并不是以尾数溢出来判断的，尾数溢出可以通过右规操作得到纠正。运算结果是否溢出主要看结果的指数是否发生了上溢，因此是由指数上滥来判断的。</li>
@@ -440,11 +520,14 @@ gtag('config', 'G-MX8PNPLLB0');
 </ol>
 </li>
 </ol>
-<h3 id="IEEE-754标准"><a href="#IEEE-754标准" class="headerlink" title="IEEE 754标准"></a>IEEE 754标准</h3><p>现代计算机中，一般都以IEEE 754标准存储浮点数，IEEE标准用: $V=(-1)^S \times M \times 2^E $来表示一个浮点数</p>
-<h4 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h4><ul>
+<h3 id="IEEE-754标准"><a class="header-anchor" href="#IEEE-754标准">¶</a>IEEE 754标准</h3>
+<p>现代计算机中，一般都以IEEE 754标准存储浮点数，IEEE标准用: $V=(-1)^S \times M \times 2^E $来表示一个浮点数</p>
+<h4 id="简介-v9"><a class="header-anchor" href="#简介-v9">¶</a>简介</h4>
+<ul>
 <li>符号: S决定这个数是正数还是负数</li>
 <li>尾数: M是一个二进制小数，采用隐藏位的原码（隐藏位是指隐藏尾数了小数点左边的<strong>1</strong>）</li>
-<li>阶码: E是对浮点数进行加权，权重是2的E次幂，使用移码表示<ul>
+<li>阶码: E是对浮点数进行加权，权重是2的E次幂，使用移码表示
+<ul>
 <li>移码 = 原码+偏移值（float型为127，double型为1023）</li>
 <li>在手算阶码时可以将其视为无符号数计算，然后再减去（加上）偏移值即可得到原码（移码也即阶码），使用十进制计算再转为二进制较为方便</li>
 </ul>
@@ -452,16 +535,16 @@ gtag('config', 'G-MX8PNPLLB0');
 </ul>
 <p>在IEEE 754标准中:</p>
 <blockquote>
-<p>规格化的短浮点数的真值为：$ (-1)^S \times 1.M \times 2^{E-127} $<br>规格化的短浮点数的真值为：$ (-1)^S \times 1.M \times 2^{E-1023} $ </p>
+<p>规格化的短浮点数的真值为：$ (-1)^S \times 1.M \times 2^{E-127} $<br>
+规格化的短浮点数的真值为：$ (-1)^S \times 1.M \times 2^{E-1023} $</p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计组-数据的表示和计算_12.79wxgrh12mc0.webp" alt="计组-数据的表示和计算_12"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%BB%84-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_12.79wxgrh12mc0.webp" alt="计组-数据的表示和计算_12"></p>
 <table>
     <tr>    <th>符号位</th>   <th>阶码</th>       <th>尾数</th> </tr>
     <tr>
             <td>sign</td>   <td>exponent</td>   <td>fraction</td>
     </tr>
 </table>
-
 <p>对于不同精度的浮点数，阶码与数值位分配的位数不一样，如下：</p>
 <table>
     <tr> <th>精度</th>   <th>数符</th>   <th>阶码</th>   <th>尾数</th> <th>总位数</th> <th>偏移值</th></tr>
@@ -472,32 +555,43 @@ gtag('config', 'G-MX8PNPLLB0');
         <th>长浮点数(C中的double)</th>  <td>1</td>   <td>11</td>   <td>52</td>   <td>64</td>   <td>$1023_{(10)}$ || $3FF_{(16)}$</td>
     </tr>
 </table>
-
 <p>对于32位的单精度浮点数，符号位分配是1位，阶码分配了8位，尾数分配了是23位（实际上是24位，隐藏了隐含小数点左边的<strong>1</strong>）。</p>
 <p>根据这个标准，我们来尝试把一个十进制的小数转换为IEEE 754标准表示。</p>
-<h4 id="规格化的值"><a href="#规格化的值" class="headerlink" title="规格化的值"></a>规格化的值</h4><p>最普遍的情况，当exp的位模式不全为0（数值0），也不全为1（单精度255，双精度2047）<br>例如：178.125</p>
+<h4 id="规格化的值-v2"><a class="header-anchor" href="#规格化的值-v2">¶</a>规格化的值</h4>
+<p>最普遍的情况，当exp的位模式不全为0（数值0），也不全为1（单精度255，双精度2047）<br>
+例如：178.125</p>
 <ol>
-<li><p>先把浮点数分别把整数部分和小数部分转换成2进制</p>
+<li>
+<p>先把浮点数分别把整数部分和小数部分转换成2进制</p>
 <ol>
-<li><p>整数部分用除2取余的方法，求得：10110010</p>
+<li>
+<p>整数部分用除2取余的方法，求得：10110010</p>
 </li>
-<li><p>小数部分用<a href="#乘2取整法">乘2取整</a>的方法，求得：001</p>
+<li>
+<p>小数部分用<a href="#%E4%B9%982%E5%8F%96%E6%95%B4%E6%B3%95">乘2取整</a>的方法，求得：001</p>
 </li>
-<li><p>合起来即是：10110010.001</p>
+<li>
+<p>合起来即是：10110010.001</p>
 </li>
-<li><p>转换成二进制的浮点数，即把小数点移动到整数位只有1，即为：1.0110010001 * 2^111，111是二进制，由于左移了7位，所以是111</p>
+<li>
+<p>转换成二进制的浮点数，即把小数点移动到整数位只有1，即为：1.0110010001 * 2^111，111是二进制，由于左移了7位，所以是111</p>
 </li>
 </ol>
 </li>
-<li><p>把浮点数转换二进制后，这里基本已经可以得出对应3部分的值了</p>
+<li>
+<p>把浮点数转换二进制后，这里基本已经可以得出对应3部分的值了</p>
 <ol>
-<li><p>数符：由于浮点数是正数，故为0.(负数为1)</p>
+<li>
+<p>数符：由于浮点数是正数，故为0.(负数为1)</p>
 </li>
-<li><p>阶码 : 阶码的计算公式：阶数 + 偏移量， 阶码是需要作移码运算，在转换出来的二进制数里，阶数是111(十进制为7)，对于单精度的浮点数，偏移值为01111111(127)[偏移量的计算是：$ 2^{(e-1)} - 1 $， e为阶码的位数，即为8，因此偏移值是127]，即：111+01111111 = 10000110</p>
+<li>
+<p>阶码 : 阶码的计算公式：阶数 + 偏移量， 阶码是需要作移码运算，在转换出来的二进制数里，阶数是111(十进制为7)，对于单精度的浮点数，偏移值为01111111(127)[偏移量的计算是：$ 2^{(e-1)} - 1 $， e为阶码的位数，即为8，因此偏移值是127]，即：111+01111111 = 10000110</p>
 </li>
-<li><p>尾数：小数点后面的数，即0110010001</p>
+<li>
+<p>尾数：小数点后面的数，即0110010001</p>
 </li>
-<li><p>最终根据位置填到对位的位置上：</p>
+<li>
+<p>最终根据位置填到对位的位置上：</p>
 </li>
 </ol>
 </li>
@@ -508,30 +602,41 @@ gtag('config', 'G-MX8PNPLLB0');
         <td>0</td>   <td>1 0 0 0 0 1 1 0</td>   <td>0 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0</td>
     </tr>
 </table>
-
 <blockquote>
 <p>阶码与尾数之间隐含小数点</p>
 </blockquote>
-<p>可能有个疑问：小数点前面的1去哪里了？由于尾数部分是规格化表示的，最高位总是“1”<br>我们将尾数定义为M=1+f，小数字段被描述为小数值f，其中0&lt;=f&lt;1，其二进制表示为：<br><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/IEEE浮点表示.5ehdoqm3j6s.gif" alt="IEEE浮点表示"><br>也就是二进制小数点在最高有效位的左边。<br>我们也可以把M看成一个二进制表达式为下图的数字，也总能调整阶码使得尾数M的范围在1到2之间。<br><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/IEEE浮点表示_2.2g2up3og3j9c.gif" alt="IEEE浮点表示_2"></p>
+<p>可能有个疑问：小数点前面的1去哪里了？由于尾数部分是规格化表示的，最高位总是“1”<br>
+我们将尾数定义为M=1+f，小数字段被描述为小数值f，其中0&lt;=f&lt;1，其二进制表示为：<br>
+<img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/IEEE%E6%B5%AE%E7%82%B9%E8%A1%A8%E7%A4%BA.5ehdoqm3j6s.gif" alt="IEEE浮点表示"><br>
+也就是二进制小数点在最高有效位的左边。<br>
+我们也可以把M看成一个二进制表达式为下图的数字，也总能调整阶码使得尾数M的范围在1到2之间。<br>
+<img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/IEEE%E6%B5%AE%E7%82%B9%E8%A1%A8%E7%A4%BA_2.2g2up3og3j9c.gif" alt="IEEE浮点表示_2"></p>
 <p>既然第一位总是1，那就可以直接隐藏不需要显示出来，同时也能够获得一个额外的精度位。</p>
-<h4 id="非规格化的值"><a href="#非规格化的值" class="headerlink" title="非规格化的值"></a>非规格化的值</h4><p>当阶码全为0时，所表示的数<em>非规格化</em>的形式。这种情况下，阶码的值是1-Bias，尾数M=f，也就是小数字段的值，不包含隐含开头的1。<br>非规格化有两个用途：</p>
+<h4 id="非规格化的值-v2"><a class="header-anchor" href="#非规格化的值-v2">¶</a>非规格化的值</h4>
+<p>当阶码全为0时，所表示的数<em>非规格化</em>的形式。这种情况下，阶码的值是1-Bias，尾数M=f，也就是小数字段的值，不包含隐含开头的1。<br>
+非规格化有两个用途：</p>
 <ul>
 <li>一、是提供一种表示数值0的方法，因为使用规格化的数我们必须使M&gt;=1，无法表示0。</li>
 <li>二、是表示那些非常接近0的数。</li>
 </ul>
-<h4 id="定点、浮点表示的区别"><a href="#定点、浮点表示的区别" class="headerlink" title="定点、浮点表示的区别"></a>定点、浮点表示的区别</h4><p>在字长相同时，浮点数取字长的一部分作为阶码，所以表示的范围比定点数要大，但是由于字长固定也就意味着尾数部分的有效位数减少，精度就要比定点数有所降低</p>
-<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计组-数据的表示和计算_13.11unr8wkk374.webp" alt="计组-数据的表示和计算_13"></p>
-<h2 id="C语言中的数据类型及强制类型转换"><a href="#C语言中的数据类型及强制类型转换" class="headerlink" title="C语言中的数据类型及强制类型转换"></a>C语言中的数据类型及强制类型转换</h2><p>在C语言中常会用到强制类型转换，C中对定点整数的存储是使用补码形式，常见的转换有char-&gt;int-&gt;long-&gt;double和float-&gt;double。从前到后的范围和精度都是从小到大，转换的过程中没有损失</p>
-<h3 id="整数类型的转换"><a href="#整数类型的转换" class="headerlink" title="整数类型的转换"></a>整数类型的转换</h3><ol>
-<li>无符号&lt;——&gt;有符号：不改变数据内容，只改变对其的解释方式</li>
-<li>长整数 ——&gt;短整数：高位截断，只保留低位</li>
-<li>短整数 ——&gt;长整数：<ul>
+<h4 id="定点、浮点表示的区别"><a class="header-anchor" href="#定点、浮点表示的区别">¶</a>定点、浮点表示的区别</h4>
+<p>在字长相同时，浮点数取字长的一部分作为阶码，所以表示的范围比定点数要大，但是由于字长固定也就意味着尾数部分的有效位数减少，精度就要比定点数有所降低</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%BB%84-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_13.11unr8wkk374.webp" alt="计组-数据的表示和计算_13"></p>
+<h2 id="C语言中的数据类型及强制类型转换"><a class="header-anchor" href="#C语言中的数据类型及强制类型转换">¶</a>C语言中的数据类型及强制类型转换</h2>
+<p>在C语言中常会用到强制类型转换，C中对定点整数的存储是使用补码形式，常见的转换有char-&gt;int-&gt;long-&gt;double和float-&gt;double。从前到后的范围和精度都是从小到大，转换的过程中没有损失</p>
+<h3 id="整数类型的转换"><a class="header-anchor" href="#整数类型的转换">¶</a>整数类型的转换</h3>
+<ol>
+<li>无符号&lt;----&gt;有符号：不改变数据内容，只改变对其的解释方式</li>
+<li>长整数 ----&gt;短整数：高位截断，只保留低位</li>
+<li>短整数 ----&gt;长整数：
+<ul>
 <li>无符号数，进行高位“0”拓展</li>
 <li>有符号数，高位用原符号位拓展</li>
 </ul>
 </li>
 </ol>
-<h3 id="包含浮点数的转换"><a href="#包含浮点数的转换" class="headerlink" title="包含浮点数的转换"></a>包含浮点数的转换</h3><ul>
+<h3 id="包含浮点数的转换"><a class="header-anchor" href="#包含浮点数的转换">¶</a>包含浮点数的转换</h3>
+<ul>
 <li>int转换为float时，虽然不会发生溢出，但float尾数连隐藏位共24位，当int型数的第24~31位非0时，无法精确转换成24位浮点数的尾数，需进行舍入处理，影响精度。</li>
 <li>int或float转化为double时，因double的有效位数更多，因此能保留精确値。</li>
 <li>double转换为float时，因float表示范围更小，因此大数转换时可能会发生滥出。此外，由于尾数有效位数变少，因此高精度数转换时会发生舍入。</li>
@@ -547,22 +652,28 @@ gtag('config', 'G-MX8PNPLLB0');
         <th>64位机</th>   <td>1B</td>   <td>2B</td>   <td>4B</td>   <td>8B</td>   <td>4B</td> <td>8B</td>
     </tr>
 </table>
-
-
-<h3 id="数据的存储和排列"><a href="#数据的存储和排列" class="headerlink" title="数据的存储和排列"></a>数据的存储和排列</h3><ol>
-<li><p>大端法和小端法<br><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计组-数据的表示和计算_14.5vz9svbzlxg0.webp" alt="计组-数据的表示和计算_14"></p>
+<h3 id="数据的存储和排列"><a class="header-anchor" href="#数据的存储和排列">¶</a>数据的存储和排列</h3>
+<ol>
+<li>
+<p>大端法和小端法<br>
+<img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%BB%84-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_14.5vz9svbzlxg0.webp" alt="计组-数据的表示和计算_14"></p>
 </li>
-<li><p>数据按照“边界对齐”的方式存储<br><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/计组-数据的表示和计算_15.2iiz7phyxl20.webp" alt="计组-数据的表示和计算_15"></p>
+<li>
+<p>数据按照“边界对齐”的方式存储<br>
+<img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/%E8%AE%A1%E7%BB%84-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%AE%A1%E7%AE%97_15.2iiz7phyxl20.webp" alt="计组-数据的表示和计算_15"></p>
 </li>
 </ol>
-<h2 id="典型例题"><a href="#典型例题" class="headerlink" title="典型例题"></a>典型例题</h2><ul>
+<h2 id="典型例题-v5"><a class="header-anchor" href="#典型例题-v5">¶</a>典型例题</h2>
+<ul>
 <li>P11-22</li>
 <li>P17-20-23</li>
 <li>P32-28-30</li>
 <li>P51-(33,37)-(38,44)-41</li>
 </ul>
 <hr>
-<h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><h3 id="乘2取整法"><a href="#乘2取整法" class="headerlink" title="乘2取整法"></a>乘2取整法</h3><p>考虑一个十进制小数0.123，我们可以用“乘10取整”法得到它的每一位小数：第一位小数是0.123 <em>10=1.23，取整数1；第二位小数：0.23 </em>10=2.3，取整数2</p>
+<h2 id="拓展-v2"><a class="header-anchor" href="#拓展-v2">¶</a>拓展</h2>
+<h3 id="乘2取整法-v2"><a class="header-anchor" href="#乘2取整法-v2">¶</a>乘2取整法</h3>
+<p>考虑一个十进制小数0.123，我们可以用“乘10取整”法得到它的每一位小数：第一位小数是0.123 *10=1.23，取整数1；第二位小数：0.23 *10=2.3，取整数2</p>
 <p>上面的方法供你直观理解，下面我们从数学的角度分析其中的原理。</p>
 <p>现在有一个十进制小数为0.625，要把它转换为二进制小数，我们需要找到它的每一位。记这个二进制小数点后第1位是$a_1$，第二位是$a_2$，……，那么这个小数的值就是$ a_1 \ast {\frac{1}{2}}^{-1}+a_2 \ast {\frac{1}{2}}^{-2}+a_3 \ast {\frac{1}{2}}^{-3}+… $ 。现在我们的目标是根据0.625找到对应的$ a_1，a_2，a_3$ ，…使得$ 0.625=a_1 \ast {\frac{1}{2}}^{-1}+a_2 \ast {\frac{1}{2}}^{-2}+a_3 \ast {\frac{1}{2}}^{-3}+… $</p>
 <p>在等式两边同时乘以2，得到$1.25=a_1 \ast {\frac{1}{2}}^{0}+a_2 \ast {\frac{1}{2}}^{-1}+a_3 \ast {\frac{1}{2}}^{-2}+…$</p>
@@ -571,8 +682,10 @@ gtag('config', 'G-MX8PNPLLB0');
 <p>我们再次乘以2，得到$0.5=a_2 \ast {\frac{1}{2}}^{0}+a_3 \ast {\frac{1}{2}}^{-1}+… $于是$a_2=0$</p>
 <p>再乘以2，得到$1=a_3 \ast {\frac{1}{2}}^{0}+…$， 于是$a_3=1$，到这里，所有的数都消耗完了，我们找到了0.625对应的二进制小数：0.101</p>
 <hr>
-<p>参考文献：<br>《王道考研-计算机组成原理复习指导》<br>《Computer Systems A Programer’s Perspective Third Edition》</p>
-<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.hiyoung.xyz">Hiyoung</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.hiyoung.xyz/2023/04/16/644b687ff221/">https://blog.hiyoung.xyz/2023/04/16/644b687ff221/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.hiyoung.xyz" target="_blank">Hiyoung'blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/">计算机数据表示</a><a class="post-meta__tags" href="/tags/%E6%B5%AE%E7%82%B9%E6%95%B0/">浮点数</a><a class="post-meta__tags" href="/tags/%E8%A1%A5%E7%A0%81/">补码</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/257.nv4547f8c5c.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/04/09/39658c8a0d3d/" title="搭建TG贴纸下载Robot"><img class="cover" src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/209.jogqdw8wz1s.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">搭建TG贴纸下载Robot</div></div></a></div><div class="next-post pull-right"><a href="/2023/04/27/78ffecc46533/" title="计算机组成原理-存储系统"><img class="cover" src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/202.1vzjaprrni5c.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">计算机组成原理-存储系统</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Hiyoung</div><div class="author-info__description">若无闲事挂心头，便是人间好时节</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">37</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">54</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/hiyoung3937"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/hiyoung3937" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:hiyoung3937@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss" style="color: #EE7621;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">网站破后重生，变得更加花哨！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E7%BA%B2"><span class="toc-number">2.</span> <span class="toc-text">大纲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81"><span class="toc-number">3.</span> <span class="toc-text">前情提要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="toc-number">4.</span> <span class="toc-text">计算机的性能指标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%A0%E7%A7%8D%E5%AD%97%E9%95%BF%E5%8C%BA%E5%88%AB"><span class="toc-number">4.1.</span> <span class="toc-text">几种字长区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E8%B7%AF%E5%B8%A6%E5%AE%BD"><span class="toc-number">4.2.</span> <span class="toc-text">数据通路带宽</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E9%80%9F%E5%BA%A6"><span class="toc-number">4.3.</span> <span class="toc-text">运算速度</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%88%B6"><span class="toc-number">5.</span> <span class="toc-text">数制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E5%88%B6%E8%AE%A1%E6%95%B0%E6%B3%95"><span class="toc-number">5.1.</span> <span class="toc-text">进制计数法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E7%BC%96%E7%A0%81%E8%A1%A8%E7%A4%BA"><span class="toc-number">5.2.</span> <span class="toc-text">定点数的编码表示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9C%9F%E5%80%BC%E5%92%8C%E6%9C%BA%E5%99%A8%E6%95%B0"><span class="toc-number">5.2.1.</span> <span class="toc-text">真值和机器数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E6%95%B0%E7%9A%84%E5%AE%9A%E7%82%B9%E8%A1%A8%E7%A4%BA"><span class="toc-number">5.2.2.</span> <span class="toc-text">机器数的定点表示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E7%A0%81%E3%80%81%E8%A1%A5%E7%A0%81%E3%80%81%E5%8F%8D%E7%A0%81%E3%80%81%E7%A7%BB%E7%A0%81"><span class="toc-number">5.2.3.</span> <span class="toc-text">原码、补码、反码、移码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E7%A7%BB%E4%BD%8D"><span class="toc-number">5.2.4.</span> <span class="toc-text">定点数的移位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E5%8A%A0%E5%87%8F%E6%B3%95%EF%BC%8C%E4%B9%98%E9%99%A4%EF%BC%88%E6%AD%A4%E5%A4%84%E4%B8%8D%E5%81%9A%E9%87%8D%E7%82%B9%E8%AF%B4%E6%98%8E%EF%BC%89"><span class="toc-number">5.2.5.</span> <span class="toc-text">定点数的加减法，乘除（此处不做重点说明）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BA%A2%E5%87%BA%E7%9A%84%E5%88%A4%E5%88%AB%E6%96%B9%E6%B3%95"><span class="toc-number">5.2.6.</span> <span class="toc-text">溢出的判别方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="toc-number">6.</span> <span class="toc-text">浮点数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">6.1.</span> <span class="toc-text">一般浮点数的表示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IEEE-754%E6%A0%87%E5%87%86"><span class="toc-number">6.2.</span> <span class="toc-text">IEEE 754标准</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-1"><span class="toc-number">6.2.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%84%E6%A0%BC%E5%8C%96%E7%9A%84%E5%80%BC"><span class="toc-number">6.2.2.</span> <span class="toc-text">规格化的值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9D%9E%E8%A7%84%E6%A0%BC%E5%8C%96%E7%9A%84%E5%80%BC"><span class="toc-number">6.2.3.</span> <span class="toc-text">非规格化的值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E7%82%B9%E3%80%81%E6%B5%AE%E7%82%B9%E8%A1%A8%E7%A4%BA%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">6.2.4.</span> <span class="toc-text">定点、浮点表示的区别</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-number">7.</span> <span class="toc-text">C语言中的数据类型及强制类型转换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-number">7.1.</span> <span class="toc-text">整数类型的转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%85%E5%90%AB%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-number">7.2.</span> <span class="toc-text">包含浮点数的转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AD%98%E5%82%A8%E5%92%8C%E6%8E%92%E5%88%97"><span class="toc-number">7.3.</span> <span class="toc-text">数据的存储和排列</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B8%E5%9E%8B%E4%BE%8B%E9%A2%98"><span class="toc-number">8.</span> <span class="toc-text">典型例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%93%E5%B1%95"><span class="toc-number">9.</span> <span class="toc-text">拓展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%982%E5%8F%96%E6%95%B4%E6%B3%95"><span class="toc-number">9.1.</span> <span class="toc-text">乘2取整法</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/03/13/d11c2f40712b/" title="unity脚本"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/84907990_p0.59g82qp0cr40.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="unity脚本"/></a><div class="content"><a class="title" href="/2024/03/13/d11c2f40712b/" title="unity脚本">unity脚本</a><time datetime="2024-03-13T12:11:44.000Z" title="发表于 2024-03-13 20:11:44">2024-03-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/02/e65bf046fb61/" title="unity笔记"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/151.4mntl7rm7dk0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="unity笔记"/></a><div class="content"><a class="title" href="/2024/03/02/e65bf046fb61/" title="unity笔记">unity笔记</a><time datetime="2024-03-02T11:14:02.000Z" title="发表于 2024-03-02 19:14:02">2024-03-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/01/15/83ffcc251cb7/" title="Cpp语言基础"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/【2022.02】-隠しきれない想い-_968178060.6sa8az908100.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Cpp语言基础"/></a><div class="content"><a class="title" href="/2024/01/15/83ffcc251cb7/" title="Cpp语言基础">Cpp语言基础</a><time datetime="2024-01-15T07:12:57.000Z" title="发表于 2024-01-15 15:12:57">2024-01-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/26/e840ca002bfb/" title="Godot基本操作"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/256.6lm2rcl6lu00.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Godot基本操作"/></a><div class="content"><a class="title" href="/2023/12/26/e840ca002bfb/" title="Godot基本操作">Godot基本操作</a><time datetime="2023-12-26T06:25:02.000Z" title="发表于 2023-12-26 14:25:02">2023-12-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/11/4dccc2fa91c5/" title="QuantumultX 使用记录"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/158.75m8qk2sdfc0.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="QuantumultX 使用记录"/></a><div class="content"><a class="title" href="/2023/11/11/4dccc2fa91c5/" title="QuantumultX 使用记录">QuantumultX 使用记录</a><time datetime="2023-11-11T07:59:43.000Z" title="发表于 2023-11-11 15:59:43">2023-11-11</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/257.nv4547f8c5c.webp')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Hiyoung</div><div class="footer_custom_text"><a href="/404/">Love from nobody</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+<p>参考文献：<br>
+《王道考研-计算机组成原理复习指导》<br>
+《Computer Systems A Programer’s Perspective Third Edition》</p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.hiyoung.xyz">Hiyoung</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.hiyoung.xyz/2023/04/16/644b687ff221/">https://blog.hiyoung.xyz/2023/04/16/644b687ff221/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.hiyoung.xyz" target="_blank">Hiyoung'blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/">计算机数据表示</a><a class="post-meta__tags" href="/tags/%E6%B5%AE%E7%82%B9%E6%95%B0/">浮点数</a><a class="post-meta__tags" href="/tags/%E8%A1%A5%E7%A0%81/">补码</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/65047754_p0.7gkotm0lwuo0.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/04/09/39658c8a0d3d/" title="搭建TG贴纸下载Robot"><img class="cover" src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/194.5513tlu6h1c0.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">搭建TG贴纸下载Robot</div></div></a></div><div class="next-post pull-right"><a href="/2023/04/27/78ffecc46533/" title="计算机组成原理-存储系统"><img class="cover" src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/65047754_p0.7gkotm0lwuo0.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">计算机组成原理-存储系统</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Hiyoung</div><div class="author-info__description">若无闲事挂心头，便是人间好时节</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">37</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">54</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/hiyoung3937"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/hiyoung3937" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:hiyoung3937@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss" style="color: #EE7621;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">网站破后重生，变得更加花哨！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-v8"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E7%BA%B2-v6"><span class="toc-number">2.</span> <span class="toc-text">大纲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81-v2"><span class="toc-number">3.</span> <span class="toc-text">前情提要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="toc-number">4.</span> <span class="toc-text">计算机的性能指标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%A0%E7%A7%8D%E5%AD%97%E9%95%BF%E5%8C%BA%E5%88%AB"><span class="toc-number">4.1.</span> <span class="toc-text">几种字长区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E8%B7%AF%E5%B8%A6%E5%AE%BD"><span class="toc-number">4.2.</span> <span class="toc-text">数据通路带宽</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E9%80%9F%E5%BA%A6"><span class="toc-number">4.3.</span> <span class="toc-text">运算速度</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%88%B6"><span class="toc-number">5.</span> <span class="toc-text">数制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E5%88%B6%E8%AE%A1%E6%95%B0%E6%B3%95"><span class="toc-number">5.1.</span> <span class="toc-text">进制计数法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E7%BC%96%E7%A0%81%E8%A1%A8%E7%A4%BA"><span class="toc-number">5.2.</span> <span class="toc-text">定点数的编码表示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9C%9F%E5%80%BC%E5%92%8C%E6%9C%BA%E5%99%A8%E6%95%B0"><span class="toc-number">5.2.1.</span> <span class="toc-text">真值和机器数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E6%95%B0%E7%9A%84%E5%AE%9A%E7%82%B9%E8%A1%A8%E7%A4%BA"><span class="toc-number">5.2.2.</span> <span class="toc-text">机器数的定点表示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E7%A0%81%E3%80%81%E8%A1%A5%E7%A0%81%E3%80%81%E5%8F%8D%E7%A0%81%E3%80%81%E7%A7%BB%E7%A0%81"><span class="toc-number">5.2.3.</span> <span class="toc-text">原码、补码、反码、移码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E7%A7%BB%E4%BD%8D"><span class="toc-number">5.2.4.</span> <span class="toc-text">定点数的移位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E5%8A%A0%E5%87%8F%E6%B3%95%EF%BC%8C%E4%B9%98%E9%99%A4%EF%BC%88%E6%AD%A4%E5%A4%84%E4%B8%8D%E5%81%9A%E9%87%8D%E7%82%B9%E8%AF%B4%E6%98%8E%EF%BC%89"><span class="toc-number">5.2.5.</span> <span class="toc-text">定点数的加减法，乘除（此处不做重点说明）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BA%A2%E5%87%BA%E7%9A%84%E5%88%A4%E5%88%AB%E6%96%B9%E6%B3%95"><span class="toc-number">5.2.6.</span> <span class="toc-text">溢出的判别方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="toc-number">6.</span> <span class="toc-text">浮点数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">6.1.</span> <span class="toc-text">一般浮点数的表示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IEEE-754%E6%A0%87%E5%87%86"><span class="toc-number">6.2.</span> <span class="toc-text">IEEE 754标准</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-v9"><span class="toc-number">6.2.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%84%E6%A0%BC%E5%8C%96%E7%9A%84%E5%80%BC-v2"><span class="toc-number">6.2.2.</span> <span class="toc-text">规格化的值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9D%9E%E8%A7%84%E6%A0%BC%E5%8C%96%E7%9A%84%E5%80%BC-v2"><span class="toc-number">6.2.3.</span> <span class="toc-text">非规格化的值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E7%82%B9%E3%80%81%E6%B5%AE%E7%82%B9%E8%A1%A8%E7%A4%BA%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">6.2.4.</span> <span class="toc-text">定点、浮点表示的区别</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-number">7.</span> <span class="toc-text">C语言中的数据类型及强制类型转换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-number">7.1.</span> <span class="toc-text">整数类型的转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%85%E5%90%AB%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-number">7.2.</span> <span class="toc-text">包含浮点数的转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AD%98%E5%82%A8%E5%92%8C%E6%8E%92%E5%88%97"><span class="toc-number">7.3.</span> <span class="toc-text">数据的存储和排列</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B8%E5%9E%8B%E4%BE%8B%E9%A2%98-v5"><span class="toc-number">8.</span> <span class="toc-text">典型例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%93%E5%B1%95-v2"><span class="toc-number">9.</span> <span class="toc-text">拓展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%982%E5%8F%96%E6%95%B4%E6%B3%95-v2"><span class="toc-number">9.1.</span> <span class="toc-text">乘2取整法</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/03/13/d11c2f40712b/" title="unity脚本"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/【2022.02】-隠しきれない想い-_968178060.6sa8az908100.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="unity脚本"/></a><div class="content"><a class="title" href="/2024/03/13/d11c2f40712b/" title="unity脚本">unity脚本</a><time datetime="2024-03-13T12:11:44.000Z" title="发表于 2024-03-13 20:11:44">2024-03-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/02/e65bf046fb61/" title="unity笔记"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/181.fnq0n4fmtp4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="unity笔记"/></a><div class="content"><a class="title" href="/2024/03/02/e65bf046fb61/" title="unity笔记">unity笔记</a><time datetime="2024-03-02T11:14:02.000Z" title="发表于 2024-03-02 19:14:02">2024-03-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/01/15/83ffcc251cb7/" title="Cpp语言基础"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/181.fnq0n4fmtp4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Cpp语言基础"/></a><div class="content"><a class="title" href="/2024/01/15/83ffcc251cb7/" title="Cpp语言基础">Cpp语言基础</a><time datetime="2024-01-15T07:12:57.000Z" title="发表于 2024-01-15 15:12:57">2024-01-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/26/e840ca002bfb/" title="Godot基本操作"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/194.5513tlu6h1c0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Godot基本操作"/></a><div class="content"><a class="title" href="/2023/12/26/e840ca002bfb/" title="Godot基本操作">Godot基本操作</a><time datetime="2023-12-26T06:25:02.000Z" title="发表于 2023-12-26 14:25:02">2023-12-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/11/4dccc2fa91c5/" title="QuantumultX 使用记录"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/193.1jrzqkvmapa8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="QuantumultX 使用记录"/></a><div class="content"><a class="title" href="/2023/11/11/4dccc2fa91c5/" title="QuantumultX 使用记录">QuantumultX 使用记录</a><time datetime="2023-11-11T07:59:43.000Z" title="发表于 2023-11-11 15:59:43">2023-11-11</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/65047754_p0.7gkotm0lwuo0.webp')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Hiyoung</div><div class="footer_custom_text"><a href="/404/">Love from nobody</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
