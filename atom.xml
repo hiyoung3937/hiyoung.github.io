@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.xyz/"/>
-  <updated>2024-07-15T07:16:29.723Z</updated>
+  <updated>2024-07-18T10:29:24.089Z</updated>
   <id>https://blog.hiyoung.xyz/</id>
   
   <author>
@@ -15,6 +15,120 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://blog.hiyoung.xyz/2024/07/18/fbee40e6fc88/"/>
+    <id>https://blog.hiyoung.xyz/2024/07/18/fbee40e6fc88/</id>
+    <published>2024-07-18T10:29:24.089Z</published>
+    <updated>2024-07-18T10:29:24.089Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在个人服务器上部署Hexo</title>
+    <link href="https://blog.hiyoung.xyz/2024/07/18/96162a320cbd/"/>
+    <id>https://blog.hiyoung.xyz/2024/07/18/96162a320cbd/</id>
+    <published>2024-07-18T10:28:46.673Z</published>
+    <updated>2022-09-01T10:40:12.551Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;服务器部署Hexo&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://blog.hiyoung.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="网站建设" scheme="https://blog.hiyoung.xyz/categories/%E5%89%8D%E7%AB%AF/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.hiyoung.xyz/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>next主题的一些设置</title>
+    <link href="https://blog.hiyoung.xyz/2024/07/18/73f3816558bd/"/>
+    <id>https://blog.hiyoung.xyz/2024/07/18/73f3816558bd/</id>
+    <published>2024-07-18T10:28:46.671Z</published>
+    <updated>2022-11-24T15:57:31.269Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Hexo默认-主题的config优先级高于Hexo的config&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#Hexo默认-主题的config优先级高于Hexo的config&quot;&gt;¶&lt;/a&gt;Hexo默认 主题的config优先级高于Hexo的config&lt;/h2&gt;
+&lt;p&gt;基于Hexo 6.2 和hexo-theme-next-8.12.1 不同版本设置可能不一样&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="前端" scheme="https://blog.hiyoung.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="网站建设" scheme="https://blog.hiyoung.xyz/categories/%E5%89%8D%E7%AB%AF/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    
+    <category term="next" scheme="https://blog.hiyoung.xyz/tags/next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>系统学习Linux笔记</title>
+    <link href="https://blog.hiyoung.xyz/2024/07/18/0ca7187336b0/"/>
+    <id>https://blog.hiyoung.xyz/2024/07/18/0ca7187336b0/</id>
+    <published>2024-07-18T10:28:46.636Z</published>
+    <updated>2022-09-01T15:46:43.862Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;笔记中命令在无特殊说明情况下以CentOS 7为准&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;（参考视频：&lt;a rel=&quot;noreferrer noopener&quot; href=&quot;https://www.bilibili.com/video/BV1WY4y1H7d3?p=1&quot; target=&quot;\_blank&quot;&gt;https://www.bilibili.com/video/BV1WY4y1H7d3?p=1&lt;/a&gt;）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学习笔记" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Linux" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://blog.hiyoung.xyz/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>家用台式电脑配件指南</title>
+    <link href="https://blog.hiyoung.xyz/2024/07/18/d93ad6a1992c/"/>
+    <id>https://blog.hiyoung.xyz/2024/07/18/d93ad6a1992c/</id>
+    <published>2024-07-18T10:28:46.632Z</published>
+    <updated>2022-10-07T16:47:52.614Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;家用台式电脑&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;文档初稿编辑日期：2021年7月15日&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="硬件DIY" scheme="https://blog.hiyoung.xyz/categories/%E7%A1%AC%E4%BB%B6DIY/"/>
+    
+    
+    <category term="PC" scheme="https://blog.hiyoung.xyz/tags/PC/"/>
+    
+    <category term="硬件" scheme="https://blog.hiyoung.xyz/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>重装系统前后需要完成的事情</title>
@@ -194,7 +308,7 @@
     <updated>2023-10-26T03:37:22.783Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v4&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v5&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;操作系统的基本概念&lt;/li&gt;
@@ -230,7 +344,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v7&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -299,7 +413,7 @@
     <updated>2023-10-26T03:38:09.143Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v5&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v8&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其四，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的CPU相关内容介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CPU的功能和基本结构&lt;/li&gt;
@@ -331,7 +445,7 @@
     <updated>2023-10-26T03:38:54.146Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v8&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v7&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v7&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其三，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的指令系统介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;指令格式的基本内容&lt;/li&gt;
@@ -417,112 +531,6 @@
     <category term="浮点数" scheme="https://blog.hiyoung.xyz/tags/%E6%B5%AE%E7%82%B9%E6%95%B0/"/>
     
     <category term="补码" scheme="https://blog.hiyoung.xyz/tags/%E8%A1%A5%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建TG贴纸下载Robot</title>
-    <link href="https://blog.hiyoung.xyz/2023/04/09/39658c8a0d3d/"/>
-    <id>https://blog.hiyoung.xyz/2023/04/09/39658c8a0d3d/</id>
-    <published>2023-04-09T11:03:05.000Z</published>
-    <updated>2023-04-09T11:50:29.667Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前情提要&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#前情提要&quot;&gt;¶&lt;/a&gt;前情提要&lt;/h2&gt;
-&lt;p&gt;最近回家用TG贴纸下载机器人的时候发现太大的贴纸包无法下载，无奈只好自己搭建一个，正好在网上看到一个不错的，于是正好写这篇教程记录一下&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="实用工具教程" scheme="https://blog.hiyoung.xyz/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="TG_Robot" scheme="https://blog.hiyoung.xyz/tags/TG-Robot/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C和C++中引用</title>
-    <link href="https://blog.hiyoung.xyz/2023/02/04/1cfe99df0026/"/>
-    <id>https://blog.hiyoung.xyz/2023/02/04/1cfe99df0026/</id>
-    <published>2023-02-03T17:44:20.000Z</published>
-    <updated>2024-01-17T08:09:20.526Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;C的指针和C-中引用和函数参数类型&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#C的指针和C-中引用和函数参数类型&quot;&gt;¶&lt;/a&gt;C的指针和C++中引用和函数参数类型&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="学习笔记" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="C++" scheme="https://blog.hiyoung.xyz/tags/C/"/>
-    
-    <category term="C" scheme="https://blog.hiyoung.xyz/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>正则表达式</title>
-    <link href="https://blog.hiyoung.xyz/2022/11/06/c5a69b4469b3/"/>
-    <id>https://blog.hiyoung.xyz/2022/11/06/c5a69b4469b3/</id>
-    <published>2022-11-06T07:17:43.000Z</published>
-    <updated>2022-11-19T08:13:43.467Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;简介-v2&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v2&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;定义&lt;br&gt;
-正则表达式是由普通字符（例如字符 a 到 z）以及特殊字符（称为&amp;quot;元字符&amp;quot;）组成的文字模式。正则表达式作为一个模板，将某个字符模式与所搜索的字符串进行匹配&lt;/li&gt;
-&lt;/ol&gt;</summary>
-    
-    
-    
-    <category term="学习笔记" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="正则" scheme="https://blog.hiyoung.xyz/tags/%E6%AD%A3%E5%88%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>游戏叙事技巧</title>
-    <link href="https://blog.hiyoung.xyz/2022/10/23/85e66183f869/"/>
-    <id>https://blog.hiyoung.xyz/2022/10/23/85e66183f869/</id>
-    <published>2022-10-23T10:48:56.000Z</published>
-    <updated>2023-03-19T16:21:43.508Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;1-冲突&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#1-冲突&quot;&gt;¶&lt;/a&gt;1. 冲突&lt;/h2&gt;
-&lt;p&gt;冲突是游戏故事的燃料，也是游戏玩法的燃料，冲突就是故事的核心。 “故事就是冲突（的集合）”&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="游戏制作" scheme="https://blog.hiyoung.xyz/categories/%E6%B8%B8%E6%88%8F%E5%88%B6%E4%BD%9C/"/>
-    
-    
-    <category term="游戏制作,游戏叙事" scheme="https://blog.hiyoung.xyz/tags/%E6%B8%B8%E6%88%8F%E5%88%B6%E4%BD%9C-%E6%B8%B8%E6%88%8F%E5%8F%99%E4%BA%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>装机软件下载网址</title>
-    <link href="https://blog.hiyoung.xyz/2022/10/08/5c79848f3e3d/"/>
-    <id>https://blog.hiyoung.xyz/2022/10/08/5c79848f3e3d/</id>
-    <published>2022-10-07T16:45:38.000Z</published>
-    <updated>2024-07-15T07:12:15.082Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;strong&gt;装机软件下载网址&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;个人常用软件列表，重装系统下软件真的麻烦…&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="PC" scheme="https://blog.hiyoung.xyz/categories/PC/"/>
-    
-    <category term="软件" scheme="https://blog.hiyoung.xyz/categories/PC/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="装机软件" scheme="https://blog.hiyoung.xyz/tags/%E8%A3%85%E6%9C%BA%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
