@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.xyz/"/>
-  <updated>2024-07-18T10:29:24.089Z</updated>
+  <updated>2022-09-01T10:40:12.551Z</updated>
   <id>https://blog.hiyoung.xyz/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://blog.hiyoung.xyz/2024/07/18/fbee40e6fc88/"/>
-    <id>https://blog.hiyoung.xyz/2024/07/18/fbee40e6fc88/</id>
-    <published>2024-07-18T10:29:24.089Z</published>
-    <updated>2024-07-18T10:29:24.089Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>在个人服务器上部署Hexo</title>
@@ -136,7 +115,7 @@
     <link href="https://blog.hiyoung.xyz/2024/07/15/efbf0fdb45f7/"/>
     <id>https://blog.hiyoung.xyz/2024/07/15/efbf0fdb45f7/</id>
     <published>2024-07-15T05:52:51.000Z</published>
-    <updated>2024-07-15T07:16:29.723Z</updated>
+    <updated>2024-07-18T10:53:50.314Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;重装系统之前备份&quot;&gt;&lt;a href=&quot;#重装系统之前备份&quot; class=&quot;headerlink&quot; title=&quot;重装系统之前备份&quot;&gt;&lt;/a&gt;重装系统之前备份&lt;/h2&gt;&lt;p&gt;在重装系统之前需要备份的重要文件&lt;/p&gt;</summary>
@@ -522,6 +501,25 @@
     <category term="浮点数" scheme="https://blog.hiyoung.xyz/tags/%E6%B5%AE%E7%82%B9%E6%95%B0/"/>
     
     <category term="补码" scheme="https://blog.hiyoung.xyz/tags/%E8%A1%A5%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建TG贴纸下载Robot</title>
+    <link href="https://blog.hiyoung.xyz/2023/04/09/39658c8a0d3d/"/>
+    <id>https://blog.hiyoung.xyz/2023/04/09/39658c8a0d3d/</id>
+    <published>2023-04-09T11:03:05.000Z</published>
+    <updated>2023-04-09T11:50:29.667Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前情提要&quot;&gt;&lt;a href=&quot;#前情提要&quot; class=&quot;headerlink&quot; title=&quot;前情提要&quot;&gt;&lt;/a&gt;前情提要&lt;/h2&gt;&lt;p&gt;最近回家用TG贴纸下载机器人的时候发现太大的贴纸包无法下载，无奈只好自己搭建一个，正好在网上看到一个不错的，于是正好写这篇教程记录一下&lt;br&gt;</summary>
+    
+    
+    
+    <category term="实用工具教程" scheme="https://blog.hiyoung.xyz/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="TG_Robot" scheme="https://blog.hiyoung.xyz/tags/TG-Robot/"/>
     
   </entry>
   
