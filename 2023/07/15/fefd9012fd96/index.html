@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>操作系统-计算机系统概述 | Hiyoung'blog</title><meta name="author" content="Hiyoung"><meta name="copyright" content="Hiyoung"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="简介操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：  操作系统的基本概念 操作系统发展历程 程序运行环境 操作系统结构 操作系统引导 虚拟机">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>操作系统-计算机系统概述 | Hiyoung'blog</title><meta name="author" content="Hiyoung"><meta name="copyright" content="Hiyoung"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="¶简介 操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：  操作系统的基本概念 操作系统发展历程 程序运行环境 操作系统结构 操作系统引导 虚拟机">
 <meta property="og:type" content="article">
 <meta property="og:title" content="操作系统-计算机系统概述">
 <meta property="og:url" content="https://blog.hiyoung.xyz/2023/07/15/fefd9012fd96/">
 <meta property="og:site_name" content="Hiyoung&#39;blog">
-<meta property="og:description" content="简介操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：  操作系统的基本概念 操作系统发展历程 程序运行环境 操作系统结构 操作系统引导 虚拟机">
+<meta property="og:description" content="¶简介 操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：  操作系统的基本概念 操作系统发展历程 程序运行环境 操作系统结构 操作系统引导 虚拟机">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/191.5f9gk6l0wao0.jpg">
 <meta property="article:published_time" content="2023-07-14T16:37:09.000Z">
@@ -167,28 +167,39 @@ gtag('config', 'G-MX8PNPLLB0');
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Hiyoung'blog" type="application/atom+xml">
-</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">38</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">55</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">20</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/191.5f9gk6l0wao0.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Hiyoung'blog"><span class="site-name">Hiyoung'blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">操作系统-计算机系统概述</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-14T16:37:09.000Z" title="发表于 2023-07-15 00:37:09">2023-07-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-26T03:37:22.783Z" title="更新于 2023-10-26 11:37:22">2023-10-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="操作系统-计算机系统概述"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：</p>
+    })(window)</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Hiyoung'blog" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">60</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/191.5f9gk6l0wao0.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Hiyoung'blog"><span class="site-name">Hiyoung'blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">操作系统-计算机系统概述</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-14T16:37:09.000Z" title="发表于 2023-07-15 00:37:09">2023-07-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-26T03:37:22.783Z" title="更新于 2023-10-26 11:37:22">2023-10-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="操作系统-计算机系统概述"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="简介-v6"><a class="header-anchor" href="#简介-v6">¶</a>简介</h2>
+<p>操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：</p>
 <ul>
 <li>操作系统的基本概念</li>
 <li>操作系统发展历程</li>
 <li>程序运行环境</li>
 <li>操作系统结构</li>
 <li>操作系统引导</li>
-<li>虚拟机<span id="more"></span>
-<h2 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h2></li>
-<li>操作系统的基本概念<ul>
+<li>虚拟机</li>
+</ul>
+<span id="more"></span>
+<h2 id="大纲-v3"><a class="header-anchor" href="#大纲-v3">¶</a>大纲</h2>
+<ul>
+<li>操作系统的基本概念
+<ul>
 <li>操作系统的特征</li>
 <li>操作系统接口</li>
 </ul>
 </li>
-<li>操作系统的发展历程<ul>
+<li>操作系统的发展历程
+<ul>
 <li>批处理阶段</li>
 <li>分时操作系统</li>
 <li>实时操作系统</li>
 </ul>
 </li>
-<li>操作系统的运行环境<ul>
+<li>操作系统的运行环境
+<ul>
 <li><strong>处理器的运行模式$\star$</strong></li>
 <li><strong>中断和异常</strong></li>
 </ul>
@@ -196,50 +207,74 @@ gtag('config', 'G-MX8PNPLLB0');
 <li>操作系统结构</li>
 <li>操作系统引导</li>
 <li>虚拟机</li>
-<li>典型例题<h2 id="操作系统的基本概念"><a href="#操作系统的基本概念" class="headerlink" title="操作系统的基本概念"></a>操作系统的基本概念</h2>操作系统（英语：Operating System，缩写：OS）是一组主管并控制计算机操作、运用和运行硬件、软件资源和提供公共服务来组织用户交互的相互关联的系统<strong>软件程序</strong>，同时也是计算机系统的内核与基石。</li>
+<li>典型例题</li>
 </ul>
-<h3 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h3><ol>
-<li>并发<br>并发：两个或者多个事件在<strong>同一个时间间隔内发生</strong>。这些事件在宏观上是同时发生的，在微观上是交替发生的。操作系统的并发是通过分时实现的<br>并行：是指两个或者多个事件<strong>在同一时刻发生</strong></li>
-<li>共享<br>资源共享，是指系统中的资源可供内存中多个并发执行的进程共同使用<ol>
+<h2 id="操作系统的基本概念"><a class="header-anchor" href="#操作系统的基本概念">¶</a>操作系统的基本概念</h2>
+<p>操作系统（英语：Operating System，缩写：OS）是一组主管并控制计算机操作、运用和运行硬件、软件资源和提供公共服务来组织用户交互的相互关联的系统<strong>软件程序</strong>，同时也是计算机系统的内核与基石。</p>
+<h3 id="操作系统的特征"><a class="header-anchor" href="#操作系统的特征">¶</a>操作系统的特征</h3>
+<ol>
+<li>并发<br>
+并发：两个或者多个事件在<strong>同一个时间间隔内发生</strong>。这些事件在宏观上是同时发生的，在微观上是交替发生的。操作系统的并发是通过分时实现的<br>
+并行：是指两个或者多个事件<strong>在同一时刻发生</strong></li>
+<li>共享<br>
+资源共享，是指系统中的资源可供内存中多个并发执行的进程共同使用
+<ol>
 <li>互斥共享方式：系统中的某些资源，可以提供给多个进程使用，但在同一时间段内，只允许一个进程访问</li>
-<li>同时共享方式：系统中的某些资源，允许一个时间段内，多个进程”同时”对该资源进行访问</li>
+<li>同时共享方式：系统中的某些资源，允许一个时间段内，多个进程&quot;同时&quot;对该资源进行访问</li>
 </ol>
 </li>
-<li>虚拟<br>把一个物理上的实体变为若干个逻辑上的对应物。</li>
-<li>异步<br>在多道程序环境下，运行多个程序并发执行，但是由于资源有限，进程的执行并不是一贯到底的，而是走走停停，以不可预知的速度向前推进，这就是进程的异步性<br>只有具有并发性才可能导致异步性</li>
+<li>虚拟<br>
+把一个物理上的实体变为若干个逻辑上的对应物。</li>
+<li>异步<br>
+在多道程序环境下，运行多个程序并发执行，但是由于资源有限，进程的执行并不是一贯到底的，而是走走停停，以不可预知的速度向前推进，这就是进程的异步性<br>
+只有具有并发性才可能导致异步性</li>
 </ol>
-<h3 id="操作系统作为接口"><a href="#操作系统作为接口" class="headerlink" title="操作系统作为接口"></a>操作系统作为接口</h3><ol>
-<li>命令接口<ol>
+<h3 id="操作系统作为接口"><a class="header-anchor" href="#操作系统作为接口">¶</a>操作系统作为接口</h3>
+<ol>
+<li>命令接口
+<ol>
 <li>联机命令接口又称交互式命令接口。例如Linux的terminal终端</li>
 <li>脱机命令接口又称批处理命令接口。例如Windows的bat批处理</li>
 </ol>
 </li>
-<li><strong>程序接口</strong><br>程序接口是一组系统调用（System call），也称广义命令。操作系统提供给应用程序的接口就是系统调用。</li>
+<li><strong>程序接口</strong><br>
+程序接口是一组系统调用（System call），也称广义命令。操作系统提供给应用程序的接口就是系统调用。</li>
 </ol>
-<h2 id="操作系统的发展历程"><a href="#操作系统的发展历程" class="headerlink" title="操作系统的发展历程"></a>操作系统的发展历程</h2><h3 id="手工操作阶段（无操作系统）"><a href="#手工操作阶段（无操作系统）" class="headerlink" title="手工操作阶段（无操作系统）"></a>手工操作阶段（无操作系统）</h3><p>缺点：人机速度矛盾</p>
+<h2 id="操作系统的发展历程"><a class="header-anchor" href="#操作系统的发展历程">¶</a>操作系统的发展历程</h2>
+<h3 id="手工操作阶段（无操作系统）"><a class="header-anchor" href="#手工操作阶段（无操作系统）">¶</a>手工操作阶段（无操作系统）</h3>
+<p>缺点：人机速度矛盾</p>
 <ol>
 <li>用户独占全机，资源利用率低</li>
 <li>CPU等待手工操作，CPU利用不充分</li>
 </ol>
-<h3 id="批处理阶段（开始出现操作系统）"><a href="#批处理阶段（开始出现操作系统）" class="headerlink" title="批处理阶段（开始出现操作系统）"></a>批处理阶段（开始出现操作系统）</h3><ol>
-<li>单道批处理系统<ul>
+<h3 id="批处理阶段（开始出现操作系统）"><a class="header-anchor" href="#批处理阶段（开始出现操作系统）">¶</a>批处理阶段（开始出现操作系统）</h3>
+<ol>
+<li>
+<p>单道批处理系统</p>
+<ul>
 <li>优点：缓解人机速度矛盾</li>
 <li>缺点：资源利用率低</li>
 </ul>
 </li>
-<li><p>多道批处理系统<br> 多道程序系统是在计算机内存中同时存放几道相互独立的程序，使它们在管理程序控制之下，相互穿插的运行 (系统由一个程序转而运行另一个程序时需要使用中断机构中断正在运行的程序) 。两个或两个以上程序在计算机系统中同处于开始和结束之间的状态。其技术运行的特征：多道、宏观上并行、微观上串行。</p>
+<li>
+<p>多道批处理系统<br>
+多道程序系统是在计算机内存中同时存放几道相互独立的程序，使它们在管理程序控制之下，相互穿插的运行 (系统由一个程序转而运行另一个程序时需要使用中断机构中断正在运行的程序) 。两个或两个以上程序在计算机系统中同处于开始和结束之间的状态。其技术运行的特征：多道、宏观上并行、微观上串行。</p>
 <ul>
 <li>优点：多道程序并发执行，资源利用率高</li>
 <li>缺点：没有人机交互功能</li>
 </ul>
 </li>
 </ol>
-<h3 id="分时操作系统"><a href="#分时操作系统" class="headerlink" title="分时操作系统"></a>分时操作系统</h3><ol>
+<h3 id="分时操作系统"><a class="header-anchor" href="#分时操作系统">¶</a>分时操作系统</h3>
+<ol>
 <li>优点：提供人机交互功能</li>
 <li>缺点：不能优先处理紧急任务</li>
 </ol>
-<h3 id="实时操作系统"><a href="#实时操作系统" class="headerlink" title="实时操作系统"></a>实时操作系统</h3><p>优点：能优先处理紧急任务</p>
-<h2 id="操作系统的运行环境"><a href="#操作系统的运行环境" class="headerlink" title="操作系统的运行环境"></a>操作系统的运行环境</h2><h3 id="处理器的运行模式-star"><a href="#处理器的运行模式-star" class="headerlink" title="处理器的运行模式$\star$"></a>处理器的运行模式$\star$</h3><p>在计算机系统中，CPU通常执行两种不同性质的程序：</p>
+<h3 id="实时操作系统"><a class="header-anchor" href="#实时操作系统">¶</a>实时操作系统</h3>
+<p>优点：能优先处理紧急任务</p>
+<h2 id="操作系统的运行环境"><a class="header-anchor" href="#操作系统的运行环境">¶</a>操作系统的运行环境</h2>
+<h3 id="处理器的运行模式-star"><a class="header-anchor" href="#处理器的运行模式-star">¶</a>处理器的运行模式$\star$</h3>
+<p>在计算机系统中，CPU通常执行两种不同性质的程序：</p>
 <ol>
 <li>操作系统的内核程序</li>
 <li>用户自编的应用程序</li>
@@ -249,33 +284,47 @@ gtag('config', 'G-MX8PNPLLB0');
 <li>特权指令：不允许用户直接使用的指令，如I/O指令、置中断指令、存取用于内存保护的寄存器等的指令</li>
 <li>非特权指令：是用户可以直接使用的指令，它不能直接访问系统中的软硬件资源，仅能访问用户的地址空间</li>
 </ol>
-<p>在具体实现上，可以将CPU的运行模式划分为用户态和核心态（或内核态、管态）。（通过修改PSW中的标志位）<br>应用程序运行在用户态，操作系统内核程序运行在核心态。应用程序向操作系统请求服务时通过访管指令，从而产生中断事件将操作系统转换为核心态。</p>
+<p>在具体实现上，可以将CPU的运行模式划分为用户态和核心态（或内核态、管态）。（通过修改PSW中的标志位）<br>
+应用程序运行在用户态，操作系统内核程序运行在核心态。应用程序向操作系统请求服务时通过访管指令，从而产生中断事件将操作系统转换为核心态。</p>
 <p>内核是计算机上配置的底层软件，大多数操作系统的内核包括四个方面：</p>
 <ol>
-<li>时钟管理<br>时钟的第一功能是计时，其次，通过时钟中断管理可以实现进程的切换。</li>
+<li>时钟管理<br>
+时钟的第一功能是计时，其次，通过时钟中断管理可以实现进程的切换。</li>
 <li>中断机制</li>
-<li>原语<br>原语是一些可被调用的公用小程序，它们具有以下特点：<ol>
+<li>原语<br>
+原语是一些可被调用的公用小程序，它们具有以下特点：
+<ol>
 <li>处于操作系统的最底层，是最接近硬件的部分</li>
 <li>原语的运行具有原子性，其操作只能一气呵成的完成（不可中断）</li>
 <li>运行时间较短，且调用频繁</li>
 </ol>
 </li>
-<li>系统控制的数据结构及处理<br>常见的操作一般有以下三种：<ol>
+<li>系统控制的数据结构及处理<br>
+常见的操作一般有以下三种：
+<ol>
 <li>进程管理：进程状态管理、调度和分派、创建和撤销进程控制块（PCB）</li>
 <li>存储器管理：存储器的空间分配和回收、内存信息保护程序等</li>
 <li>设备管理：缓冲区管理、设备分配和回收等</li>
 </ol>
 </li>
 </ol>
-<h3 id="中断和异常"><a href="#中断和异常" class="headerlink" title="中断和异常"></a>中断和异常</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><ul>
-<li>中断：也称外中断，是指来自CPU执行指令外部的事件（与当前执行的指令无关）<br> 如设备发出的I/O结束中断、时钟中断，表示一个固定的时间片已到</li>
-<li>异常：也称内中断，是指来自CPU执行指令内部的事件（与当前执行的指令有关）<br> 如程序的非法操作码、地址越界、运算溢出。<br> 异常不能被屏蔽，一旦出现，就应该立即处理</li>
+<h3 id="中断和异常"><a class="header-anchor" href="#中断和异常">¶</a>中断和异常</h3>
+<h4 id="定义"><a class="header-anchor" href="#定义">¶</a>定义</h4>
+<ul>
+<li>中断：也称外中断，是指来自CPU执行指令外部的事件（与当前执行的指令无关）<br>
+如设备发出的I/O结束中断、时钟中断，表示一个固定的时间片已到</li>
+<li>异常：也称内中断，是指来自CPU执行指令内部的事件（与当前执行的指令有关）<br>
+如程序的非法操作码、地址越界、运算溢出。<br>
+异常不能被屏蔽，一旦出现，就应该立即处理</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/操作系统-概述-1.6ezeeqb9yz80.webp" alt="操作系统-概述-1"></p>
-<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><ul>
-<li><p>外中断可分为可屏蔽中断和不可屏蔽中断</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%A6%82%E8%BF%B0-1.6ezeeqb9yz80.webp" alt="操作系统-概述-1"></p>
+<h4 id="分类"><a class="header-anchor" href="#分类">¶</a>分类</h4>
+<ul>
+<li>
+<p>外中断可分为可屏蔽中断和不可屏蔽中断</p>
 </li>
-<li><p>异常可分为故障、自陷和终止</p>
+<li>
+<p>异常可分为故障、自陷和终止</p>
 <ul>
 <li>故障：通常是由指令执行引起的异常，如非法操作码、缺页故障、除数为0、运算溢出等</li>
 <li>自陷：是一种事先安排的“异常”事件，用于在用户态下调用操作系统内核程序（要先传递需要内核执行的参数，再进入自陷）</li>
@@ -283,76 +332,101 @@ gtag('config', 'G-MX8PNPLLB0');
 </ul>
 </li>
 </ul>
-<h4 id="中断和异常的处理过程"><a href="#中断和异常的处理过程" class="headerlink" title="中断和异常的处理过程"></a>中断和异常的处理过程</h4><p>不同的中断信号（通过“中断向量表”查询）需要用不同的<strong>中断处理程序</strong>（一定是内核程序，要在内核态运行）来处理</p>
-<h3 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h3><p>系统调用，是指用户在程序中调用操作系统所提供的一些子功能，系统调用可视为特殊的公共子程序。<br>应用程序可以通过系统调用来请求获得操作系统内核的服务</p>
+<h4 id="中断和异常的处理过程"><a class="header-anchor" href="#中断和异常的处理过程">¶</a>中断和异常的处理过程</h4>
+<p>不同的中断信号（通过“中断向量表”查询）需要用不同的<strong>中断处理程序</strong>（一定是内核程序，要在内核态运行）来处理</p>
+<h3 id="系统调用"><a class="header-anchor" href="#系统调用">¶</a>系统调用</h3>
+<p>系统调用，是指用户在程序中调用操作系统所提供的一些子功能，系统调用可视为特殊的公共子程序。<br>
+应用程序可以通过系统调用来请求获得操作系统内核的服务</p>
 <blockquote>
 <p>tips:程序运行由用户态转到核心态，会用到访管指令。因为访管指令是在用户态使用的，所以它不可能是特权指令</p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/操作系统-概述-2.34ppuunptik0.webp" alt="操作系统-概述-2"></p>
-<h2 id="操作系统结构"><a href="#操作系统结构" class="headerlink" title="操作系统结构"></a>操作系统结构</h2><h3 id="分层法"><a href="#分层法" class="headerlink" title="分层法"></a>分层法</h3><ol>
-<li>优点：<ul>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%A6%82%E8%BF%B0-2.34ppuunptik0.webp" alt="操作系统-概述-2"></p>
+<h2 id="操作系统结构"><a class="header-anchor" href="#操作系统结构">¶</a>操作系统结构</h2>
+<h3 id="分层法"><a class="header-anchor" href="#分层法">¶</a>分层法</h3>
+<ol>
+<li>优点：
+<ul>
 <li>便于系统的调试和验证，简化了系统的设计和实现</li>
 <li>易拓展和维护</li>
 </ul>
 </li>
-<li>缺点：<ul>
+<li>缺点：
+<ul>
 <li>合理定义各层比较困难</li>
 <li>效率较差</li>
 </ul>
 </li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/操作系统-概述-3.ki05mv4zwsw.webp" alt="操作系统-概述-3"></p>
-<h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><p>模块化是将操作系统按功能划分为具有一定独立性的模块。内核=主模块+可加载的内核模块</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%A6%82%E8%BF%B0-3.ki05mv4zwsw.webp" alt="操作系统-概述-3"></p>
+<h3 id="模块化"><a class="header-anchor" href="#模块化">¶</a>模块化</h3>
+<p>模块化是将操作系统按功能划分为具有一定独立性的模块。内核=主模块+可加载的内核模块</p>
 <ol>
-<li>优点：<ul>
+<li>优点：
+<ul>
 <li>提高了操作系统设计的正确性、可维护性和可理解性</li>
 <li>增强了操作系统的可适应性</li>
 <li>加速了操作系统的开发过程</li>
 <li>如何模块可直接调用其他模块，效率高</li>
 </ul>
 </li>
-<li>缺点：<ul>
+<li>缺点：
+<ul>
 <li>模块的接口规定很难满足对接口的实际需求</li>
 </ul>
 </li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/操作系统-概述-4.6rrbq02ueck0.webp" alt="操作系统-概述-4"></p>
-<h3 id="宏内核"><a href="#宏内核" class="headerlink" title="宏内核"></a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/%E6%95%B4%E5%A1%8A%E6%80%A7%E6%A0%B8%E5%BF%83">宏内核</a></h3><ol>
-<li>优点：<ul>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%A6%82%E8%BF%B0-4.6rrbq02ueck0.webp" alt="操作系统-概述-4"></p>
+<h3 id="宏内核"><a class="header-anchor" href="#宏内核">¶</a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/%E6%95%B4%E5%A1%8A%E6%80%A7%E6%A0%B8%E5%BF%83">宏内核</a></h3>
+<ol>
+<li>优点：
+<ul>
 <li>高性能</li>
 </ul>
 </li>
-<li>缺点：<ul>
+<li>缺点：
+<ul>
 <li>内核代码庞大，难以维护</li>
 </ul>
 </li>
 </ol>
-<h3 id="微内核"><a href="#微内核" class="headerlink" title="微内核"></a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%BE%AE%E5%85%A7%E6%A0%B8">微内核</a></h3><ol>
-<li>优点：<ul>
+<h3 id="微内核"><a class="header-anchor" href="#微内核">¶</a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%BE%AE%E5%85%A7%E6%A0%B8">微内核</a></h3>
+<ol>
+<li>优点：
+<ul>
 <li>方便维护</li>
 </ul>
 </li>
-<li>缺点：<ul>
+<li>缺点：
+<ul>
 <li>CPU状态切换频繁（核心态和用户态之间切换）性能差</li>
 </ul>
 </li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/操作系统-概述-5.1mepr7v3km00.webp" alt="操作系统-概述-5"></p>
-<h3 id="外核"><a href="#外核" class="headerlink" title="外核"></a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/Exokernel">外核</a></h3><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/操作系统-概述-6.6vhflxp90rk0.webp" alt="操作系统-概述-6"></p>
-<h2 id="操作系统引导"><a href="#操作系统引导" class="headerlink" title="操作系统引导"></a>操作系统引导</h2><p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/操作系统-概述-7.5c1rjn3jp1c0.webp" alt="操作系统-概述-7"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%A6%82%E8%BF%B0-5.1mepr7v3km00.webp" alt="操作系统-概述-5"></p>
+<h3 id="外核"><a class="header-anchor" href="#外核">¶</a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/Exokernel">外核</a></h3>
+<h3 id="总结"><a class="header-anchor" href="#总结">¶</a>总结</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%A6%82%E8%BF%B0-6.6vhflxp90rk0.webp" alt="操作系统-概述-6"></p>
+<h2 id="操作系统引导"><a class="header-anchor" href="#操作系统引导">¶</a>操作系统引导</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%A6%82%E8%BF%B0-7.5c1rjn3jp1c0.webp" alt="操作系统-概述-7"></p>
 <ol>
 <li>CPU从一个特定主存地址开始，取指令，执行ROM中的引导程序（先进行硬件自检，再开机）</li>
 <li>将磁盘的第一块——主引导记录 读入内存，执行磁盘引导程序，扫描分区表</li>
 <li>从活动分区（又称主分区，即安装了操作系统的分区）读入分区引导记录，执行其中的程序</li>
 <li>从根目录下找到完整的操作系统初始化程序（即 启动管理器）并执行，完成“开机”的一系列动作</li>
 </ol>
-<h2 id="虚拟机"><a href="#虚拟机" class="headerlink" title="虚拟机"></a>虚拟机</h2><p>虚拟机：使用虚拟化技术，将一台物理机器虚拟化为多台虚拟机器（Virtual Machine, VM），每个虚拟机器都可以独立运行一个操作系统<br>同义术语：虚拟机管理程序/虚拟机监控程序/Virtual Machine Monitor/Hypervisor</p>
-<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/操作系统-概述-8.1df9ei75zngg.webp" alt="操作系统-概述-8"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/操作系统-概述-9.2cn6k3jf58bo.webp" alt="操作系统-概述-9"></p>
-<h2 id="典型例题"><a href="#典型例题" class="headerlink" title="典型例题"></a>典型例题</h2><p>待补充</p>
+<h2 id="虚拟机"><a class="header-anchor" href="#虚拟机">¶</a>虚拟机</h2>
+<p>虚拟机：使用虚拟化技术，将一台物理机器虚拟化为多台虚拟机器（Virtual Machine, VM），每个虚拟机器都可以独立运行一个操作系统<br>
+同义术语：虚拟机管理程序/虚拟机监控程序/Virtual Machine Monitor/Hypervisor</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%A6%82%E8%BF%B0-8.1df9ei75zngg.webp" alt="操作系统-概述-8"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E6%A6%82%E8%BF%B0-9.2cn6k3jf58bo.webp" alt="操作系统-概述-9"></p>
+<h2 id="典型例题-v3"><a class="header-anchor" href="#典型例题-v3">¶</a>典型例题</h2>
+<p>待补充</p>
 <hr>
-<p>参考文献：<br>《王道考研-操作系统复习指导》<br>《Computer Systems A Programer’s Perspective Third Edition》<br> <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/">中文维基百科</a></p>
-<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.hiyoung.xyz">Hiyoung</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.hiyoung.xyz/2023/07/15/fefd9012fd96/">https://blog.hiyoung.xyz/2023/07/15/fefd9012fd96/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.hiyoung.xyz" target="_blank">Hiyoung'blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a><a class="post-meta__tags" href="/tags/%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">系统概述</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/191.5f9gk6l0wao0.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/07/02/820a4a133c49/" title="计算机组成原理-总线及I/O"><img class="cover" src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/199.65xac4d5vqc0.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">计算机组成原理-总线及I/O</div></div></a></div><div class="next-post pull-right"><a href="/2023/07/26/b1f4b3c589a9/" title="操作系统-进程和线程"><img class="cover" src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/135.yx3toip2d00.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">操作系统-进程和线程</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/07/26/b1f4b3c589a9/" title="操作系统-进程和线程"><img class="cover" src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/135.yx3toip2d00.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-26</div><div class="title">操作系统-进程和线程</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Hiyoung</div><div class="author-info__description">若无闲事挂心头，便是人间好时节</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">38</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">55</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">20</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/hiyoung3937"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/hiyoung3937" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:hiyoung3937@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss" style="color: #EE7621;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">网站破后重生，变得更加花哨！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E7%BA%B2"><span class="toc-number">2.</span> <span class="toc-text">大纲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">3.</span> <span class="toc-text">操作系统的基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">3.1.</span> <span class="toc-text">操作系统的特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%BD%9C%E4%B8%BA%E6%8E%A5%E5%8F%A3"><span class="toc-number">3.2.</span> <span class="toc-text">操作系统作为接口</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="toc-number">4.</span> <span class="toc-text">操作系统的发展历程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%B7%A5%E6%93%8D%E4%BD%9C%E9%98%B6%E6%AE%B5%EF%BC%88%E6%97%A0%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%89"><span class="toc-number">4.1.</span> <span class="toc-text">手工操作阶段（无操作系统）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%B9%E5%A4%84%E7%90%86%E9%98%B6%E6%AE%B5%EF%BC%88%E5%BC%80%E5%A7%8B%E5%87%BA%E7%8E%B0%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%89"><span class="toc-number">4.2.</span> <span class="toc-text">批处理阶段（开始出现操作系统）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%97%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">4.3.</span> <span class="toc-text">分时操作系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E6%97%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">4.4.</span> <span class="toc-text">实时操作系统</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83"><span class="toc-number">5.</span> <span class="toc-text">操作系统的运行环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E5%99%A8%E7%9A%84%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F-star"><span class="toc-number">5.1.</span> <span class="toc-text">处理器的运行模式$\star$</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD%E5%92%8C%E5%BC%82%E5%B8%B8"><span class="toc-number">5.2.</span> <span class="toc-text">中断和异常</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">5.2.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E7%B1%BB"><span class="toc-number">5.2.2.</span> <span class="toc-text">分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD%E5%92%8C%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B"><span class="toc-number">5.2.3.</span> <span class="toc-text">中断和异常的处理过程</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8"><span class="toc-number">5.3.</span> <span class="toc-text">系统调用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84"><span class="toc-number">6.</span> <span class="toc-text">操作系统结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E5%B1%82%E6%B3%95"><span class="toc-number">6.1.</span> <span class="toc-text">分层法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E5%8C%96"><span class="toc-number">6.2.</span> <span class="toc-text">模块化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%8F%E5%86%85%E6%A0%B8"><span class="toc-number">6.3.</span> <span class="toc-text">宏内核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E5%86%85%E6%A0%B8"><span class="toc-number">6.4.</span> <span class="toc-text">微内核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%96%E6%A0%B8"><span class="toc-number">6.5.</span> <span class="toc-text">外核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">6.6.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E5%AF%BC"><span class="toc-number">7.</span> <span class="toc-text">操作系统引导</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-number">8.</span> <span class="toc-text">虚拟机</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B8%E5%9E%8B%E4%BE%8B%E9%A2%98"><span class="toc-number">9.</span> <span class="toc-text">典型例题</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/07/15/efbf0fdb45f7/" title="重装系统前后需要完成的事情"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/209.jogqdw8wz1s.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="重装系统前后需要完成的事情"/></a><div class="content"><a class="title" href="/2024/07/15/efbf0fdb45f7/" title="重装系统前后需要完成的事情">重装系统前后需要完成的事情</a><time datetime="2024-07-15T05:52:51.000Z" title="发表于 2024-07-15 13:52:51">2024-07-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/02/e65bf046fb61/" title="unity笔记"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/205.1dyybxioniyo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="unity笔记"/></a><div class="content"><a class="title" href="/2024/03/02/e65bf046fb61/" title="unity笔记">unity笔记</a><time datetime="2024-03-02T11:14:02.000Z" title="发表于 2024-03-02 19:14:02">2024-03-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/01/d39bb69c3aa4/" title="unity脚本"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/257.nv4547f8c5c.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="unity脚本"/></a><div class="content"><a class="title" href="/2024/03/01/d39bb69c3aa4/" title="unity脚本">unity脚本</a><time datetime="2024-03-01T12:11:44.000Z" title="发表于 2024-03-01 20:11:44">2024-03-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/01/15/83ffcc251cb7/" title="Cpp语言基础"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/207.308q94csnwo0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Cpp语言基础"/></a><div class="content"><a class="title" href="/2024/01/15/83ffcc251cb7/" title="Cpp语言基础">Cpp语言基础</a><time datetime="2024-01-15T07:12:57.000Z" title="发表于 2024-01-15 15:12:57">2024-01-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/26/e840ca002bfb/" title="Godot基本操作"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/290.293o5z0jwxlw.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Godot基本操作"/></a><div class="content"><a class="title" href="/2023/12/26/e840ca002bfb/" title="Godot基本操作">Godot基本操作</a><time datetime="2023-12-26T06:25:02.000Z" title="发表于 2023-12-26 14:25:02">2023-12-26</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/191.5f9gk6l0wao0.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Hiyoung</div><div class="footer_custom_text"><a href="/404/">Love from nobody</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+<p>参考文献：<br>
+《王道考研-操作系统复习指导》<br>
+《Computer Systems A Programer’s Perspective Third Edition》<br>
+<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/">中文维基百科</a></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.hiyoung.xyz">Hiyoung</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.hiyoung.xyz/2023/07/15/fefd9012fd96/">https://blog.hiyoung.xyz/2023/07/15/fefd9012fd96/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.hiyoung.xyz" target="_blank">Hiyoung'blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a><a class="post-meta__tags" href="/tags/%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">系统概述</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/191.5f9gk6l0wao0.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/07/02/820a4a133c49/" title="计算机组成原理-总线及I/O"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">计算机组成原理-总线及I/O</div></div></a></div><div class="next-post pull-right"><a href="/2023/07/26/b1f4b3c589a9/" title="操作系统-进程和线程"><img class="cover" src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/135.yx3toip2d00.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">操作系统-进程和线程</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/07/26/b1f4b3c589a9/" title="操作系统-进程和线程"><img class="cover" src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/135.yx3toip2d00.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-26</div><div class="title">操作系统-进程和线程</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Hiyoung</div><div class="author-info__description">若无闲事挂心头，便是人间好时节</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">60</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/hiyoung3937"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/hiyoung3937" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:hiyoung3937@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss" style="color: #EE7621;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">网站破后重生，变得更加花哨！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-v6"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E7%BA%B2-v3"><span class="toc-number">2.</span> <span class="toc-text">大纲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">3.</span> <span class="toc-text">操作系统的基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">3.1.</span> <span class="toc-text">操作系统的特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%BD%9C%E4%B8%BA%E6%8E%A5%E5%8F%A3"><span class="toc-number">3.2.</span> <span class="toc-text">操作系统作为接口</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="toc-number">4.</span> <span class="toc-text">操作系统的发展历程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%B7%A5%E6%93%8D%E4%BD%9C%E9%98%B6%E6%AE%B5%EF%BC%88%E6%97%A0%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%89"><span class="toc-number">4.1.</span> <span class="toc-text">手工操作阶段（无操作系统）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%B9%E5%A4%84%E7%90%86%E9%98%B6%E6%AE%B5%EF%BC%88%E5%BC%80%E5%A7%8B%E5%87%BA%E7%8E%B0%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%89"><span class="toc-number">4.2.</span> <span class="toc-text">批处理阶段（开始出现操作系统）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%97%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">4.3.</span> <span class="toc-text">分时操作系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E6%97%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">4.4.</span> <span class="toc-text">实时操作系统</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83"><span class="toc-number">5.</span> <span class="toc-text">操作系统的运行环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E5%99%A8%E7%9A%84%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F-star"><span class="toc-number">5.1.</span> <span class="toc-text">处理器的运行模式$\star$</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD%E5%92%8C%E5%BC%82%E5%B8%B8"><span class="toc-number">5.2.</span> <span class="toc-text">中断和异常</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">5.2.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E7%B1%BB"><span class="toc-number">5.2.2.</span> <span class="toc-text">分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD%E5%92%8C%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B"><span class="toc-number">5.2.3.</span> <span class="toc-text">中断和异常的处理过程</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8"><span class="toc-number">5.3.</span> <span class="toc-text">系统调用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84"><span class="toc-number">6.</span> <span class="toc-text">操作系统结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E5%B1%82%E6%B3%95"><span class="toc-number">6.1.</span> <span class="toc-text">分层法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E5%8C%96"><span class="toc-number">6.2.</span> <span class="toc-text">模块化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%8F%E5%86%85%E6%A0%B8"><span class="toc-number">6.3.</span> <span class="toc-text">宏内核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E5%86%85%E6%A0%B8"><span class="toc-number">6.4.</span> <span class="toc-text">微内核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%96%E6%A0%B8"><span class="toc-number">6.5.</span> <span class="toc-text">外核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">6.6.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E5%AF%BC"><span class="toc-number">7.</span> <span class="toc-text">操作系统引导</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-number">8.</span> <span class="toc-text">虚拟机</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B8%E5%9E%8B%E4%BE%8B%E9%A2%98-v3"><span class="toc-number">9.</span> <span class="toc-text">典型例题</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/28/d3abcd7be53b/" title="cpp STL详解">cpp STL详解</a><time datetime="2024-10-28T07:45:19.000Z" title="发表于 2024-10-28 15:45:19">2024-10-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/28/ff8eb3c08cc4/" title="信奥竞赛技巧与算法">信奥竞赛技巧与算法</a><time datetime="2024-10-28T07:38:09.000Z" title="发表于 2024-10-28 15:38:09">2024-10-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/15/86baf1ab0f95/" title="重装系统前后需要完成的事情">重装系统前后需要完成的事情</a><time datetime="2024-07-15T05:52:51.000Z" title="发表于 2024-07-15 13:52:51">2024-07-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/02/6d3a7a302452/" title="unity笔记">unity笔记</a><time datetime="2024-03-02T11:14:02.000Z" title="发表于 2024-03-02 19:14:02">2024-03-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/01/abe151f591a2/" title="unity脚本">unity脚本</a><time datetime="2024-03-01T12:11:44.000Z" title="发表于 2024-03-01 20:11:44">2024-03-01</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/public/191.5f9gk6l0wao0.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Hiyoung</div><div class="footer_custom_text"><a href="/404/">Love from nobody</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
