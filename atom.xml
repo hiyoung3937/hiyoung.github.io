@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.xyz/"/>
-  <updated>2024-10-28T07:48:26.970Z</updated>
+  <updated>2024-12-02T03:17:35.514Z</updated>
   <id>https://blog.hiyoung.xyz/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>cpp STL详解</title>
+    <title>算法</title>
+    <link href="https://blog.hiyoung.xyz/2024/12/02/1c0197db7a5f/"/>
+    <id>https://blog.hiyoung.xyz/2024/12/02/1c0197db7a5f/</id>
+    <published>2024-12-02T01:54:45.000Z</published>
+    <updated>2024-12-02T03:17:35.514Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;动态规划算法&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#动态规划算法&quot;&gt;¶&lt;/a&gt;动态规划算法&lt;/h2&gt;
+&lt;h3 id=&quot;总方法论-动态规划五部曲&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机基础" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="算法" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://blog.hiyoung.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ STL&amp;语法辨析</title>
     <link href="https://blog.hiyoung.xyz/2024/10/28/d3abcd7be53b/"/>
     <id>https://blog.hiyoung.xyz/2024/10/28/d3abcd7be53b/</id>
     <published>2024-10-28T07:45:19.000Z</published>
-    <updated>2024-10-28T07:48:26.970Z</updated>
+    <updated>2024-11-11T06:23:36.917Z</updated>
     
     
       
@@ -47,11 +75,11 @@
   </entry>
   
   <entry>
-    <title>信奥竞赛技巧与算法</title>
-    <link href="https://blog.hiyoung.xyz/2024/10/28/ff8eb3c08cc4/"/>
-    <id>https://blog.hiyoung.xyz/2024/10/28/ff8eb3c08cc4/</id>
+    <title>信奥竞赛技巧</title>
+    <link href="https://blog.hiyoung.xyz/2024/10/28/d0dc2834939c/"/>
+    <id>https://blog.hiyoung.xyz/2024/10/28/d0dc2834939c/</id>
     <published>2024-10-28T07:38:09.000Z</published>
-    <updated>2024-10-28T09:02:15.065Z</updated>
+    <updated>2024-12-02T01:53:26.782Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;简介-v3&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v3&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;</summary>
@@ -156,9 +184,9 @@
     <category term="Cpp" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Cpp/"/>
     
     
-    <category term="Cpp" scheme="https://blog.hiyoung.xyz/tags/Cpp/"/>
-    
     <category term="C++" scheme="https://blog.hiyoung.xyz/tags/C/"/>
+    
+    <category term="Cpp" scheme="https://blog.hiyoung.xyz/tags/Cpp/"/>
     
   </entry>
   
@@ -220,7 +248,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v7&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -247,7 +275,7 @@
     <updated>2023-10-26T03:37:22.783Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v6&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v5&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;操作系统的基本概念&lt;/li&gt;
@@ -283,7 +311,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v11&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -353,7 +381,7 @@
     <updated>2023-10-26T03:38:09.143Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v4&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v6&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其四，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的CPU相关内容介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CPU的功能和基本结构&lt;/li&gt;
@@ -385,7 +413,7 @@
     <updated>2023-10-26T03:38:54.146Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v9&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v9&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v8&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其三，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的指令系统介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;指令格式的基本内容&lt;/li&gt;
@@ -416,7 +444,7 @@
     <updated>2023-10-26T03:38:21.180Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v5&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v7&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v7&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其二，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机内部和外部的存储介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;存储器的分类与层次化的存储器基本结构&lt;/li&gt;
@@ -447,7 +475,7 @@
     <updated>2023-10-26T03:38:39.746Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v10&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v10&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v9&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v9&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其一，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;数制的表示&lt;/li&gt;
@@ -509,31 +537,9 @@
     <category term="学习笔记" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="C++" scheme="https://blog.hiyoung.xyz/tags/C/"/>
-    
     <category term="C" scheme="https://blog.hiyoung.xyz/tags/C/"/>
     
-  </entry>
-  
-  <entry>
-    <title>next主题的一些设置</title>
-    <link href="https://blog.hiyoung.xyz/2022/11/20/eac15b136357/"/>
-    <id>https://blog.hiyoung.xyz/2022/11/20/eac15b136357/</id>
-    <published>2022-11-20T07:11:02.000Z</published>
-    <updated>2024-07-18T11:03:59.462Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;Hexo默认-主题的config优先级高于Hexo的config&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#Hexo默认-主题的config优先级高于Hexo的config&quot;&gt;¶&lt;/a&gt;Hexo默认 主题的config优先级高于Hexo的config&lt;/h2&gt;
-&lt;p&gt;基于Hexo 6.2 和hexo-theme-next-8.12.1 不同版本设置可能不一样&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="前端" scheme="https://blog.hiyoung.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="网站建设" scheme="https://blog.hiyoung.xyz/categories/%E5%89%8D%E7%AB%AF/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
-    
-    
-    <category term="next" scheme="https://blog.hiyoung.xyz/tags/next/"/>
+    <category term="C++" scheme="https://blog.hiyoung.xyz/tags/C/"/>
     
   </entry>
   
