@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.xyz/"/>
-  <updated>2024-12-06T12:48:05.325Z</updated>
+  <updated>2024-12-14T06:24:17.873Z</updated>
   <id>https://blog.hiyoung.xyz/</id>
   
   <author>
@@ -17,9 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>高精度算法</title>
+    <link href="https://blog.hiyoung.xyz/2024/12/14/5b1482e0ddf6/"/>
+    <id>https://blog.hiyoung.xyz/2024/12/14/5b1482e0ddf6/</id>
+    <published>2024-12-14T06:22:53.000Z</published>
+    <updated>2024-12-14T06:24:17.873Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;高精度问题&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机基础" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="算法" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://blog.hiyoung.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>01背包-目标和</title>
-    <link href="https://blog.hiyoung.xyz/2024/12/06/e7925ddc0ec8/"/>
-    <id>https://blog.hiyoung.xyz/2024/12/06/e7925ddc0ec8/</id>
+    <link href="https://blog.hiyoung.xyz/2024/12/06/f910e508c34f/"/>
+    <id>https://blog.hiyoung.xyz/2024/12/06/f910e508c34f/</id>
     <published>2024-12-06T12:25:00.000Z</published>
     <updated>2024-12-06T12:48:05.325Z</updated>
     
@@ -51,18 +78,18 @@
   </entry>
   
   <entry>
-    <title>算法</title>
-    <link href="https://blog.hiyoung.xyz/2024/12/02/1c0197db7a5f/"/>
-    <id>https://blog.hiyoung.xyz/2024/12/02/1c0197db7a5f/</id>
+    <title>动态规划算法</title>
+    <link href="https://blog.hiyoung.xyz/2024/12/02/5821c98090f1/"/>
+    <id>https://blog.hiyoung.xyz/2024/12/02/5821c98090f1/</id>
     <published>2024-12-02T01:54:45.000Z</published>
-    <updated>2024-12-05T02:13:24.422Z</updated>
+    <updated>2024-12-14T06:24:19.843Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;动态规划算法&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#动态规划算法&quot;&gt;¶&lt;/a&gt;动态规划算法&lt;/h2&gt;
+    <summary type="html">&lt;h3 id=&quot;动态规划&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#动态规划&quot;&gt;¶&lt;/a&gt;动态规划&lt;/h3&gt;
 &lt;h3 id=&quot;总方法论-动态规划五部曲&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
@@ -80,10 +107,10 @@
   
   <entry>
     <title>C++ STL&amp;语法辨析</title>
-    <link href="https://blog.hiyoung.xyz/2024/10/28/d3abcd7be53b/"/>
-    <id>https://blog.hiyoung.xyz/2024/10/28/d3abcd7be53b/</id>
+    <link href="https://blog.hiyoung.xyz/2024/10/28/73901e16de05/"/>
+    <id>https://blog.hiyoung.xyz/2024/10/28/73901e16de05/</id>
     <published>2024-10-28T07:45:19.000Z</published>
-    <updated>2024-11-11T06:23:36.917Z</updated>
+    <updated>2024-12-13T08:53:18.882Z</updated>
     
     
       
@@ -110,8 +137,8 @@
   
   <entry>
     <title>信奥竞赛技巧</title>
-    <link href="https://blog.hiyoung.xyz/2024/10/28/d0dc2834939c/"/>
-    <id>https://blog.hiyoung.xyz/2024/10/28/d0dc2834939c/</id>
+    <link href="https://blog.hiyoung.xyz/2024/10/28/9112d7b96d10/"/>
+    <id>https://blog.hiyoung.xyz/2024/10/28/9112d7b96d10/</id>
     <published>2024-10-28T07:38:09.000Z</published>
     <updated>2024-12-02T01:53:26.782Z</updated>
     
@@ -282,7 +309,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v11&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -309,7 +336,7 @@
     <updated>2023-10-26T03:37:22.783Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v4&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v10&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v10&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;操作系统的基本概念&lt;/li&gt;
@@ -345,7 +372,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v9&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v7&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -415,7 +442,7 @@
     <updated>2023-10-26T03:38:09.143Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v7&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v7&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v4&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其四，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的CPU相关内容介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CPU的功能和基本结构&lt;/li&gt;
@@ -447,7 +474,7 @@
     <updated>2023-10-26T03:38:54.146Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v8&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v6&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其三，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的指令系统介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;指令格式的基本内容&lt;/li&gt;
@@ -478,7 +505,7 @@
     <updated>2023-10-26T03:38:21.180Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v6&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v5&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其二，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机内部和外部的存储介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;存储器的分类与层次化的存储器基本结构&lt;/li&gt;
@@ -509,7 +536,7 @@
     <updated>2023-10-26T03:38:39.746Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v10&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v10&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v8&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其一，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;数制的表示&lt;/li&gt;
@@ -533,26 +560,6 @@
     <category term="浮点数" scheme="https://blog.hiyoung.xyz/tags/%E6%B5%AE%E7%82%B9%E6%95%B0/"/>
     
     <category term="补码" scheme="https://blog.hiyoung.xyz/tags/%E8%A1%A5%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建TG贴纸下载Robot</title>
-    <link href="https://blog.hiyoung.xyz/2023/04/09/39658c8a0d3d/"/>
-    <id>https://blog.hiyoung.xyz/2023/04/09/39658c8a0d3d/</id>
-    <published>2023-04-09T11:03:05.000Z</published>
-    <updated>2023-04-09T11:50:29.667Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前情提要&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#前情提要&quot;&gt;¶&lt;/a&gt;前情提要&lt;/h2&gt;
-&lt;p&gt;最近回家用TG贴纸下载机器人的时候发现太大的贴纸包无法下载，无奈只好自己搭建一个，正好在网上看到一个不错的，于是正好写这篇教程记录一下&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="实用工具教程" scheme="https://blog.hiyoung.xyz/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="TG_Robot" scheme="https://blog.hiyoung.xyz/tags/TG-Robot/"/>
     
   </entry>
   
