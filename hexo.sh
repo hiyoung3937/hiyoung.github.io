@@ -1,5 +1,5 @@
 #! /bin/bash
-cd D:\Hexo\hiyoung.github.io
+cd D:/Hexo/hiyoung.github.io
 
 git pull origin hexo
 
