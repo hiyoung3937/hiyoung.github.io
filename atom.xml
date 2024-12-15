@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.xyz/"/>
-  <updated>2024-12-15T12:07:33.739Z</updated>
+  <updated>2024-12-15T12:05:47.728Z</updated>
   <id>https://blog.hiyoung.xyz/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="https://blog.hiyoung.xyz/2024/12/15/ecd032f05b10/"/>
-    <id>https://blog.hiyoung.xyz/2024/12/15/ecd032f05b10/</id>
-    <published>2024-12-15T12:07:33.000Z</published>
-    <updated>2024-12-15T12:07:33.739Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;script type=&quot;text&amp;#x2F;javascript&quot; src=&quot;https://unpkg.com/kity@2.0.4/dist/kity.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text&amp;#x2F;javascript&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>VsCode配置C语言环境</title>
@@ -61,9 +40,9 @@
     <category term="C/C++" scheme="https://blog.hiyoung.xyz/categories/%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/C-C/"/>
     
     
-    <category term="C/C++" scheme="https://blog.hiyoung.xyz/tags/C-C/"/>
-    
     <category term="配置环境" scheme="https://blog.hiyoung.xyz/tags/%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83/"/>
+    
+    <category term="C/C++" scheme="https://blog.hiyoung.xyz/tags/C-C/"/>
     
   </entry>
   
@@ -364,7 +343,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v7&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -427,7 +406,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v9&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -497,7 +476,7 @@
     <updated>2024-12-15T12:05:47.732Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v6&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v5&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其四，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的CPU相关内容介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CPU的功能和基本结构&lt;/li&gt;
@@ -529,7 +508,7 @@
     <updated>2024-12-15T12:05:47.733Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v8&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v9&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v9&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
 &lt;p&gt;计算机组成原理系列其三，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的指令系统介绍，主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;指令格式的基本内容&lt;/li&gt;
@@ -549,6 +528,37 @@
     <category term="计组" scheme="https://blog.hiyoung.xyz/tags/%E8%AE%A1%E7%BB%84/"/>
     
     <category term="指令系统" scheme="https://blog.hiyoung.xyz/tags/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机组成原理-存储系统</title>
+    <link href="https://blog.hiyoung.xyz/2023/04/27/78ffecc46533/"/>
+    <id>https://blog.hiyoung.xyz/2023/04/27/78ffecc46533/</id>
+    <published>2023-04-27T05:39:24.000Z</published>
+    <updated>2024-12-15T12:05:47.732Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v8&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+&lt;p&gt;计算机组成原理系列其二，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机内部和外部的存储介绍，主要包含以下几点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;存储器的分类与层次化的存储器基本结构&lt;/li&gt;
+&lt;li&gt;主存与外(辅)存&lt;/li&gt;
+&lt;li&gt;主存的拓展和外存的结构&lt;/li&gt;
+&lt;li&gt;Cache&lt;/li&gt;
+&lt;li&gt;虚拟内存&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="计算机基础" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="计算机组成原理" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="计组" scheme="https://blog.hiyoung.xyz/tags/%E8%AE%A1%E7%BB%84/"/>
+    
+    <category term="存储系统" scheme="https://blog.hiyoung.xyz/tags/%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
