@@ -1,0 +1,170 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Hiyoung'blog
+subtitle: 'Tech Otakus Change The World'
+description: '若无闲事挂心头，便是人间好时节'
+keywords: blog
+author: Hiyoung
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# sidebar
+sidebar:
+# Sidebar Position.
+position: left
+#position: right
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://blog.hiyoung.xyz/
+permalink: :year/:month/:day/:hash/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source                    #资源文件夹，这个文件夹用来存放内容。
+public_dir: public                    #公共文件夹，这个文件夹用于存放生成的站点文件。
+tag_dir: tags                         #标签文件夹
+archive_dir: archives                 #归档文件夹
+category_dir: categories              #分类文件夹
+code_dir: downloads/code              #Include code 文件夹，source_dir 下的子目录
+i18n_dir: :lang                       #国际化（i18n）文件夹
+skip_render:                          #跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。
+test_dir: test                        #测试文件
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:       #代码块的设置 https://hexo.io/docs/syntax-highlight#Highlight-js
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: 选项只会应用到 source/   ignore：选项会应用到所有文件夹
+include:
+exclude: 
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+# theme: next
+theme: butterfly
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  #repo改为repo: git@你的域名:/var/repo/hexo.git
+  # repo: git@github.com:hiyoung3937/hiyoung.github.io.git #github配置
+  repo: https://github.com/hiyoung3937/hiyoung.github.io.git #使用https连接
+  #repo: git@blog.hiyoung.xyz:/hexo_blog/repo/hexo.git #服务器配置
+  branch: master
+
+# Local Search 添加百度/谷歌/本地 自定义站点内容搜索
+## Docs:https://theme-next.iissnan.com/third-party-services.html
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+  limit: 10000
+
+#emoji表情
+# Markdown-it config
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+## emoji查询：https://www.emojicopy.com/
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:                
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji  # add emoji
+                         ##注意要在plugins:选项中加上- markdown-it-emoji ，即加上emoji插件。
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+
+## RSS订阅
+## https://github.com/hexojs/hexo-generator-feed
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  #icon: icon.png
+  autodiscovery: true
+  template:
