@@ -10,6 +10,20 @@ Hallo啊！ 这里是Hiyoung's blog，欢迎来到我的个人博客。本网站
 
 ## 网站历史记录
 
+{% timeline 2023 %}
+<!-- timeline 5-15 -->
+更换域名为blog.hiyoung.xyz
+<!-- endtimeline -->
+
+<!-- timeline 6-24 -->
+更换至git page托管
+<!-- endtimeline -->
+
+<!-- timeline 6-30 -->
+更换主题为Butterfly
+<!-- endtimeline -->
+{% endtimeline %}
+
 {% timeline 2022,pink %}
 <!-- timeline 6-26 -->
 博客正式运营
@@ -25,19 +39,7 @@ Hallo啊！ 这里是Hiyoung's blog，欢迎来到我的个人博客。本网站
 
 {% endtimeline %}
 
-{% timeline 2023 %}
-<!-- timeline 5-15 -->
-更换域名为blog.hiyoung.xyz
-<!-- endtimeline -->
 
-<!-- timeline 6-24 -->
-更换至git page托管
-<!-- endtimeline -->
-
-<!-- timeline 6-30 -->
-更换主题为Butterfly
-<!-- endtimeline -->
-{% endtimeline %}
 
 - **2022年6月26日搭建成功**
 - **2022年6月27日更换为Next主题**
