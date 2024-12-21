@@ -3,7 +3,7 @@ title: VsCode配置C语言环境
 tags: [C/C++,配置环境]
 categories: [编程环境配置,C/C++]
 cover: false
-date: 2024-12-15 16:25:39
+date: 2022-12-15 16:25:39
 mathjax:
 ---
 
