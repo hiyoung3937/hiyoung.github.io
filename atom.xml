@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.xyz/"/>
-  <updated>2024-12-20T06:41:40.722Z</updated>
+  <updated>2024-12-21T07:50:44.730Z</updated>
   <id>https://blog.hiyoung.xyz/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>二分查找</title>
+    <link href="https://blog.hiyoung.xyz/2024/12/20/5e7051f35314/"/>
+    <id>https://blog.hiyoung.xyz/2024/12/20/5e7051f35314/</id>
+    <published>2024-12-20T07:20:12.000Z</published>
+    <updated>2024-12-21T07:50:44.730Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;二分查找算法概述&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#二分查找算法概述&quot;&gt;¶&lt;/a&gt;二分查找算法概述&lt;/h2&gt;
+&lt;p&gt;二分查找很简单吗？或许二分查找的思想是直观的，但是细节才是程序的核心。看看 Knuth 大佬（发明 KMP</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://blog.hiyoung.xyz/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="二分算法" scheme="https://blog.hiyoung.xyz/categories/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://blog.hiyoung.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="二分查找" scheme="https://blog.hiyoung.xyz/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>前缀和与差分数组</title>
     <link href="https://blog.hiyoung.xyz/2024/12/16/2a70732fe5e4/"/>
     <id>https://blog.hiyoung.xyz/2024/12/16/2a70732fe5e4/</id>
     <published>2024-12-16T03:19:24.000Z</published>
-    <updated>2024-12-20T06:41:40.722Z</updated>
+    <updated>2024-12-21T07:35:03.677Z</updated>
     
     
       
@@ -61,9 +91,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#前言&quot;&gt;¶&lt;/a&gt;前言&lt;/h2&gt;
-&lt;p&gt;最近需要用两台电脑来更新博客，但是用U盘来回拷贝太麻烦而且有点捞，使用开始尝试使用git和github来实现hexo的多端同步&lt;br&gt;
-Hexo</summary>
+    <summary type="html">&lt;h2 id=&quot;前言-v2&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -77,36 +105,6 @@ Hexo</summary>
     <category term="git" scheme="https://blog.hiyoung.xyz/tags/git/"/>
     
     <category term="hexo同步" scheme="https://blog.hiyoung.xyz/tags/hexo%E5%90%8C%E6%AD%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VsCode配置C语言环境</title>
-    <link href="https://blog.hiyoung.xyz/2024/12/15/74efb82ee616/"/>
-    <id>https://blog.hiyoung.xyz/2024/12/15/74efb82ee616/</id>
-    <published>2024-12-15T08:25:39.000Z</published>
-    <updated>2024-12-15T08:27:19.641Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;VsCode只是一个纯文本&lt;strong&gt;编辑器&lt;/strong&gt;，不是IDE(集成开发环境)，不含&lt;strong&gt;编译器&lt;/strong&gt;和许多其它功能，所以编译器要自己装好&lt;/p&gt;
-&lt;p&gt;第一步：在vscode官网下载软件，链接：&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="编程环境配置" scheme="https://blog.hiyoung.xyz/categories/%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-    
-    <category term="C/C++" scheme="https://blog.hiyoung.xyz/categories/%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/C-C/"/>
-    
-    
-    <category term="C/C++" scheme="https://blog.hiyoung.xyz/tags/C-C/"/>
-    
-    <category term="配置环境" scheme="https://blog.hiyoung.xyz/tags/%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83/"/>
     
   </entry>
   
@@ -343,9 +341,9 @@ Hexo</summary>
     <category term="Cpp" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Cpp/"/>
     
     
-    <category term="C++" scheme="https://blog.hiyoung.xyz/tags/C/"/>
-    
     <category term="Cpp" scheme="https://blog.hiyoung.xyz/tags/Cpp/"/>
+    
+    <category term="C++" scheme="https://blog.hiyoung.xyz/tags/C/"/>
     
   </entry>
   
@@ -407,7 +405,7 @@ Hexo</summary>
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v7&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -470,7 +468,7 @@ Hexo</summary>
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v9&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v11&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
