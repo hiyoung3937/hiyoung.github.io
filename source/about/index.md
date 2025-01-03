@@ -6,7 +6,7 @@ layout: about
 ---
 
 ## 简介
-Hallo啊！ 这里是Hiyoung's blog，欢迎来到我的个人博客。本网站只是我个人使用<span class="heimu" title="你知道的太多了">，找到女朋友除外,"怎么想都是不可能的吧(￣▽￣)~*"</span>，以便我记录学习历程。
+ciallo~ 这里是Hiyoung's blog，欢迎来到我的个人博客。本网站只是我个人使用<span class="heimu" title="你知道的太多了">，找到女朋友除外,"怎么想都是不可能的吧(￣▽￣)~*"</span>，以便我记录学习历程。
 
 ## 网站历史记录
 
