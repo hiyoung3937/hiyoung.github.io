@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.xyz/"/>
-  <updated>2025-01-02T09:21:24.557Z</updated>
+  <updated>2025-01-03T03:02:32.789Z</updated>
   <id>https://blog.hiyoung.xyz/</id>
   
   <author>
@@ -21,14 +21,15 @@
     <link href="https://blog.hiyoung.xyz/2024/12/20/5e7051f35314/"/>
     <id>https://blog.hiyoung.xyz/2024/12/20/5e7051f35314/</id>
     <published>2024-12-20T07:20:12.000Z</published>
-    <updated>2025-01-02T09:21:24.557Z</updated>
+    <updated>2025-01-03T03:02:32.789Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;二分查找算法概述&quot;&gt;&lt;a href=&quot;#二分查找算法概述&quot; class=&quot;headerlink&quot; title=&quot;二分查找算法概述&quot;&gt;&lt;/a&gt;二分查找算法概述&lt;/h2&gt;&lt;p&gt;二分查找很简单吗？或许二分查找的思想是直观的，但是细节才是程序的核心。看看 Knuth</summary>
+    <summary type="html">&lt;h2 id=&quot;二分查找算法概述&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#二分查找算法概述&quot;&gt;¶&lt;/a&gt;二分查找算法概述&lt;/h2&gt;
+&lt;p&gt;二分查找很简单吗？或许二分查找的思想是直观的，但是细节才是程序的核心。看看 Knuth 大佬（发明 KMP</summary>
         
       
     
@@ -169,10 +170,10 @@ Hexo</summary>
   
   <entry>
     <title>动态规划算法</title>
-    <link href="https://blog.hiyoung.xyz/2024/12/02/5821c98090f1/"/>
-    <id>https://blog.hiyoung.xyz/2024/12/02/5821c98090f1/</id>
+    <link href="https://blog.hiyoung.xyz/2024/12/02/7e542d2118c8/"/>
+    <id>https://blog.hiyoung.xyz/2024/12/02/7e542d2118c8/</id>
     <published>2024-12-02T01:54:45.000Z</published>
-    <updated>2024-12-14T06:24:19.843Z</updated>
+    <updated>2025-01-03T02:08:40.078Z</updated>
     
     
       
@@ -186,9 +187,9 @@ Hexo</summary>
     
     
     
-    <category term="计算机基础" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    <category term="算法" scheme="https://blog.hiyoung.xyz/categories/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="算法" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%AE%97%E6%B3%95/"/>
+    <category term="动态规划" scheme="https://blog.hiyoung.xyz/categories/%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
     
     <category term="算法" scheme="https://blog.hiyoung.xyz/tags/%E7%AE%97%E6%B3%95/"/>
@@ -230,16 +231,14 @@ Hexo</summary>
     <link href="https://blog.hiyoung.xyz/2024/10/28/9112d7b96d10/"/>
     <id>https://blog.hiyoung.xyz/2024/10/28/9112d7b96d10/</id>
     <published>2024-10-28T07:38:09.000Z</published>
-    <updated>2024-12-15T08:00:19.629Z</updated>
+    <updated>2025-01-03T02:08:22.936Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v3&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v3&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;</summary>
     
     
     
-    <category term="计算机基础" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-    
-    <category term="算法" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://blog.hiyoung.xyz/categories/%E7%AE%97%E6%B3%95/"/>
     
     
     <category term="算法" scheme="https://blog.hiyoung.xyz/tags/%E7%AE%97%E6%B3%95/"/>
