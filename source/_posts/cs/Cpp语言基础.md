@@ -2,7 +2,7 @@
 title: Cpp语言基础
 tags: [Cpp,C++]
 date: 2024-01-15 15:12:57
-categories: [学习笔记,Cpp]
+categories: [学习笔记,cpp]
 mathjax: true
 cover:
 ---

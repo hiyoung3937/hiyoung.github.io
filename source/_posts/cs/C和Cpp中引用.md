@@ -2,7 +2,7 @@
 title: C和C++中引用
 date: 2023-02-04 01:44:20
 tags: [C,C++]
-categories: 学习笔记
+categories: [学习笔记,cpp]
 ---
 ## C的指针和C++中引用和函数参数类型
 <!-- more -->
