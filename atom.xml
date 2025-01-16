@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.xyz/"/>
-  <updated>2025-01-06T03:01:33.928Z</updated>
+  <updated>2025-01-16T08:47:05.588Z</updated>
   <id>https://blog.hiyoung.xyz/</id>
   
   <author>
@@ -17,9 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>c++ string</title>
+    <link href="https://blog.hiyoung.xyz/2025/01/16/1db9c2525802/"/>
+    <id>https://blog.hiyoung.xyz/2025/01/16/1db9c2525802/</id>
+    <published>2025-01-16T06:56:45.000Z</published>
+    <updated>2025-01-16T08:47:05.588Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;字符串和字符数组-v2&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#字符串和字符数组-v2&quot;&gt;¶&lt;/a&gt;字符串和字符数组&lt;/h2&gt;
+&lt;h3 id=&quot;cin-getline-与getline-的区别-v2&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="学习笔记" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="cpp" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/cpp/"/>
+    
+    
+    <category term="string" scheme="https://blog.hiyoung.xyz/tags/string/"/>
+    
+    <category term="字符串" scheme="https://blog.hiyoung.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>二分查找</title>
-    <link href="https://blog.hiyoung.xyz/2024/12/20/5e7051f35314/"/>
-    <id>https://blog.hiyoung.xyz/2024/12/20/5e7051f35314/</id>
+    <link href="https://blog.hiyoung.xyz/2024/12/20/4b1a88f4ccb4/"/>
+    <id>https://blog.hiyoung.xyz/2024/12/20/4b1a88f4ccb4/</id>
     <published>2024-12-20T07:20:12.000Z</published>
     <updated>2025-01-06T03:01:33.928Z</updated>
     
@@ -28,7 +58,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;二分查找算法概述&quot;&gt;&lt;a href=&quot;#二分查找算法概述&quot; class=&quot;headerlink&quot; title=&quot;二分查找算法概述&quot;&gt;&lt;/a&gt;二分查找算法概述&lt;/h2&gt;&lt;p&gt;二分查找很简单吗？或许二分查找的思想是直观的，但是细节才是程序的核心。看看 Knuth</summary>
+    <summary type="html">&lt;h2 id=&quot;二分查找算法概述&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#二分查找算法概述&quot;&gt;¶&lt;/a&gt;二分查找算法概述&lt;/h2&gt;
+&lt;p&gt;二分查找很简单吗？或许二分查找的思想是直观的，但是细节才是程序的核心。看看 Knuth 大佬（发明 KMP</summary>
         
       
     
@@ -47,8 +78,8 @@
   
   <entry>
     <title>前缀和与差分数组</title>
-    <link href="https://blog.hiyoung.xyz/2024/12/16/2a70732fe5e4/"/>
-    <id>https://blog.hiyoung.xyz/2024/12/16/2a70732fe5e4/</id>
+    <link href="https://blog.hiyoung.xyz/2024/12/16/73129417df3a/"/>
+    <id>https://blog.hiyoung.xyz/2024/12/16/73129417df3a/</id>
     <published>2024-12-16T03:19:24.000Z</published>
     <updated>2024-12-21T07:35:03.677Z</updated>
     
@@ -57,8 +88,9 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前缀和算法&quot;&gt;&lt;a href=&quot;#前缀和算法&quot; class=&quot;headerlink&quot; title=&quot;前缀和算法&quot;&gt;&lt;/a&gt;前缀和算法&lt;/h2&gt;&lt;p&gt;前缀和主要适用的场景是原始数组不会被修改的情况下，频繁查询某个区间的累加和。&lt;/p&gt;
-&lt;h3</summary>
+    <summary type="html">&lt;h2 id=&quot;前缀和算法&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#前缀和算法&quot;&gt;¶&lt;/a&gt;前缀和算法&lt;/h2&gt;
+&lt;p&gt;前缀和主要适用的场景是原始数组不会被修改的情况下，频繁查询某个区间的累加和。&lt;/p&gt;
+&lt;h3 id=&quot;前缀和核心代码&quot;&gt;&lt;a</summary>
         
       
     
@@ -89,7 +121,9 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#前言&quot;&gt;¶&lt;/a&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近需要用两台电脑来更新博客，但是用U盘来回拷贝太麻烦而且有点捞，使用开始尝试使用git和github来实现hexo的多端同步&lt;br&gt;
+Hexo</summary>
         
       
     
@@ -108,8 +142,8 @@
   
   <entry>
     <title>高精度算法</title>
-    <link href="https://blog.hiyoung.xyz/2024/12/14/5b1482e0ddf6/"/>
-    <id>https://blog.hiyoung.xyz/2024/12/14/5b1482e0ddf6/</id>
+    <link href="https://blog.hiyoung.xyz/2024/12/14/03d8ff0c1f0a/"/>
+    <id>https://blog.hiyoung.xyz/2024/12/14/03d8ff0c1f0a/</id>
     <published>2024-12-14T06:22:53.000Z</published>
     <updated>2025-01-02T08:19:38.989Z</updated>
     
@@ -118,7 +152,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;高精度问题&quot;&gt;&lt;a href=&quot;#高精度问题&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;高精度问题&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -135,8 +169,8 @@
   
   <entry>
     <title>01背包-目标和</title>
-    <link href="https://blog.hiyoung.xyz/2024/12/06/f910e508c34f/"/>
-    <id>https://blog.hiyoung.xyz/2024/12/06/f910e508c34f/</id>
+    <link href="https://blog.hiyoung.xyz/2024/12/06/dae65aa0a527/"/>
+    <id>https://blog.hiyoung.xyz/2024/12/06/dae65aa0a527/</id>
     <published>2024-12-06T12:25:00.000Z</published>
     <updated>2025-01-02T08:19:32.299Z</updated>
     
@@ -145,7 +179,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题面&quot;&gt;&lt;a href=&quot;#题面&quot; class=&quot;headerlink&quot; title=&quot;题面&quot;&gt;&lt;/a&gt;题面&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;题面&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题面&quot;&gt;¶&lt;/a&gt;题面&lt;/h2&gt;
+&lt;p&gt;&lt;a</summary>
         
       
     
@@ -166,8 +201,8 @@
   
   <entry>
     <title>动态规划算法</title>
-    <link href="https://blog.hiyoung.xyz/2024/12/02/7e542d2118c8/"/>
-    <id>https://blog.hiyoung.xyz/2024/12/02/7e542d2118c8/</id>
+    <link href="https://blog.hiyoung.xyz/2024/12/02/e2e3c6bf2032/"/>
+    <id>https://blog.hiyoung.xyz/2024/12/02/e2e3c6bf2032/</id>
     <published>2024-12-02T01:54:45.000Z</published>
     <updated>2025-01-03T02:08:40.078Z</updated>
     
@@ -176,7 +211,8 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;动态规划&quot;&gt;&lt;a href=&quot;#动态规划&quot; class=&quot;headerlink&quot; title=&quot;动态规划&quot;&gt;&lt;/a&gt;动态规划&lt;/h3&gt;&lt;h3 id=&quot;总方法论-动态规划五部曲&quot;&gt;&lt;a href=&quot;#总方法论-动态规划五部曲&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;动态规划&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#动态规划&quot;&gt;¶&lt;/a&gt;动态规划&lt;/h3&gt;
+&lt;h3 id=&quot;总方法论-动态规划五部曲&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -192,18 +228,19 @@
   </entry>
   
   <entry>
-    <title>C++ STL&amp;语法辨析</title>
-    <link href="https://blog.hiyoung.xyz/2024/10/28/73901e16de05/"/>
-    <id>https://blog.hiyoung.xyz/2024/10/28/73901e16de05/</id>
+    <title>C++のSTL</title>
+    <link href="https://blog.hiyoung.xyz/2024/10/28/ee1e5588a4e1/"/>
+    <id>https://blog.hiyoung.xyz/2024/10/28/ee1e5588a4e1/</id>
     <published>2024-10-28T07:45:19.000Z</published>
-    <updated>2024-12-13T08:53:18.882Z</updated>
+    <updated>2025-01-12T05:57:28.118Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;set容器&quot;&gt;&lt;a href=&quot;#set容器&quot; class=&quot;headerlink&quot; title=&quot;set容器&quot;&gt;&lt;/a&gt;set容器&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;set容器&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#set容器&quot;&gt;¶&lt;/a&gt;set容器&lt;/h2&gt;
+&lt;p&gt;&lt;a</summary>
         
       
     
@@ -222,13 +259,13 @@
   
   <entry>
     <title>信奥竞赛技巧</title>
-    <link href="https://blog.hiyoung.xyz/2024/10/28/9112d7b96d10/"/>
-    <id>https://blog.hiyoung.xyz/2024/10/28/9112d7b96d10/</id>
+    <link href="https://blog.hiyoung.xyz/2024/10/28/5917ed17bca7/"/>
+    <id>https://blog.hiyoung.xyz/2024/10/28/5917ed17bca7/</id>
     <published>2024-10-28T07:38:09.000Z</published>
     <updated>2025-01-03T02:08:22.936Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v3&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v3&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;</summary>
     
     
     
@@ -251,7 +288,8 @@
     <updated>2024-07-18T10:53:50.314Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;重装系统之前备份&quot;&gt;&lt;a href=&quot;#重装系统之前备份&quot; class=&quot;headerlink&quot; title=&quot;重装系统之前备份&quot;&gt;&lt;/a&gt;重装系统之前备份&lt;/h2&gt;&lt;p&gt;在重装系统之前需要备份的重要文件&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;重装系统之前备份&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#重装系统之前备份&quot;&gt;¶&lt;/a&gt;重装系统之前备份&lt;/h2&gt;
+&lt;p&gt;在重装系统之前需要备份的重要文件&lt;/p&gt;</summary>
     
     
     
@@ -272,7 +310,9 @@
     <updated>2024-03-23T07:53:44.907Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;基础操作记录&quot;&gt;&lt;a href=&quot;#基础操作记录&quot; class=&quot;headerlink&quot; title=&quot;基础操作记录&quot;&gt;&lt;/a&gt;基础操作记录&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1gQ4y1e7SS&quot;&gt;跟学视频&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.hiyoung.xyz/2024/03/13/d11c2f40712b/&quot;&gt;脚本文件&lt;/a&gt;&lt;br&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;基础操作记录&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#基础操作记录&quot;&gt;¶&lt;/a&gt;基础操作记录&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1gQ4y1e7SS&quot;&gt;跟学视频&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://blog.hiyoung.xyz/2024/03/13/d11c2f40712b/&quot;&gt;脚本文件&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
@@ -295,7 +335,7 @@
     <updated>2024-03-19T15:30:36.770Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;脚本文件&quot;&gt;&lt;a href=&quot;#脚本文件&quot; class=&quot;headerlink&quot; title=&quot;脚本文件&quot;&gt;&lt;/a&gt;脚本文件&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;脚本文件&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#脚本文件&quot;&gt;¶&lt;/a&gt;脚本文件&lt;/h3&gt;</summary>
     
     
     
@@ -312,13 +352,13 @@
   
   <entry>
     <title>Cpp语言基础</title>
-    <link href="https://blog.hiyoung.xyz/2024/01/15/de51b4aa334f/"/>
-    <id>https://blog.hiyoung.xyz/2024/01/15/de51b4aa334f/</id>
+    <link href="https://blog.hiyoung.xyz/2024/01/15/053453c5273a/"/>
+    <id>https://blog.hiyoung.xyz/2024/01/15/053453c5273a/</id>
     <published>2024-01-15T07:12:57.000Z</published>
     <updated>2025-01-12T02:23:36.684Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;部分内容复习&quot;&gt;&lt;a href=&quot;#部分内容复习&quot; class=&quot;headerlink&quot; title=&quot;部分内容复习&quot;&gt;&lt;/a&gt;部分内容复习&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;部分内容复习&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#部分内容复习&quot;&gt;¶&lt;/a&gt;部分内容复习&lt;/h2&gt;</summary>
     
     
     
@@ -345,7 +385,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;配置外部编辑器&quot;&gt;&lt;a href=&quot;#配置外部编辑器&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;配置外部编辑器&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -368,7 +408,7 @@
     <updated>2023-11-11T08:46:41.938Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;记录一下QuantumultX的使用教程和一些规则&quot;&gt;&lt;a href=&quot;#记录一下QuantumultX的使用教程和一些规则&quot; class=&quot;headerlink&quot; title=&quot;记录一下QuantumultX的使用教程和一些规则&quot;&gt;&lt;/a&gt;记录一下QuantumultX的使用教程和一些规则&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;记录一下QuantumultX的使用教程和一些规则&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#记录一下QuantumultX的使用教程和一些规则&quot;&gt;¶&lt;/a&gt;记录一下QuantumultX的使用教程和一些规则&lt;/h2&gt;</summary>
     
     
     
@@ -391,7 +431,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -418,14 +458,16 @@
     <updated>2023-10-26T03:37:22.783Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v4&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
+&lt;p&gt;操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;操作系统的基本概念&lt;/li&gt;
 &lt;li&gt;操作系统发展历程&lt;/li&gt;
 &lt;li&gt;程序运行环境&lt;/li&gt;
 &lt;li&gt;操作系统结构&lt;/li&gt;
 &lt;li&gt;操作系统引导&lt;/li&gt;
-&lt;li&gt;虚拟机</summary>
+&lt;li&gt;虚拟机&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     
@@ -452,7 +494,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v8&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -479,7 +521,7 @@
     <updated>2024-08-06T14:36:36.518Z</updated>
     
     
-    <summary type="html">&lt;p&gt;记录一下平常会用到的一些Hexo指令，在指定文件夹下Git Bash here输入命令即可&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;记录一下平常会用到的一些Hexo指令，在指定文件夹下Git Bash here输入命令即可&lt;/p&gt;</summary>
     
     
     
@@ -500,7 +542,8 @@
     <updated>2024-11-04T01:18:24.342Z</updated>
     
     
-    <summary type="html">&lt;p&gt;记录一下可能会用到非Markdown基础语法包含的实用技巧&lt;br&gt;官方的速查表&lt;Markdown 语法速查表&gt;(&lt;a href=&quot;https://markdown.com.cn/cheat-sheet.html#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&quot;&gt;https://markdown.com.cn/cheat-sheet.html#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&lt;/a&gt;)&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;记录一下可能会用到非Markdown基础语法包含的实用技巧&lt;br&gt;
+官方的速查表&amp;lt;Markdown 语法速查表&amp;gt;(&lt;a href=&quot;https://markdown.com.cn/cheat-sheet.html#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&quot;&gt;https://markdown.com.cn/cheat-sheet.html#基本语法&lt;/a&gt;)&lt;/p&gt;</summary>
     
     
     
@@ -510,37 +553,6 @@
     
     
     <category term="Markdown" scheme="https://blog.hiyoung.xyz/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机组成原理-CPU</title>
-    <link href="https://blog.hiyoung.xyz/2023/06/24/524b2effcffb/"/>
-    <id>https://blog.hiyoung.xyz/2023/06/24/524b2effcffb/</id>
-    <published>2023-06-24T13:53:32.000Z</published>
-    <updated>2023-10-26T03:38:09.143Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;计算机组成原理系列其四，主要是针对中国大陆考研所要求的内容对计算机组成原理的知识体系进行总结和梳理，本篇内容是计算机的CPU相关内容介绍，主要包含以下几点：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;CPU的功能和基本结构&lt;/li&gt;
-&lt;li&gt;指令的执行过程&lt;/li&gt;
-&lt;li&gt;CPU内的数据通路&lt;/li&gt;
-&lt;li&gt;控制器的功能和原理&lt;/li&gt;
-&lt;li&gt;指令流水线&lt;/li&gt;
-&lt;li&gt;多处理器&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="计算机基础" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-    
-    <category term="计算机组成原理" scheme="https://blog.hiyoung.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
-    
-    
-    <category term="计组" scheme="https://blog.hiyoung.xyz/tags/%E8%AE%A1%E7%BB%84/"/>
-    
-    <category term="CPU" scheme="https://blog.hiyoung.xyz/tags/CPU/"/>
     
   </entry>
   
