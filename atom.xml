@@ -121,7 +121,9 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前言-v2&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#前言&quot;&gt;¶&lt;/a&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近需要用两台电脑来更新博客，但是用U盘来回拷贝太麻烦而且有点捞，使用开始尝试使用git和github来实现hexo的多端同步&lt;br&gt;
+Hexo</summary>
         
       
     
@@ -365,9 +367,9 @@
     <category term="C++" scheme="https://blog.hiyoung.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C/"/>
     
     
-    <category term="Cpp" scheme="https://blog.hiyoung.xyz/tags/Cpp/"/>
-    
     <category term="C++" scheme="https://blog.hiyoung.xyz/tags/C/"/>
+    
+    <category term="Cpp" scheme="https://blog.hiyoung.xyz/tags/Cpp/"/>
     
   </entry>
   
@@ -429,7 +431,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
