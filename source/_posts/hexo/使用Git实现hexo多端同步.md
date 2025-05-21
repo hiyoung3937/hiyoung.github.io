@@ -127,10 +127,13 @@ ssh-keygen -t rsa -C "你刚刚设置的邮箱"
 ```
 
 如果不需要设置密码的话，连续三个回车就好了。在这之后会得到两个文件： id_rsa 和 id_rsa.pub
-找到id_rsa.pub文件(默认位置在C盘，一般也不建议改动位置)，用记事本打开，复制其内容。路径： C:\Users\（你的用户名）\.ssh
+找到id_rsa.pub文件(默认位置在C盘，一般也不建议改动位置)，用记事本打开，复制其内容。
+
+Win路径： C:\Users\（你的用户名）\.ssh
+MacOS路径：/Users/（你的用户名）/.ssh/
 
 #### 在GitHub上添加SSH密钥
-登录GitHub，在Settings里面选择 SSH and GPG keys ，然后点击 New SSH Key
+登录GitHub，在Settings里面选择 [SSH and GPG keys](https://github.com/settings/keys) ，然后点击 New SSH Key
 这里应该包含你新老两个电脑的SHH密钥，如果你有多个电脑那就应该都要加入
 
 完成之后测试一下，在git bash输入：

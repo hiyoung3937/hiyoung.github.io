@@ -11,14 +11,14 @@
   link_list:
     - name: yexca'blog
       link: https://blog.yexca.net/
-      # avatar: https://http.cat/images/200.jpg
-      avatar: https://blog.yexca.net/assets/img/favicons/android-chrome-192x192.png
+#       avatar: https://http.cat/images/200.jpg
+      avatar:https://blog.yexca.net/assets/img/favicons/android-chrome-192x192.png
       descr: yexca'blog
     
-    - name: 音乐解锁
-      link: http://unlock-music.hiyoung.icu/
-      avatar: https://http.cat/images/403.jpg
-      descr: 音乐解锁网页
+#    - name: 音乐解锁
+#      link: http://unlock-music.hiyoung.icu/
+#      avatar: https://http.cat/images/403.jpg
+#      descr: 音乐解锁网页
     
     # - name: Twitter
     #   link: https://twitter.com/

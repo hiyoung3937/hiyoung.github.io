@@ -19,7 +19,7 @@ position: left
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.hiyoung.xyz/
+url: https://blog.hiyoung.icu/
 permalink: :year/:month/:day/:hash/
 permalink_defaults:
 pretty_urls:
