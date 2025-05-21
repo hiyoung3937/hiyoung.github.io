@@ -112,8 +112,8 @@ theme: butterfly
 deploy:
   type: git
   #repo改为repo: git@你的域名:/var/repo/hexo.git
-  # repo: git@github.com:hiyoung3937/hiyoung.github.io.git #github配置
-  repo: https://github.com/hiyoung3937/hiyoung.github.io.git #使用https连接
+  repo: git@github.com:hiyoung3937/hiyoung.github.io.git #github配置
+  # repo: https://github.com/hiyoung3937/hiyoung.github.io.git #使用https连接
   #repo: git@blog.hiyoung.xyz:/hexo_blog/repo/hexo.git #服务器配置
   branch: master
 
