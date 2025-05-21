@@ -1,0 +1,382 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>unity笔记 | Hiyoung'blog</title><meta name="author" content="Hiyoung"><meta name="copyright" content="Hiyoung"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="¶基础操作记录 跟学视频 脚本文件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="unity笔记">
+<meta property="og:url" content="https://blog.hiyoung.icu/2024/03/02/6d3a7a302452/">
+<meta property="og:site_name" content="Hiyoung&#39;blog">
+<meta property="og:description" content="¶基础操作记录 跟学视频 脚本文件">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg">
+<meta property="article:published_time" content="2024-03-02T11:14:02.000Z">
+<meta property="article:modified_time" content="2025-05-21T05:45:16.148Z">
+<meta property="article:author" content="Hiyoung">
+<meta property="article:tag" content="unity">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="游戏引擎">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg"><link rel="shortcut icon" href="/img/favicon-32x32-next.png"><link rel="canonical" href="https://blog.hiyoung.icu/2024/03/02/6d3a7a302452/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-MX8PNPLLB0"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-MX8PNPLLB0');
+</script><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;17f84f9a8d794d2bb0adf5c2ad7d7b5e&quot;}"></script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'unity笔记',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-05-21 13:45:16'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Hiyoung'blog" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">50</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">72</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">29</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/127.44pssp7pwfg0.webp')"><nav id="nav"><span id="blog-info"><a href="/" title="Hiyoung'blog"><span class="site-name">Hiyoung'blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">unity笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-03-02T11:14:02.000Z" title="发表于 2024-03-02 19:14:02">2024-03-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-21T05:45:16.148Z" title="更新于 2025-05-21 13:45:16">2025-05-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B8%B8%E6%88%8F%E5%88%B6%E4%BD%9C/">游戏制作</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="unity笔记"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="基础操作记录"><a class="header-anchor" href="#基础操作记录">¶</a>基础操作记录</h3>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1gQ4y1e7SS">跟学视频</a><br>
+<a target="_blank" rel="noopener" href="https://blog.hiyoung.xyz/2024/03/13/d11c2f40712b/">脚本文件</a></p>
+<span id="more"></span>
+<h3 id="第一天学习P6-P10-创建物体、坐标系"><a class="header-anchor" href="#第一天学习P6-P10-创建物体、坐标系">¶</a>第一天学习P6-P10 创建物体、坐标系</h3>
+<ol>
+<li>
+<p>创建3D物体<br>
+在层级下鼠标右击选择 3D object中选择各种形状</p>
+</li>
+<li>
+<p>坐标系<br>
+分为世界坐标系和物体坐标系<br>
+选中物体后在属性中transform.position的数值是相对于世界坐标系计算的<br>
+将一个物体变为另一个物体的子类后单独移动，position还是相对世界坐标系的，但在移动父类时它和父类的相对位置不会改变(上手实践一下)</p>
+</li>
+<li>
+<p>对物体的基本操作</p>
+</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/unity%E7%AC%94%E8%AE%B0-1.36nq5cnboce0.webp" alt="unity笔记-1"></p>
+<p>依次为:</p>
+<ul>
+<li>移动视角(可以按住鼠标中键),快捷键-Q</li>
+<li>移动物体,快捷键-W</li>
+<li>旋转物体,快捷键-E</li>
+<li>放缩物体,快捷键-R</li>
+<li>矩形工具,快捷键-T</li>
+<li>综合变换,快捷键-Y</li>
+</ul>
+<ol start="4">
+<li>导入模型和修改材质<br>
+模型资源导入在assets中，还可以修改材质(materials)，选择外部材质即可。project中选中物体-&gt;Inspector-&gt;Materials</li>
+</ol>
+<p>也可以自己设置新材质，project右击-&gt;Create-&gt;Material</p>
+<ol start="5">
+<li>资源商定<br>
+导航栏中Windows选中asset store，在商店中购买需要的素材。在package manager中下载和导入素材</li>
+</ol>
+<h3 id="第二天学习P11-P16-地编、脚本"><a class="header-anchor" href="#第二天学习P11-P16-地编、脚本">¶</a>第二天学习P11-P16 地编、脚本</h3>
+<ol>
+<li>地形编辑</li>
+</ol>
+<p>在3D object中新建一个Terrain。在属性中可以修改地形地貌，创建山川等。还可以添加贴图和森林</p>
+<ol start="2">
+<li>添加C#脚本</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://docs.unity3d.com/cn/2022.3/Manual/ExecutionOrder.html">Unity中事件函数的执行顺序</a></p>
+<p>脚本要发挥作用需要添加到相应物体上才能实现</p>
+<p>关于脚本的执行顺序：<br>
+可以使用 Script Execution Order 设置（菜单：Edit &gt; Project Settings，然后选择 Script Execution Order 类别）<br>
+或者在脚本的inspector中点击 Execution Order添加脚本如何修改优先级</p>
+<h3 id="第三天学习P17-P23-标记、图层、预制体、向量、四元数"><a class="header-anchor" href="#第三天学习P17-P23-标记、图层、预制体、向量、四元数">¶</a>第三天学习P17-P23 标记、图层、预制体、向量、四元数</h3>
+<ol>
+<li>标记（Tag）和图层（Layer）</li>
+</ol>
+<p>给物体添加一个标记（tag），用来标记物体便于查找<br>
+可以使用图层可以标记一类物体，一般用于碰撞检测、摄像机捕捉和显示</p>
+<ol start="2">
+<li>预制体（prefab）和预制体变体（prefab variant）</li>
+</ol>
+<p>将物体从图层Hierarchy移至项目project即可生成一个预制体</p>
+<p>一个预制体就是一个模板，可以批量生成和修改类似的物体。而预制体变体类似于继承某一预制体并加上自己的需求（例如：某一预制体是不带帽子的个体而不同的预制体变体可以带帽子、带项链等），并且通过原始预制体可以统一修改预制体变体</p>
+<ol start="3">
+<li>向量、欧拉角、四元数和Vector3的一些使用</li>
+</ol>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//旋转，欧拉角、四元数</span></span><br><span class="line">    Vector3 rotate = <span class="keyword">new</span> Vector3(<span class="number">0</span>, <span class="number">30</span>, <span class="number">0</span>);</span><br><span class="line">    <span class="comment">//定义一个四元数</span></span><br><span class="line">    Quaternion quaternion = Quaternion.identity;</span><br><span class="line">    <span class="comment">//四元数转换为欧拉角</span></span><br><span class="line">    rotate = quaternion.eulerAngles;</span><br><span class="line">    <span class="comment">//欧拉角转换为四元数</span></span><br><span class="line">    quaternion = Quaternion.Euler(rotate);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//物体指向某个角度</span></span><br><span class="line">    quaternion = Quaternion.LookRotation(<span class="keyword">new</span> Vector3(<span class="number">90</span>, <span class="number">0</span>, <span class="number">0</span>));</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="第四天P24-GameObject类"><a class="header-anchor" href="#第四天P24-GameObject类">¶</a>第四天P24 GameObject类</h3>
+<p>使用脚本动态控制物体的属性，GameObject类的使用，和一些API的使用</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EmptyTest</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> GameObject emptyCube;</span><br><span class="line">    <span class="comment">//获取预设体，程序化生成物体</span></span><br><span class="line">    <span class="keyword">public</span> GameObject prefab;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// Start is called before the first frame update</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//拿到当前脚本所挂载的物体</span></span><br><span class="line">        GameObject go = <span class="keyword">this</span>.gameObject;</span><br><span class="line">        <span class="comment">//名称</span></span><br><span class="line">        Debug.Log(go.name);</span><br><span class="line">        <span class="comment">// = Debug.Log(gameObject.name);</span></span><br><span class="line">        <span class="comment">//tag</span></span><br><span class="line">        Debug.Log(gameObject.tag);</span><br><span class="line">        <span class="comment">//layer</span></span><br><span class="line">        Debug.Log(gameObject.layer);</span><br><span class="line">        <span class="comment">//Empty_Cube的名称</span></span><br><span class="line">        Debug.Log(emptyCube.name);</span><br><span class="line">        <span class="comment">//物体本身是否处于激活状态</span></span><br><span class="line">        Debug.Log(emptyCube.activeSelf);</span><br><span class="line">        <span class="comment">//物体在图层中是否实际处于激活状态</span></span><br><span class="line">        Debug.Log(emptyCube.activeInHierarchy);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//获取transform组件</span></span><br><span class="line">        <span class="comment">// transform tans = this.transform; ==</span></span><br><span class="line">        Debug.Log(transform.position);</span><br><span class="line">        <span class="comment">//获取其他组件</span></span><br><span class="line">        BoxCollider bc = GetComponent&lt;BoxCollider&gt;();</span><br><span class="line">        <span class="comment">//获取当前物体的子物体身上的某个组件</span></span><br><span class="line">        GetComponentInChildren&lt;CapsuleCollider&gt;(<span class="literal">true</span>);</span><br><span class="line">        GetComponentsInChildren&lt;CapsuleCollider&gt;(bc);</span><br><span class="line">        <span class="comment">//获取当前物体父物体身上的某个组件</span></span><br><span class="line">        GetComponentInParent&lt;BoxCollider&gt;();</span><br><span class="line">        <span class="comment">//添加组件</span></span><br><span class="line">        emptyCube.AddComponent&lt;AudioSource&gt;();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//通过游戏物体的名称来获取游戏物体，若物体同名则返回所有同名物体</span></span><br><span class="line">        GameObject enemy = GameObject.Find(<span class="string">&quot;enemy&quot;</span>);</span><br><span class="line">        <span class="comment">//通过标签来获取游戏物体，多个相同标签则返回最后一个创建的物体</span></span><br><span class="line">        GameObject enemy1 = GameObject.FindWithTag(<span class="string">&quot;enemy&quot;</span>);</span><br><span class="line">        Debug.Log(enemy.transform.position);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//通过预设体来实例化一个游戏物体</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            Instantiate(prefab,Vector3.zero, Quaternion.identity);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="第五天P25-P29-一些类的使用"><a class="header-anchor" href="#第五天P25-P29-一些类的使用">¶</a>第五天P25-P29 一些类的使用</h3>
+<p>主要是Time类、Application类、场景类、异步加载场景、transform类相关的一些方法使用<br>
+笔记内容见脚本文件</p>
+<h3 id="第六天P30-P31-鼠标键盘操作"><a class="header-anchor" href="#第六天P30-P31-鼠标键盘操作">¶</a>第六天P30-P31 鼠标键盘操作</h3>
+<p>键盘、鼠标操作和虚拟轴的使用<br>
+笔记内容见脚本文件</p>
+<h3 id="第七天P32-P33-灯光、摄像机"><a class="header-anchor" href="#第七天P32-P33-灯光、摄像机">¶</a>第七天P32-P33 灯光、摄像机</h3>
+<p>灯光、摄像机的使用</p>
+<h4 id="灯光"><a class="header-anchor" href="#灯光">¶</a>灯光</h4>
+<p>按照类型主要分为：定向光、聚光、点光源和区域光（仅烘培）</p>
+<p>其中定向光类似于太阳光仅代表光线方向与光影物体位置无关</p>
+<p>区域光（仅烘培）：由于实时光照性能消耗较大，在一个光源固定的场景中可以预先烘培光照来减轻负担。</p>
+<p>要使用烘培我们首先需要设定对象为Contribute GI，选中对象，勾选Static下的Contribute GI（组成GI）。然后在Windows-&gt;Rendering-&gt;Lighting(快捷键Crtl+9)中点击Generate Lighting渲染</p>
+<p>Lightmap适用于静态光照贴图对象，所有标记为Contribute GI的物体都会被被渲染到Lightmap（光照贴图）中</p>
+<p>除了类型外，还可以选择光照的渲染方式（Mode）、强度（Intensity）、阴影类型（Shadow Type）、剪影（Cookie）</p>
+<p>在光照下选择剔除遮罩（Culling Mask）可以选择是否渲染不同图层</p>
+<h4 id="摄像机"><a class="header-anchor" href="#摄像机">¶</a>摄像机</h4>
+<p>摄像机可以选择透视摄像机或者正交摄像机。其中透视摄像机在3D游戏中使用，有近大远小的特点。正交摄像机在2D游戏中使用，所有物体都被放在一个平面上。</p>
+<p>在摄像机Clear Flags中可以选择在空区域中显示什么，例如天空盒（SkyBox）、纯色（Soiled color）、仅深度（Depth Only）或者不显示（Don`t clear）<br>
+若选择了天空盒则可以在摄像机中添加Skybox组件来更换不同天空。</p>
+<p>深度（Depth）属性：若有多个摄像机会根据深度属性数值大小来决定哪个摄像机会优先显示在游戏界面。深度数值越大的会优先显示。</p>
+<p>若有多个摄像机时选择仅深度可以实现在游戏（Game）视窗同时显示多个摄像机捕捉的物体</p>
+<p>视野（Filed of View）可以调节摄像机视野</p>
+<p>裁切平面（Clipping Planes）可以调节摄像机的远面和近面</p>
+<p>Viewpoint Rect可以调整摄像机在游戏（Game）视窗的位置和高度宽度</p>
+<p>目标显示（Target Display）可以修改摄像机的显示目标，在游戏（Game）视窗可以切换Display</p>
+<p>在Project中可以新建一个目标纹理（Render Texture）（需挂载在一个物体上），然后将目标纹理拖到摄像机的Target Texture上即可实现将摄像机捕捉的画面映射在物体上</p>
+<h3 id="第八天P35-P38-声音、视频和角色移动控制"><a class="header-anchor" href="#第八天P35-P38-声音、视频和角色移动控制">¶</a>第八天P35-P38 声音、视频和角色移动控制</h3>
+<p>声音、视频和角色移动控制</p>
+<h4 id="声音"><a class="header-anchor" href="#声音">¶</a>声音</h4>
+<p>在物体上添加Audio Source组件后即可播放声音，只需将音频拖到AudioClip上即可，同时可以在Audio Source中调节声音效果<br>
+还可以使用脚本来控制声音的播放暂停等操作，具体细节可以看脚本<br>
+要听见声音需要一个Audio Listener组件，一般在摄像机上。若有多个摄像机则只能有一个有Audio Listener组件</p>
+<h3 id="视频"><a class="header-anchor" href="#视频">¶</a>视频</h3>
+<p>视频和声音的一些操作类似<br>
+需要一个Video Player组件，在组件的Video Clip上添加上需要播放的视频。此外，可以将Video Player的渲染模式（Render Mode）改为渲染器纹理（Render Texture），新建一个渲染器纹理将其拖到目标纹理上。再将该目标纹理拖到物体上即可。使用这种渲染器纹理方式可以统一改变所有使用该渲染器纹理的视频，在需要重复使用在多个物体上的视频来说很便捷。</p>
+<p>还可以通过脚本来控制视频的播放暂停。（见脚本文件）</p>
+<h3 id="角色控制器"><a class="header-anchor" href="#角色控制器">¶</a>角色控制器</h3>
+<p>见脚本文件</p>
+<h3 id="第九天P39-P40"><a class="header-anchor" href="#第九天P39-P40">¶</a>第九天P39-P40</h3>
+<h4 id="碰撞"><a class="header-anchor" href="#碰撞">¶</a>碰撞</h4>
+<p>Tips：选中摄像机，Ctrl+Shift+F可以对齐视图，快速调节视角</p>
+<p>产生碰撞的条件：</p>
+<ul>
+<li>2个游戏对象都有Collider</li>
+<li>至少有一个游戏对象有Rigidbody</li>
+<li>2个游戏对象保持相对运动（一个Cube放在Plane上，不会产生碰撞，因为没有相对运动）</li>
+</ul>
+<h4 id="触发"><a class="header-anchor" href="#触发">¶</a>触发</h4>
+<p>要将物体改为触发器，只需在Box Collider中将is trigger勾选上，然后使用脚本完成触发逻辑（见脚本文件）</p>
+<h3 id="第十天P41-47"><a class="header-anchor" href="#第十天P41-47">¶</a>第十天P41-47</h3>
+<h4 id="铰链、弹簧和物理关节"><a class="header-anchor" href="#铰链、弹簧和物理关节">¶</a>铰链、弹簧和物理关节</h4>
+<p>为物体添加铰链组件：<strong>Hinge Joint</strong></p>
+<p>弹簧组件：需要选中两个物体，添加<strong>Spring Joint</strong>，在Connected Body选中要连接的物体（连接的物体需要有刚体才可添加）</p>
+<p>物理关节：添加<strong>Fixed Joint</strong></p>
+<h4 id="物理材质（摩擦力）"><a class="header-anchor" href="#物理材质（摩擦力）">¶</a>物理材质（摩擦力）</h4>
+<p>在Assets中新建-&gt;物理材质（Physic Material），然后在Collider的材质中将物理材质拖入即可<br>
+在Physic Material中可以调节材质的动摩擦，静摩擦和弹力数值</p>
+<h4 id="射线检测"><a class="header-anchor" href="#射线检测">¶</a>射线检测</h4>
+<p>类似于从摄像机发出一条射线，点击某个位置可以检测出位置等信息</p>
+<h4 id="粒子系统"><a class="header-anchor" href="#粒子系统">¶</a>粒子系统</h4>
+<p>添加Particle System组件，来设置粒子效果</p>
+<h4 id="绘制线条和拖尾"><a class="header-anchor" href="#绘制线条和拖尾">¶</a>绘制线条和拖尾</h4>
+<p>添加Line Renderer组件</p>
+<h4 id="动画"><a class="header-anchor" href="#动画">¶</a>动画</h4>
+<p>有老版的Animation组件和新版的Animator组件<br>
+使用Animator组件需要给模型挂载一个Animator组件，然后再打开Animator窗口即可使用类似于蓝图的方式来完成动画</p>
+<h3 id="第十一天P48-P50"><a class="header-anchor" href="#第十一天P48-P50">¶</a>第十一天P48-P50</h3>
+<p>按键控制角色移动+角色动画的使用，见脚本文件</p>
+<p>动画剪辑</p>
+<h3 id="第十二天P51-P54"><a class="header-anchor" href="#第十二天P51-P54">¶</a>第十二天P51-P54</h3>
+<h4 id="动画曲线"><a class="header-anchor" href="#动画曲线">¶</a>动画曲线</h4>
+<p>在动画文件中可以找到Curves（曲线），并在animator中添加一个float与<strong>曲线名同名参数</strong>，相当于一个随动画播放而变化的<strong>数值函数</strong>，可以获得一个随动画播放而不断变化的数值。例如，如果做一个挥拳的动画，可以通过这个数值来控制挥拳可能用到的特效、声音等。</p>
+<h4 id="动画事件"><a class="header-anchor" href="#动画事件">¶</a>动画事件</h4>
+<p>动画事件（Evevts），<strong>事件是一个函数</strong>，事件名即函数名，可以在挂载在物体的脚本上调用同名函数。通过设置事件在动画中发生的时间点则可以调用事件函数中的代码，实现需要的效果。</p>
+<h4 id="混合动画"><a class="header-anchor" href="#混合动画">¶</a>混合动画</h4>
+<p>在animator界面中可以右键-&gt;Create State-&gt;From Blend Tree，添加一个混合动画，在Blend Tree中可以添加多个动作，修改动画的比例来混合动画。</p>
+<h4 id="动画遮罩"><a class="header-anchor" href="#动画遮罩">¶</a>动画遮罩</h4>
+<p>在Assets-&gt;Create-&gt;Avatar Mask，新建一个动画遮罩，在遮罩里选择Humanoid，可以选择只使用那一身体部分的动画，然后在Animator的动画层级中选择添加Mask即可</p>
+<h3 id="第十三天P55"><a class="header-anchor" href="#第十三天P55">¶</a>第十三天P55-</h3>
+<h4 id="IK-反向动力学"><a class="header-anchor" href="#IK-反向动力学">¶</a>IK(反向动力学)</h4>
+<h4 id="导航的使用"><a class="header-anchor" href="#导航的使用">¶</a>导航的使用</h4>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.hiyoung.icu">Hiyoung</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.hiyoung.icu/2024/03/02/6d3a7a302452/">https://blog.hiyoung.icu/2024/03/02/6d3a7a302452/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.hiyoung.icu" target="_blank">Hiyoung'blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/unity/">unity</a><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a><a class="post-meta__tags" href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E/">游戏引擎</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/03/01/abe151f591a2/" title="unity脚本"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">unity脚本</div></div></a></div><div class="next-post pull-right"><a href="/2024/07/15/86baf1ab0f95/" title="重装系统前后需要完成的事情"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">重装系统前后需要完成的事情</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/03/01/abe151f591a2/" title="unity脚本"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-03-01</div><div class="title">unity脚本</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/bolg/bolg_icon.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Hiyoung</div><div class="author-info__description">若无闲事挂心头，便是人间好时节</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">50</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">72</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/hiyoung3937"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/hiyoung3937" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:hiyoung3937@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss" style="color: #EE7621;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">网站破后重生，变得更加花哨！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95"><span class="toc-number">1.</span> <span class="toc-text">基础操作记录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0P6-P10-%E5%88%9B%E5%BB%BA%E7%89%A9%E4%BD%93%E3%80%81%E5%9D%90%E6%A0%87%E7%B3%BB"><span class="toc-number">2.</span> <span class="toc-text">第一天学习P6-P10 创建物体、坐标系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%A4%A9%E5%AD%A6%E4%B9%A0P11-P16-%E5%9C%B0%E7%BC%96%E3%80%81%E8%84%9A%E6%9C%AC"><span class="toc-number">3.</span> <span class="toc-text">第二天学习P11-P16 地编、脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%A4%A9%E5%AD%A6%E4%B9%A0P17-P23-%E6%A0%87%E8%AE%B0%E3%80%81%E5%9B%BE%E5%B1%82%E3%80%81%E9%A2%84%E5%88%B6%E4%BD%93%E3%80%81%E5%90%91%E9%87%8F%E3%80%81%E5%9B%9B%E5%85%83%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">第三天学习P17-P23 标记、图层、预制体、向量、四元数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%A4%A9P24-GameObject%E7%B1%BB"><span class="toc-number">5.</span> <span class="toc-text">第四天P24 GameObject类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E5%A4%A9P25-P29-%E4%B8%80%E4%BA%9B%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">6.</span> <span class="toc-text">第五天P25-P29 一些类的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E5%A4%A9P30-P31-%E9%BC%A0%E6%A0%87%E9%94%AE%E7%9B%98%E6%93%8D%E4%BD%9C"><span class="toc-number">7.</span> <span class="toc-text">第六天P30-P31 鼠标键盘操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E5%A4%A9P32-P33-%E7%81%AF%E5%85%89%E3%80%81%E6%91%84%E5%83%8F%E6%9C%BA"><span class="toc-number">8.</span> <span class="toc-text">第七天P32-P33 灯光、摄像机</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%81%AF%E5%85%89"><span class="toc-number">8.1.</span> <span class="toc-text">灯光</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%91%84%E5%83%8F%E6%9C%BA"><span class="toc-number">8.2.</span> <span class="toc-text">摄像机</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E5%A4%A9P35-P38-%E5%A3%B0%E9%9F%B3%E3%80%81%E8%A7%86%E9%A2%91%E5%92%8C%E8%A7%92%E8%89%B2%E7%A7%BB%E5%8A%A8%E6%8E%A7%E5%88%B6"><span class="toc-number">9.</span> <span class="toc-text">第八天P35-P38 声音、视频和角色移动控制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A3%B0%E9%9F%B3"><span class="toc-number">9.1.</span> <span class="toc-text">声音</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E9%A2%91"><span class="toc-number">10.</span> <span class="toc-text">视频</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%92%E8%89%B2%E6%8E%A7%E5%88%B6%E5%99%A8"><span class="toc-number">11.</span> <span class="toc-text">角色控制器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E5%A4%A9P39-P40"><span class="toc-number">12.</span> <span class="toc-text">第九天P39-P40</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A2%B0%E6%92%9E"><span class="toc-number">12.1.</span> <span class="toc-text">碰撞</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A6%E5%8F%91"><span class="toc-number">12.2.</span> <span class="toc-text">触发</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%A4%A9P41-47"><span class="toc-number">13.</span> <span class="toc-text">第十天P41-47</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%93%B0%E9%93%BE%E3%80%81%E5%BC%B9%E7%B0%A7%E5%92%8C%E7%89%A9%E7%90%86%E5%85%B3%E8%8A%82"><span class="toc-number">13.1.</span> <span class="toc-text">铰链、弹簧和物理关节</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E6%9D%90%E8%B4%A8%EF%BC%88%E6%91%A9%E6%93%A6%E5%8A%9B%EF%BC%89"><span class="toc-number">13.2.</span> <span class="toc-text">物理材质（摩擦力）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%84%E7%BA%BF%E6%A3%80%E6%B5%8B"><span class="toc-number">13.3.</span> <span class="toc-text">射线检测</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B2%92%E5%AD%90%E7%B3%BB%E7%BB%9F"><span class="toc-number">13.4.</span> <span class="toc-text">粒子系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%98%E5%88%B6%E7%BA%BF%E6%9D%A1%E5%92%8C%E6%8B%96%E5%B0%BE"><span class="toc-number">13.5.</span> <span class="toc-text">绘制线条和拖尾</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A8%E7%94%BB"><span class="toc-number">13.6.</span> <span class="toc-text">动画</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E5%A4%A9P48-P50"><span class="toc-number">14.</span> <span class="toc-text">第十一天P48-P50</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%A4%A9P51-P54"><span class="toc-number">15.</span> <span class="toc-text">第十二天P51-P54</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A8%E7%94%BB%E6%9B%B2%E7%BA%BF"><span class="toc-number">15.1.</span> <span class="toc-text">动画曲线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A8%E7%94%BB%E4%BA%8B%E4%BB%B6"><span class="toc-number">15.2.</span> <span class="toc-text">动画事件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%B7%E5%90%88%E5%8A%A8%E7%94%BB"><span class="toc-number">15.3.</span> <span class="toc-text">混合动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A8%E7%94%BB%E9%81%AE%E7%BD%A9"><span class="toc-number">15.4.</span> <span class="toc-text">动画遮罩</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9P55"><span class="toc-number">16.</span> <span class="toc-text">第十三天P55-</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#IK-%E5%8F%8D%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6"><span class="toc-number">16.1.</span> <span class="toc-text">IK(反向动力学)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%BC%E8%88%AA%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">16.2.</span> <span class="toc-text">导航的使用</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/21/2202a4acca1d/" title="github pages 使用自定义域名">github pages 使用自定义域名</a><time datetime="2025-05-21T07:44:32.000Z" title="发表于 2025-05-21 15:44:32">2025-05-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/21/c217aa68acd8/" title="hexo引用站内文章">hexo引用站内文章</a><time datetime="2025-05-21T06:33:04.000Z" title="发表于 2025-05-21 14:33:04">2025-05-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/21/11c3804fc30c/" title="MacOS上配置Hexo教程">MacOS上配置Hexo教程</a><time datetime="2025-05-21T05:56:00.000Z" title="发表于 2025-05-21 13:56:00">2025-05-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/01/16/1db9c2525802/" title="c++ string">c++ string</a><time datetime="2025-01-16T06:56:45.000Z" title="发表于 2025-01-16 14:56:45">2025-01-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/20/4b1a88f4ccb4/" title="二分查找">二分查找</a><time datetime="2024-12-20T07:20:12.000Z" title="发表于 2024-12-20 15:20:12">2024-12-20</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/hiyoung3937/img_hiyoung@master/blog_config/127.44pssp7pwfg0.webp')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Hiyoung</div><div class="footer_custom_text"><a href="/404/">Love from nobody</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addModeChange('mermaid', runMermaid)
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
