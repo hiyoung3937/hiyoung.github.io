@@ -43,14 +43,14 @@
     <link href="https://blog.hiyoung.icu/2025/05/21/c217aa68acd8/"/>
     <id>https://blog.hiyoung.icu/2025/05/21/c217aa68acd8/</id>
     <published>2025-05-21T06:33:04.000Z</published>
-    <updated>2025-05-21T07:42:23.992Z</updated>
+    <updated>2025-05-21T08:20:23.705Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;暂定： 文章未完成&lt;br&gt;
+    <summary type="html">&lt;p&gt;暂定： 未完成&lt;br&gt;
 看 MacOS 上配置 Hexo 教程&lt;br&gt;
 这里可以参考站内文章：&lt;a href=&quot;/2024/12/15/d21e918fc279/&quot; title=&quot;使用Git实现hexo多端同步&quot;&gt;使用Git实现hexo多端同步&lt;/a&gt;&lt;br&gt;
 &lt;a</summary>
@@ -63,6 +63,8 @@
     
     <category term="网站建设" scheme="https://blog.hiyoung.icu/categories/%E5%89%8D%E7%AB%AF/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
+    
+    <category term="hexo" scheme="https://blog.hiyoung.icu/tags/hexo/"/>
     
   </entry>
   
@@ -78,7 +80,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前言-v2&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -200,7 +202,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前言-v3&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;前言-v2&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
