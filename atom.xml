@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.icu/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.icu/"/>
-  <updated>2025-05-21T07:45:02.962Z</updated>
+  <updated>2025-09-28T07:18:22.688Z</updated>
   <id>https://blog.hiyoung.icu/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>位运算</title>
+    <link href="https://blog.hiyoung.icu/2025/06/20/96f44b0b3296/"/>
+    <id>https://blog.hiyoung.icu/2025/06/20/96f44b0b3296/</id>
+    <published>2025-06-20T08:07:50.000Z</published>
+    <updated>2025-09-28T07:18:22.688Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script type=&quot;text&amp;#x2F;javascript&quot; src=&quot;https://unpkg.com/kity@2.0.4/dist/kity.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text&amp;#x2F;javascript&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>github pages 使用自定义域名</title>
@@ -40,20 +61,19 @@
   
   <entry>
     <title>hexo引用站内文章</title>
-    <link href="https://blog.hiyoung.icu/2025/05/21/c217aa68acd8/"/>
-    <id>https://blog.hiyoung.icu/2025/05/21/c217aa68acd8/</id>
+    <link href="https://blog.hiyoung.icu/2025/05/21/63411a054828/"/>
+    <id>https://blog.hiyoung.icu/2025/05/21/63411a054828/</id>
     <published>2025-05-21T06:33:04.000Z</published>
-    <updated>2025-05-21T08:20:23.705Z</updated>
+    <updated>2025-09-28T07:18:04.421Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;暂定： 未完成&lt;br&gt;
-看 MacOS 上配置 Hexo 教程&lt;br&gt;
-这里可以参考站内文章：&lt;a href=&quot;/2024/12/15/d21e918fc279/&quot; title=&quot;使用Git实现hexo多端同步&quot;&gt;使用Git实现hexo多端同步&lt;/a&gt;&lt;br&gt;
-&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;语法&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#语法&quot;&gt;¶&lt;/a&gt;语法&lt;/h2&gt;
+&lt;p&gt;基本的语法结构如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
         
       
     
@@ -311,7 +331,7 @@
     <link href="https://blog.hiyoung.icu/2024/10/28/ee1e5588a4e1/"/>
     <id>https://blog.hiyoung.icu/2024/10/28/ee1e5588a4e1/</id>
     <published>2024-10-28T07:45:19.000Z</published>
-    <updated>2025-05-21T05:45:16.146Z</updated>
+    <updated>2025-06-21T01:46:06.445Z</updated>
     
     
       
@@ -344,7 +364,7 @@
     <updated>2025-05-21T05:45:16.149Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;简介-v3&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v3&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;</summary>
     
     
     
@@ -510,7 +530,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v5&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
@@ -526,38 +546,6 @@
     <category term="进程" scheme="https://blog.hiyoung.icu/tags/%E8%BF%9B%E7%A8%8B/"/>
     
     <category term="线程" scheme="https://blog.hiyoung.icu/tags/%E7%BA%BF%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统-计算机系统概述</title>
-    <link href="https://blog.hiyoung.icu/2023/07/15/fefd9012fd96/"/>
-    <id>https://blog.hiyoung.icu/2023/07/15/fefd9012fd96/</id>
-    <published>2023-07-14T16:37:09.000Z</published>
-    <updated>2025-05-21T05:45:16.147Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介-v4&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;
-&lt;p&gt;操作系统系列其一，主要是针对中国大陆考研所要求的内容对操作系统的知识体系进行总结和梳理，对于重点内容会使用黑体加粗，本篇内容主要包含以下几点：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;操作系统的基本概念&lt;/li&gt;
-&lt;li&gt;操作系统发展历程&lt;/li&gt;
-&lt;li&gt;程序运行环境&lt;/li&gt;
-&lt;li&gt;操作系统结构&lt;/li&gt;
-&lt;li&gt;操作系统引导&lt;/li&gt;
-&lt;li&gt;虚拟机&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="计算机基础" scheme="https://blog.hiyoung.icu/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-    
-    <category term="操作系统" scheme="https://blog.hiyoung.icu/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-    <category term="操作系统" scheme="https://blog.hiyoung.icu/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    <category term="系统概述" scheme="https://blog.hiyoung.icu/tags/%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
     
   </entry>
   
