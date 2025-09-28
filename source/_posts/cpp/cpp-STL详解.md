@@ -92,3 +92,120 @@ if(s.find(sub) != string::npos){
 - Q3: find函数的返回值
   如果找到了子串，则find函数的返回值是这个字串在字符串中第一次出现的位置
 
+
+## 优先队列 priority_queue
+优先队列默认为大梗堆实现，内部维护大根堆时间复杂度为$log_2 n$
+包含头文件 ```#include<queue>```
+优先队列具有队列的所有特性，包括队列的基本操作，只是在这基础上添加了内部的一个排序，它本质是一个堆实现的
+### 基本语法
+```cpp
+// priority_queue<int,vector<int>,less<int> >;  // 小于号表示降序
+priority_queue<int> pq;
+
+pq.top() 访问队头元素
+pq.empty() 队列是否为空
+pq.size() 返回队列内元素个数
+pq.push(x) 插入元素x到队尾 (并排序)
+pq.pop() 弹出队头元素
+
+```
+
+#### 小根堆
+``` cpp
+//注意最后两个 > 之间有一个空格（输入运算符：>>）
+priority_queue<Type,vector<Type>,greater<Type> >; //大于号表示升序
+
+```
+
+- 其中 vector<int>（也就是第二个参数）填写的是来承载底层数据结构堆（heap）的容器，如果第一个参数是 double 型或 char 型，则此处只需要填写 vector<double> 或 vector<char>；
+
+- 而第三个参数 less<int> 则是对第一个参数的比较类，less<int> 表示数字大的优先级越大，而 greater<int> 表示数字小的优先级越大。
+- 传入的第三个参数是仿函数，是将新插入数据与父结点进行比较，当父结点小于子结点的时候，才会在堆中进行交换，所以less<int>表示大根堆，greater<int>表示大根堆
+
+### 重载运算符
+#### 格式
+1. 运算符重载的必要语法
+运算符重载有明确的语法规则，以下是关键点：
+
+2. 使用 operator 关键词
+在 C++ 中运算符重载始终使用关键词 operator 开头。以下是加法运算符重载的声明：
+
+```cpp
+ReturnType operator+(ParameterList);
+```
+3. 限定只能为已有运算符重载
+C++ 允许重载大多数运算符，但有少数运算符不能重载：
+
+- 不能重载 .（成员访问运算符）
+- 不能重载 ::（域运算符）
+- 不能重载 sizeof（类型大小运算符）
+- 不能重载 ?:（三元运算符）
+原因：这些是语言层级的运算符，过于底层。
+
+4. **参数传递规则**
+当操作符为二元操作符（如 +, -, *, /）时，通常需要两个参数：
+- 左操作数（**隐式传递，即调用者本身** this）
+- 右操作数（**显式传递的参数**）
+当操作符为一元操作符（如 ++, --）时，只需要一个参数（调用者本身）。
+
+作为类成员函数重载的格式：
+```cpp
+ReturnType operatorOp(const Type& operand);  // 二元操作符
+ReturnType operatorOp();                     // 一元操作符
+```
+
+5. 返回类型
+运算符重载函数的返回类型取决于实际需求：
+
+- 对于二元算术运算符（如 + ），返回一个新的对象。
+- 对于赋值运算符（如 =），返回 *this（即对调用对象的引用）。
+
+#### 重载运算符的写法
+1. 比较运算符 (<)
+
+比较运算符需要返回布尔值，常用于排序和 STL 容器（如 std::sort 或 std::priority_queue）。
+
+``` cpp
+#include <iostream>
+#include <queue>
+#include <vector>
+using namespace std;
+
+struct node {
+    string name;
+    int age;
+
+    // 重载小于运算符
+    // this可省略
+    bool operator<(const node& other) const {
+        return this->age < other.age;  // 按年龄降序排序
+    }
+};
+
+int main() {
+    priority_queue<node> pq;
+
+    pq.push({"Alice", 30});
+    pq.push({"Bob", 20});
+    pq.push({"Charlie", 25});
+
+    while (!pq.empty()) {
+        cout << pq.top().name << " (" << pq.top().age << ")" << endl;
+        pq.pop();
+    }
+
+    return 0;
+}
+```
+
+- 为什么需要这样写？
+
+返回值是 bool，符合比较运算的预期。
+标记函数为 const，因为它不改变操作数的值，符合比较逻辑的无副作用原则。
+优先队列使用 operator< 作为比较基础，自定义行为可以实现不同的比较策略。
+
+- 升序和降序
+```return this->age < other.age;  // 按年龄降序排序```
+返回规则在于，左操作数为调用者本身，this对象，右操作数为比较的对象。**this可省略**
+**$ < $** 表示按照降序排列，**$ > $**表示按照升序排列
+
