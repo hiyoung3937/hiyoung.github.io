@@ -1,7 +1,7 @@
 ---
 title: QuantumultX 使用记录
 tags: [QuantumultX]
-categories: [实用工具教程]
+categories: [软件,苹果]
 date: 2023-11-11 15:59:43
 mathjax:
 cover:
