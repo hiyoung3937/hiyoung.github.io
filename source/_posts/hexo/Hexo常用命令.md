@@ -69,6 +69,18 @@ hexo --debug
 ```Bash
 npm ls -dept 0 
 ```
+或者
+```Bash
+npm list
+```
+
+### 卸载某个插件
+```bash 
+npm uninstall 插件名
+```
+再删除相关配置和文件：
+- 删除主题或Hexo配置中的插件配置
+- 删除node_modules 目录下对应的插件文件
 
 ### 修改文章默认layout
 在下列文件中可以修改新建文章的layout（文章开头的Front-matter内容）

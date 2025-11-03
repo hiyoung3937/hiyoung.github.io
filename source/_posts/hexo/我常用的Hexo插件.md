@@ -15,3 +15,6 @@ mathjax:
 
 思维导图：[hexo-simple-mindmap](https://github.com/HunterXuan/hexo-simple-mindmap)
 参考文章：https://hunterx.xyz/hexo-simple-mindmap-plugin-intro.html
+
+博客说说：[hpptalk]([npm install hexo-butterfly-hpptalk](https://github.com/jerryc127/butterfly-plugins/tree/main/hexo-butterfly-hpptalk))
+插件文档：具体配置查看[插件文档](https://hexoplusplus.js.org/start/)

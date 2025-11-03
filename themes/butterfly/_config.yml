@@ -300,7 +300,7 @@ aside:
 busuanzi:
   site_uv: false
   site_pv: false
-  page_pv: true
+  page_pv: false
 
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
@@ -345,7 +345,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: true
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
   start: # 8
   end: # 22
@@ -716,7 +716,7 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: true
+  enable: false
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
@@ -1015,4 +1015,3 @@ CDN:
     # artalk_css:
     # busuanzi: "//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
     # abcjs_basic_js:
-
