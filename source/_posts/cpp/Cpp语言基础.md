@@ -1147,3 +1147,198 @@ this 指针是 C++ 类中一个 隐式存在的指针
 它指向当前对象本身。
 
 使用 return 返回时使用 ```*this``` 返回当前对象
+
+### 类的静态成员
+
+作用：静态成员变量和静态成员函数可以在多个对象之间共享数据，比全局变量更加安全
+
+本质：将类的成员声明为静态的，就可以把它和类的对象独立开来，或者说**静态成员不属于对象而是只属于类的**，整个程序中只储存一份
+
+使用注意：
+- 静态成员变量不会再创建对象的适合初始化，需要在程序的全局区用代码清晰的初始化
+- 静态成员使用类名加::即可访问，不需要创建对象
+``` cpp
+class Node{
+    static int age;
+};
+
+int Node::age;  //初始化
+
+int main(){
+    cout<<Node::age;
+    ...
+}
+```
+
+总结：
+| 类型     | 属于 | 是否有 this | 所有对象是否共享 |
+| ------ | -- | -------- | -------- |
+| 普通成员变量 | 对象 | 有        | 否        |
+| 静态成员变量 | 类  | 无        | 是        |
+| 普通成员函数 | 对象 | 有        | —        |
+| 静态成员函数 | 类  | 无        | —        |
+
+### 友元
+关键字： ```friend```
+产生原因：
+如果要访问类的私有成员变量，可以通过调用类的public 成员函数，但是类的private 成员函数则无法访问。友元则提供了一种访问类的private 成员的方法。
+
+友元的定义可以放在类中的任意位置
+
+友元有三种：
+- 友元全局函数
+```cpp
+class Person{
+    friend void showAge(Person& p); // 声明 showAge 是 Person 的友元
+private:
+    int age;
+public:
+    Person(){}
+    Person(int a):age(a){}
+    
+};
+
+void showAge(Person& p){
+    cout << p.age << endl;  // 可以访问 private
+}
+
+```
+- 友元类
+```cpp
+class A{
+    friend class B;  // 整个 B 类都可以访问 A 的 private
+private:
+    int x;
+public:
+    A():x(10){}
+    
+};
+
+class B{
+public:
+    void f(A& a){
+        cout << a.x << endl; // 可以访问 A::x
+    }
+};
+```
+
+注意事项：
+  - 友元关系不能被继承
+  - 友元关系是单向的，不具备交换性
+
+
+- 友元成员函数
+假设有两个类 A 和 B，我们希望 B 的某个成员函数能访问 A 的私有成员，而不是整个类 B 都可以访问：
+```cpp
+class B; // 前向声明
+
+class A {
+private:
+    int x;
+public:
+    A(int val) : x(val) {}
+    
+    // 声明 B 类的成员函数 f 为友元
+    friend void B::f(A& a);
+};
+
+class B {
+public:
+    void f(A& a) {
+        cout << "访问 A 的私有成员 x = " << a.x << endl;
+    }
+};
+
+int main() {
+    A a(100);
+    B b;
+    b.f(a);  // 可以访问 A::x
+}
+
+```
+
+说明：
+1. 需要前向声明：由于 A 里要声明 B::f 为友元，必须提前告诉编译器 B 是一个类
+2. friend 声明：写在类 A 内，声明 B::f 是 A 的友元成员函数
+
+### 类的自动类型转换
+概念：
+C++ 支持对象在某些情况下自动转换成其他类型，或者**其他类型转换成对象**。
+#### C++基础类型 → 类对象
+示例：
+```cpp
+class A {
+    int x;
+public:
+    A(){}
+    A(int val) : x(val) {} // 单参数构造函数
+    void show() { cout << x << endl; }
+};
+
+int main() {
+    A a = 10; // int 自动转换为 A 对象，调用 A(10)
+    a.show(); // 输出 10
+}
+
+int main(){
+    A a1(8);    // 常规写法
+    A a1 = A(8);    //显式转换
+    A a1 = 8        //隐式转换
+
+    //先创建对象再赋值
+    A a1;
+    a1 = 8;
+}
+```
+
+说明：
+1. **单参数构造函数**可以被用作 **类型转换构造函数**
+
+
+禁止自动类型转换：
+如果不想允许**隐式转换(仍可以显示转换)**，可以在单参数构造函数前加 ```explicit```
+```cpp
+class A {
+    int x;
+public:
+    explicit A(int val) : x(val) {} //禁用隐式转换
+};
+
+int main() {
+    // A a = 10; // 错误！必须显式调用
+    A a(10); // 正确
+}
+
+```
+
+#### 类 → 其他类型
+通过在类中定义 ``` operator Type() ```函数实现。
+
+注意：
+- 在实际开发中使用operator进行类型转换不如使用**自己手动编写的类型转换函数**，因为隐式的转换有时候可能会导致错误和**二义性**，反而不利于代码维护和排查错误
+
+示例：
+```cpp
+class A {
+    int x;
+    string y;
+    double z;
+public:
+    A(int val) : x(val) {}
+    
+    // 类 A → int 的转换
+    operator int() {  return x; }
+    // 类 A → string 的转换
+    operator string()   {   return y;   }
+    // 类 A → double 的转换
+    operator double()   {return z;  }
+};
+
+int main() {
+    A a;
+    int n = a;  // 调用 operator int() 自动转换
+    string y = string(A);
+    double z = double(A);
+}
+
+```
