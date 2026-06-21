@@ -20,3 +20,373 @@
 {
   color: #BA0000 !important;
 }
+
+// 液态玻璃效果
+:root
+  --font-color: #2b2f33
+  --text-highlight-color: #171c22
+  --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, .46), rgba(255, 255, 255, .24))
+  --glass-border: rgba(255, 255, 255, .42)
+  --glass-highlight: rgba(255, 255, 255, .62)
+  --glass-shadow: 0 18px 45px rgba(31, 38, 135, .16), inset 0 1px 0 rgba(255, 255, 255, .45), inset 0 -1px 0 rgba(255, 255, 255, .12)
+  --glass-blur: saturate(190%) contrast(105%) blur(22px)
+  --glass-nav-bg: linear-gradient(135deg, rgba(255, 255, 255, .28), rgba(255, 255, 255, .10))
+  --glass-nav-border: rgba(255, 255, 255, .24)
+  --glass-nav-text: #24303a
+  --glass-nav-hover: #0f1720
+  --glass-nav-shadow: 0 8px 22px rgba(31, 38, 135, .08), inset 0 1px 0 rgba(255, 255, 255, .24)
+  --glass-readable-bg: linear-gradient(135deg, rgba(255, 255, 255, .84), rgba(255, 255, 255, .70))
+  --glass-readable-border: rgba(255, 255, 255, .62)
+  --glass-readable-shadow: 0 12px 34px rgba(31, 38, 135, .10), inset 0 1px 0 rgba(255, 255, 255, .42)
+  --glass-readable-blur: saturate(125%) blur(10px)
+  --glass-footer-bg: linear-gradient(135deg, rgba(255, 255, 255, .40), rgba(255, 255, 255, .22))
+
+[data-theme='dark']
+  --font-color: rgba(255, 255, 255, .72)
+  --text-highlight-color: rgba(255, 255, 255, .92)
+  --glass-bg: linear-gradient(135deg, rgba(28, 28, 30, .42), rgba(12, 12, 14, .24))
+  --glass-border: rgba(255, 255, 255, .12)
+  --glass-highlight: rgba(255, 255, 255, .18)
+  --glass-shadow: 0 18px 45px rgba(0, 0, 0, .34), inset 0 1px 0 rgba(255, 255, 255, .12), inset 0 -1px 0 rgba(255, 255, 255, .05)
+  --glass-nav-bg: linear-gradient(135deg, rgba(24, 24, 26, .34), rgba(12, 12, 14, .18))
+  --glass-nav-border: rgba(255, 255, 255, .08)
+  --glass-nav-text: rgba(255, 255, 255, .88)
+  --glass-nav-hover: #ffffff
+  --glass-nav-shadow: 0 8px 22px rgba(0, 0, 0, .18), inset 0 1px 0 rgba(255, 255, 255, .06)
+  --glass-readable-bg: linear-gradient(135deg, rgba(24, 24, 26, .76), rgba(12, 12, 14, .62))
+  --glass-readable-border: rgba(255, 255, 255, .14)
+  --glass-readable-shadow: 0 14px 38px rgba(0, 0, 0, .30), inset 0 1px 0 rgba(255, 255, 255, .08)
+  --glass-readable-blur: saturate(135%) blur(14px)
+  --glass-footer-bg: linear-gradient(135deg, rgba(24, 24, 26, .48), rgba(12, 12, 14, .32))
+
+#web_bg:before
+  position: absolute
+  width: 100%
+  height: 100%
+  background: rgba(255, 255, 255, .06)
+  content: ''
+
+#web_bg
+  filter: saturate(.78) contrast(.92) brightness(.98)
+
+[data-theme='dark'] #web_bg
+  filter: none
+
+#recent-posts > .recent-post-item,
+#aside-content .card-widget,
+#pagination .page-number
+  position: relative
+  isolation: isolate
+  border: 1px solid var(--glass-border)
+  background: var(--glass-bg) !important
+  box-shadow: var(--glass-shadow)
+  -webkit-backdrop-filter: var(--glass-blur)
+  backdrop-filter: var(--glass-blur)
+
+#pagination.pagination-post
+  display: flex
+  gap: 1px
+  border: 1px solid var(--glass-border)
+  border-radius: 8px
+  background: transparent !important
+  box-shadow: var(--glass-shadow)
+  -webkit-backdrop-filter: var(--glass-blur)
+  backdrop-filter: var(--glass-blur)
+
+#pagination.pagination-post .prev-post,
+#pagination.pagination-post .next-post
+  background: var(--glass-bg) !important
+
+#pagination.pagination-post .prev-post a,
+#pagination.pagination-post .next-post a
+  height: 150px
+  background: transparent !important
+
+#pagination.pagination-post .cover
+  opacity: .18
+  filter: saturate(.85) contrast(.92)
+
+#pagination.pagination-post .pagination-info
+  z-index: 1
+
+#pagination.pagination-post .label
+  color: rgba(43, 47, 51, .78) !important
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .55)
+
+#pagination.pagination-post .prev_info,
+#pagination.pagination-post .next_info
+  color: var(--text-highlight-color) !important
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .55)
+
+[data-theme='dark'] #pagination.pagination-post .label
+  color: rgba(255, 255, 255, .68) !important
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .45)
+
+[data-theme='dark'] #pagination.pagination-post .prev_info,
+[data-theme='dark'] #pagination.pagination-post .next_info
+  color: var(--text-highlight-color) !important
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .45)
+
+#nav,
+#page-header.nav-fixed > #nav,
+#page-header.not-top-img > #nav,
+#nav.show
+  position: absolute
+  isolation: isolate
+  border: 1px solid var(--glass-nav-border)
+  border-right: 0
+  border-left: 0
+  background: var(--glass-nav-bg) !important
+  box-shadow: var(--glass-nav-shadow)
+  -webkit-backdrop-filter: saturate(160%) blur(18px)
+  backdrop-filter: saturate(160%) blur(18px)
+
+#nav #blog-info,
+#nav .site-name,
+#nav a,
+#nav .site-page,
+#nav #toggle-menu
+  color: var(--glass-nav-text) !important
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .52) !important
+
+#nav a:hover,
+#nav .site-page:hover,
+#nav #toggle-menu:hover
+  color: var(--glass-nav-hover) !important
+
+[data-theme='dark'] #nav #blog-info,
+[data-theme='dark'] #nav .site-name,
+[data-theme='dark'] #nav a,
+[data-theme='dark'] #nav .site-page,
+[data-theme='dark'] #nav #toggle-menu
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .45) !important
+
+#post,
+#page,
+#archive,
+#tag,
+#category,
+#post-comment
+  position: relative
+  isolation: isolate
+  border: 1px solid var(--glass-readable-border)
+  background: var(--glass-readable-bg) !important
+  box-shadow: var(--glass-readable-shadow)
+  -webkit-backdrop-filter: var(--glass-readable-blur)
+  backdrop-filter: var(--glass-readable-blur)
+
+#recent-posts > .recent-post-item:before,
+#aside-content .card-widget:before
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 0
+  border-radius: inherit
+  background: linear-gradient(135deg, var(--glass-highlight), rgba(255, 255, 255, 0) 38%)
+  content: ''
+  pointer-events: none
+
+#recent-posts > .recent-post-item > *,
+#aside-content .card-widget > *
+  position: relative
+  z-index: 1
+
+#recent-posts > .recent-post-item,
+#post,
+#page,
+#archive,
+#tag,
+#category,
+#aside-content .card-widget,
+#post-comment
+  overflow: hidden
+
+#recent-posts > .recent-post-item
+  height: auto !important
+  min-height: 16.8em
+
+#recent-posts > .recent-post-item > .recent-post-info
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+#recent-posts > .recent-post-item > .recent-post-info > .content
+  margin-bottom: 0
+  max-height: 6.8em
+  line-height: 1.65
+  overflow: hidden
+  word-break: break-word
+  -webkit-mask-image: linear-gradient(180deg, #000 72%, rgba(0, 0, 0, 0))
+  mask-image: linear-gradient(180deg, #000 72%, rgba(0, 0, 0, 0))
+
+#recent-posts > .recent-post-item > .recent-post-info > .content p,
+#recent-posts > .recent-post-item > .recent-post-info > .content ul,
+#recent-posts > .recent-post-item > .recent-post-info > .content ol,
+#recent-posts > .recent-post-item > .recent-post-info > .content blockquote
+  margin: 0 0 6px
+
+#recent-posts > .recent-post-item > .recent-post-info > .content h1,
+#recent-posts > .recent-post-item > .recent-post-info > .content h2,
+#recent-posts > .recent-post-item > .recent-post-info > .content h3,
+#recent-posts > .recent-post-item > .recent-post-info > .content h4,
+#recent-posts > .recent-post-item > .recent-post-info > .content h5,
+#recent-posts > .recent-post-item > .recent-post-info > .content h6
+  margin: 0 0 6px
+  padding: 0
+  color: var(--text-highlight-color)
+  font-size: 1.05em
+  line-height: 1.35
+  font-weight: 600
+
+#recent-posts > .recent-post-item > .recent-post-info > .content h1:before,
+#recent-posts > .recent-post-item > .recent-post-info > .content h2:before,
+#recent-posts > .recent-post-item > .recent-post-info > .content h3:before,
+#recent-posts > .recent-post-item > .recent-post-info > .content h4:before,
+#recent-posts > .recent-post-item > .recent-post-info > .content h5:before,
+#recent-posts > .recent-post-item > .recent-post-info > .content h6:before,
+#recent-posts > .recent-post-item > .recent-post-info > .content .headerlink,
+#recent-posts > .recent-post-item > .recent-post-info > .content .header-anchor
+  display: none !important
+
+#recent-posts > .recent-post-item > .recent-post-info > .content ul,
+#recent-posts > .recent-post-item > .recent-post-info > .content ol
+  padding-left: 1.2em
+
+#recent-posts > .recent-post-item > .recent-post-info > .content li
+  margin: 0
+
+#recent-posts > .recent-post-item > .recent-post-info > .content code
+  padding: 1px 5px
+  border-radius: 4px
+  background: rgba(127, 127, 127, .16)
+  font-size: .92em
+
+#recent-posts > .recent-post-item > .recent-post-info > .content pre,
+#recent-posts > .recent-post-item > .recent-post-info > .content figure,
+#recent-posts > .recent-post-item > .recent-post-info > .content table,
+#recent-posts > .recent-post-item > .recent-post-info > .content img,
+#recent-posts > .recent-post-item > .recent-post-info > .content iframe
+  display: none
+
+#article-container,
+#article-container p,
+#page,
+#archive,
+#tag,
+#category,
+#recent-posts > .recent-post-item > .recent-post-info > .content
+  color: var(--font-color)
+
+#recent-posts > .recent-post-item > .recent-post-info > .article-title,
+#post-info .post-title
+  color: var(--text-highlight-color)
+
+#recent-posts .article-tag-list
+  display: flex
+  flex-wrap: wrap
+  gap: 8px
+  margin-top: 16px
+
+#recent-posts .article-tag
+  display: inline-flex
+  align-items: center
+  gap: 5px
+  padding: 4px 10px
+  border: 1px solid var(--glass-border)
+  border-radius: 999px
+  background: var(--glass-bg)
+  color: var(--text-highlight-color)
+  font-size: .86em
+  line-height: 1.4
+  text-decoration: none !important
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .16)
+  -webkit-backdrop-filter: saturate(150%) blur(12px)
+  backdrop-filter: saturate(150%) blur(12px)
+  transition: color .2s ease, border-color .2s ease, transform .2s ease, background .2s ease
+
+#recent-posts .article-tag:hover
+  border-color: var(--glass-nav-hover)
+  color: var(--glass-nav-hover)
+  transform: translateY(-1px)
+
+#recent-posts .article-tag i
+  margin: 0
+  font-size: .9em
+
+#footer
+  border-top: 1px solid var(--glass-border)
+  background: var(--glass-footer-bg) !important
+  -webkit-backdrop-filter: var(--glass-readable-blur)
+  backdrop-filter: var(--glass-readable-blur)
+
+#footer:before
+  display: none
+
+#footer-wrap,
+#footer-wrap a
+  color: var(--font-color)
+
+.relatedPosts
+  margin-top: 40px
+
+.relatedPosts > .headline
+  margin-bottom: 14px
+  color: var(--text-highlight-color)
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .36)
+
+[data-theme='dark'] .relatedPosts > .headline
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .45)
+
+.relatedPosts > .relatedPosts-list > div
+  position: relative
+  isolation: isolate
+  overflow: hidden
+  border: 1px solid var(--glass-border)
+  border-radius: 8px
+  background: var(--glass-bg) !important
+  box-shadow: var(--glass-shadow)
+  -webkit-backdrop-filter: var(--glass-blur)
+  backdrop-filter: var(--glass-blur)
+
+.relatedPosts > .relatedPosts-list > div:before
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 0
+  width: 100%
+  height: 100%
+  border-radius: inherit
+  background: linear-gradient(135deg, var(--glass-highlight), rgba(255, 255, 255, 0) 42%)
+  content: ''
+  pointer-events: none
+
+.relatedPosts > .relatedPosts-list > div .cover
+  opacity: .16
+  background: transparent !important
+  filter: saturate(.85) contrast(.92)
+
+.relatedPosts > .relatedPosts-list > div a,
+.relatedPosts > .relatedPosts-list > div .content
+  position: relative
+  z-index: 1
+
+.relatedPosts > .relatedPosts-list .content .date
+  color: var(--font-color)
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .32)
+
+.relatedPosts > .relatedPosts-list .content .title
+  color: var(--text-highlight-color)
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .32)
+
+[data-theme='dark'] .relatedPosts > .relatedPosts-list .content .date,
+[data-theme='dark'] .relatedPosts > .relatedPosts-list .content .title
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .52)
+
+.relatedPosts > .relatedPosts-list > div:hover
+  border-color: var(--glass-highlight)
+  transform: translateY(-2px)
+
+.relatedPosts > .relatedPosts-list > div:hover .cover
+  opacity: .24

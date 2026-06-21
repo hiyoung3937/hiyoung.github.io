@@ -117,18 +117,17 @@ mixin postUI(posts)
           when 1
             .content!= article.description
           when 2
-            if article.description
-              .content!= article.description
-            else
-              - const content = strip_html(article.content)
-              - let expert = content.substring(0, theme.index_post_content.length) 
-              - content.length > theme.index_post_content.length ? expert += ' ...' : ''
-              .content!= expert
+            - const renderedContent = (article.content || article.excerpt || article.description || '').replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<link[^>]*>/gi, '')
+            .content!= renderedContent
           default
-            - const content = strip_html(article.content)
-            - let expert = content.substring(0, theme.index_post_content.length) 
-            - content.length > theme.index_post_content.length ? expert += ' ...' : ''
-            .content!= expert
+            - const renderedExcerpt = (article.content || article.excerpt || article.description || '').replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<link[^>]*>/gi, '')
+            .content!= renderedExcerpt
+        if article.tags.data.length > 0
+          .article-tag-list
+            each item in article.tags.data
+              a.article-tag(href=url_for(item.path) title=item.name)
+                i.fas.fa-tag
+                span= item.name
 
     if theme.ad && theme.ad.index
       if (index + 1) % 3 == 0
