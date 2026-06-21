@@ -6,7 +6,7 @@
   <link href="https://blog.hiyoung.icu/atom.xml" rel="self"/>
   
   <link href="https://blog.hiyoung.icu/"/>
-  <updated>2025-09-28T07:18:22.688Z</updated>
+  <updated>2025-11-04T13:20:46.755Z</updated>
   <id>https://blog.hiyoung.icu/</id>
   
   <author>
@@ -17,23 +17,64 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>位运算</title>
-    <link href="https://blog.hiyoung.icu/2025/06/20/96f44b0b3296/"/>
-    <id>https://blog.hiyoung.icu/2025/06/20/96f44b0b3296/</id>
-    <published>2025-06-20T08:07:50.000Z</published>
-    <updated>2025-09-28T07:18:22.688Z</updated>
+    <title>飞牛NAS备忘录</title>
+    <link href="https://blog.hiyoung.icu/2025/10/20/dbe08ff5365b/"/>
+    <id>https://blog.hiyoung.icu/2025/10/20/dbe08ff5365b/</id>
+    <published>2025-10-20T07:01:21.000Z</published>
+    <updated>2025-11-04T13:20:46.755Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;script type=&quot;text&amp;#x2F;javascript&quot; src=&quot;https://unpkg.com/kity@2.0.4/dist/kity.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text&amp;#x2F;javascript&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;DNS拦截与Nginx设置&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
     
     
+    <category term="软件" scheme="https://blog.hiyoung.icu/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="NAS" scheme="https://blog.hiyoung.icu/categories/%E8%BD%AF%E4%BB%B6/NAS/"/>
+    
+    
+    <category term="nas" scheme="https://blog.hiyoung.icu/tags/nas/"/>
+    
+    <category term="飞牛OS" scheme="https://blog.hiyoung.icu/tags/%E9%A3%9E%E7%89%9BOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安卓实用软件记录</title>
+    <link href="https://blog.hiyoung.icu/2025/10/15/03db291ca246/"/>
+    <id>https://blog.hiyoung.icu/2025/10/15/03db291ca246/</id>
+    <published>2025-10-15T14:29:51.000Z</published>
+    <updated>2025-10-15T14:43:07.194Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;强制旋转屏幕&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#强制旋转屏幕&quot;&gt;¶&lt;/a&gt;强制旋转屏幕&lt;/h3&gt;
+&lt;p&gt;针对一些软件不对平板进行优化，只能选择一些软件来强制旋转软件的方向:&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="https://blog.hiyoung.icu/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="安卓" scheme="https://blog.hiyoung.icu/categories/%E8%BD%AF%E4%BB%B6/%E5%AE%89%E5%8D%93/"/>
+    
+    
+    <category term="Android" scheme="https://blog.hiyoung.icu/tags/Android/"/>
+    
+    <category term="安卓" scheme="https://blog.hiyoung.icu/tags/%E5%AE%89%E5%8D%93/"/>
+    
+    <category term="软件" scheme="https://blog.hiyoung.icu/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
@@ -357,34 +398,11 @@
   </entry>
   
   <entry>
-    <title>信奥竞赛技巧</title>
-    <link href="https://blog.hiyoung.icu/2024/10/28/5917ed17bca7/"/>
-    <id>https://blog.hiyoung.icu/2024/10/28/5917ed17bca7/</id>
-    <published>2024-10-28T07:38:09.000Z</published>
-    <updated>2025-05-21T05:45:16.149Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#简介&quot;&gt;¶&lt;/a&gt;简介&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="算法" scheme="https://blog.hiyoung.icu/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="算法" scheme="https://blog.hiyoung.icu/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="信奥竞赛" scheme="https://blog.hiyoung.icu/tags/%E4%BF%A1%E5%A5%A5%E7%AB%9E%E8%B5%9B/"/>
-    
-    <category term="CSP" scheme="https://blog.hiyoung.icu/tags/CSP/"/>
-    
-  </entry>
-  
-  <entry>
     <title>重装系统前后需要完成的事情</title>
     <link href="https://blog.hiyoung.icu/2024/07/15/86baf1ab0f95/"/>
     <id>https://blog.hiyoung.icu/2024/07/15/86baf1ab0f95/</id>
     <published>2024-07-15T05:52:51.000Z</published>
-    <updated>2025-05-21T05:45:16.148Z</updated>
+    <updated>2025-10-15T14:43:07.194Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;重装系统之前备份&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#重装系统之前备份&quot;&gt;¶&lt;/a&gt;重装系统之前备份&lt;/h2&gt;
@@ -392,9 +410,9 @@
     
     
     
-    <category term="PC" scheme="https://blog.hiyoung.icu/categories/PC/"/>
+    <category term="软件" scheme="https://blog.hiyoung.icu/categories/%E8%BD%AF%E4%BB%B6/"/>
     
-    <category term="重装系统" scheme="https://blog.hiyoung.icu/categories/PC/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
+    <category term="PC" scheme="https://blog.hiyoung.icu/categories/%E8%BD%AF%E4%BB%B6/PC/"/>
     
     
     <category term="重装系统" scheme="https://blog.hiyoung.icu/tags/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
@@ -454,7 +472,7 @@
     <link href="https://blog.hiyoung.icu/2024/01/15/053453c5273a/"/>
     <id>https://blog.hiyoung.icu/2024/01/15/053453c5273a/</id>
     <published>2024-01-15T07:12:57.000Z</published>
-    <updated>2025-05-21T05:45:16.146Z</updated>
+    <updated>2026-06-19T05:05:32.742Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;部分内容复习&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#部分内容复习&quot;&gt;¶&lt;/a&gt;部分内容复习&lt;/h2&gt;</summary>
@@ -466,9 +484,9 @@
     <category term="C++" scheme="https://blog.hiyoung.icu/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C/"/>
     
     
-    <category term="Cpp" scheme="https://blog.hiyoung.icu/tags/Cpp/"/>
-    
     <category term="C++" scheme="https://blog.hiyoung.icu/tags/C/"/>
+    
+    <category term="Cpp" scheme="https://blog.hiyoung.icu/tags/Cpp/"/>
     
   </entry>
   
@@ -501,17 +519,19 @@
   
   <entry>
     <title>QuantumultX 使用记录</title>
-    <link href="https://blog.hiyoung.icu/2023/11/11/ebb5d4dc5598/"/>
-    <id>https://blog.hiyoung.icu/2023/11/11/ebb5d4dc5598/</id>
+    <link href="https://blog.hiyoung.icu/2023/11/11/3d70d8a1c278/"/>
+    <id>https://blog.hiyoung.icu/2023/11/11/3d70d8a1c278/</id>
     <published>2023-11-11T07:59:43.000Z</published>
-    <updated>2025-05-21T05:45:16.148Z</updated>
+    <updated>2025-10-15T14:43:07.194Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;记录一下QuantumultX的使用教程和一些规则&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#记录一下QuantumultX的使用教程和一些规则&quot;&gt;¶&lt;/a&gt;记录一下QuantumultX的使用教程和一些规则&lt;/h2&gt;</summary>
     
     
     
-    <category term="实用工具教程" scheme="https://blog.hiyoung.icu/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
+    <category term="软件" scheme="https://blog.hiyoung.icu/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="苹果" scheme="https://blog.hiyoung.icu/categories/%E8%BD%AF%E4%BB%B6/%E8%8B%B9%E6%9E%9C/"/>
     
     
     <category term="QuantumultX" scheme="https://blog.hiyoung.icu/tags/QuantumultX/"/>
@@ -530,7 +550,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v6&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
         
       
     
