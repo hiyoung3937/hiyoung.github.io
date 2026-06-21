@@ -28,7 +28,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;DNS拦截与Nginx设置&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;DNS拦截与Nginx设置&quot;&gt;&lt;a href=&quot;#DNS拦截与Nginx设置&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -57,8 +57,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;强制旋转屏幕&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#强制旋转屏幕&quot;&gt;¶&lt;/a&gt;强制旋转屏幕&lt;/h3&gt;
-&lt;p&gt;针对一些软件不对平板进行优化，只能选择一些软件来强制旋转软件的方向:&lt;/p&gt;
+    <summary type="html">&lt;h3 id=&quot;强制旋转屏幕&quot;&gt;&lt;a href=&quot;#强制旋转屏幕&quot; class=&quot;headerlink&quot; title=&quot;强制旋转屏幕&quot;&gt;&lt;/a&gt;强制旋转屏幕&lt;/h3&gt;&lt;p&gt;针对一些软件不对平板进行优化，只能选择一些软件来强制旋转软件的方向:&lt;/p&gt;
 &lt;p&gt;&lt;a</summary>
         
       
@@ -90,8 +89,7 @@
       
         
         
-    <summary type="html">&lt;p&gt;暂定 未完成&lt;br&gt;
-&lt;a</summary>
+    <summary type="html">&lt;p&gt;暂定 未完成&lt;br&gt;&lt;a</summary>
         
       
     
@@ -112,9 +110,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;语法&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#语法&quot;&gt;¶&lt;/a&gt;语法&lt;/h2&gt;
-&lt;p&gt;基本的语法结构如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+    <summary type="html">&lt;h2 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h2&gt;&lt;p&gt;基本的语法结构如下：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
         
       
     
@@ -141,7 +137,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -170,8 +166,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;字符串和字符数组-v2&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#字符串和字符数组-v2&quot;&gt;¶&lt;/a&gt;字符串和字符数组&lt;/h2&gt;
-&lt;h3 id=&quot;cin-getline-与getline-的区别-v2&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;字符串和字符数组&quot;&gt;&lt;a href=&quot;#字符串和字符数组&quot; class=&quot;headerlink&quot; title=&quot;字符串和字符数组&quot;&gt;&lt;/a&gt;字符串和字符数组&lt;/h2&gt;&lt;h3 id=&quot;cin-getline-与getline-的区别&quot;&gt;&lt;a</summary>
         
       
     
@@ -200,8 +195,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;二分查找算法概述&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#二分查找算法概述&quot;&gt;¶&lt;/a&gt;二分查找算法概述&lt;/h2&gt;
-&lt;p&gt;二分查找很简单吗？或许二分查找的思想是直观的，但是细节才是程序的核心。看看 Knuth 大佬（发明 KMP</summary>
+    <summary type="html">&lt;h2 id=&quot;二分查找算法概述&quot;&gt;&lt;a href=&quot;#二分查找算法概述&quot; class=&quot;headerlink&quot; title=&quot;二分查找算法概述&quot;&gt;&lt;/a&gt;二分查找算法概述&lt;/h2&gt;&lt;p&gt;二分查找很简单吗？或许二分查找的思想是直观的，但是细节才是程序的核心。看看 Knuth</summary>
         
       
     
@@ -230,9 +224,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前缀和算法&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#前缀和算法&quot;&gt;¶&lt;/a&gt;前缀和算法&lt;/h2&gt;
-&lt;p&gt;前缀和主要适用的场景是原始数组不会被修改的情况下，频繁查询某个区间的累加和。&lt;/p&gt;
-&lt;h3 id=&quot;前缀和核心代码&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;前缀和算法&quot;&gt;&lt;a href=&quot;#前缀和算法&quot; class=&quot;headerlink&quot; title=&quot;前缀和算法&quot;&gt;&lt;/a&gt;前缀和算法&lt;/h2&gt;&lt;p&gt;前缀和主要适用的场景是原始数组不会被修改的情况下，频繁查询某个区间的累加和。&lt;/p&gt;
+&lt;h3</summary>
         
       
     
@@ -263,7 +256,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前言-v2&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -292,7 +285,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;高精度问题&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;高精度问题&quot;&gt;&lt;a href=&quot;#高精度问题&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -319,8 +312,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题面&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#题面&quot;&gt;¶&lt;/a&gt;题面&lt;/h2&gt;
-&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;题面&quot;&gt;&lt;a href=&quot;#题面&quot; class=&quot;headerlink&quot; title=&quot;题面&quot;&gt;&lt;/a&gt;题面&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
         
       
     
@@ -351,8 +343,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;动态规划&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#动态规划&quot;&gt;¶&lt;/a&gt;动态规划&lt;/h3&gt;
-&lt;h3 id=&quot;总方法论-动态规划五部曲&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;动态规划&quot;&gt;&lt;a href=&quot;#动态规划&quot; class=&quot;headerlink&quot; title=&quot;动态规划&quot;&gt;&lt;/a&gt;动态规划&lt;/h3&gt;&lt;h3 id=&quot;总方法论-动态规划五部曲&quot;&gt;&lt;a href=&quot;#总方法论-动态规划五部曲&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -379,8 +370,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;set容器&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#set容器&quot;&gt;¶&lt;/a&gt;set容器&lt;/h2&gt;
-&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;set容器&quot;&gt;&lt;a href=&quot;#set容器&quot; class=&quot;headerlink&quot; title=&quot;set容器&quot;&gt;&lt;/a&gt;set容器&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
         
       
     
@@ -405,8 +395,7 @@
     <updated>2025-10-15T14:43:07.194Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;重装系统之前备份&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#重装系统之前备份&quot;&gt;¶&lt;/a&gt;重装系统之前备份&lt;/h2&gt;
-&lt;p&gt;在重装系统之前需要备份的重要文件&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;重装系统之前备份&quot;&gt;&lt;a href=&quot;#重装系统之前备份&quot; class=&quot;headerlink&quot; title=&quot;重装系统之前备份&quot;&gt;&lt;/a&gt;重装系统之前备份&lt;/h2&gt;&lt;p&gt;在重装系统之前需要备份的重要文件&lt;/p&gt;</summary>
     
     
     
@@ -427,9 +416,7 @@
     <updated>2025-05-21T05:45:16.148Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;基础操作记录&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#基础操作记录&quot;&gt;¶&lt;/a&gt;基础操作记录&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1gQ4y1e7SS&quot;&gt;跟学视频&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://blog.hiyoung.xyz/2024/03/13/d11c2f40712b/&quot;&gt;脚本文件&lt;/a&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;基础操作记录&quot;&gt;&lt;a href=&quot;#基础操作记录&quot; class=&quot;headerlink&quot; title=&quot;基础操作记录&quot;&gt;&lt;/a&gt;基础操作记录&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1gQ4y1e7SS&quot;&gt;跟学视频&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://blog.hiyoung.xyz/2024/03/13/d11c2f40712b/&quot;&gt;脚本文件&lt;/a&gt;&lt;br&gt;</summary>
     
     
     
@@ -452,7 +439,7 @@
     <updated>2025-05-21T05:45:16.148Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;脚本文件&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#脚本文件&quot;&gt;¶&lt;/a&gt;脚本文件&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;脚本文件&quot;&gt;&lt;a href=&quot;#脚本文件&quot; class=&quot;headerlink&quot; title=&quot;脚本文件&quot;&gt;&lt;/a&gt;脚本文件&lt;/h3&gt;</summary>
     
     
     
@@ -475,7 +462,7 @@
     <updated>2026-06-19T05:05:32.742Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;部分内容复习&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#部分内容复习&quot;&gt;¶&lt;/a&gt;部分内容复习&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;部分内容复习&quot;&gt;&lt;a href=&quot;#部分内容复习&quot; class=&quot;headerlink&quot; title=&quot;部分内容复习&quot;&gt;&lt;/a&gt;部分内容复习&lt;/h2&gt;</summary>
     
     
     
@@ -484,9 +471,9 @@
     <category term="C++" scheme="https://blog.hiyoung.icu/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C/"/>
     
     
-    <category term="C++" scheme="https://blog.hiyoung.icu/tags/C/"/>
-    
     <category term="Cpp" scheme="https://blog.hiyoung.icu/tags/Cpp/"/>
+    
+    <category term="C++" scheme="https://blog.hiyoung.icu/tags/C/"/>
     
   </entry>
   
@@ -502,7 +489,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;配置外部编辑器&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;配置外部编辑器&quot;&gt;&lt;a href=&quot;#配置外部编辑器&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -525,7 +512,7 @@
     <updated>2025-10-15T14:43:07.194Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;记录一下QuantumultX的使用教程和一些规则&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#记录一下QuantumultX的使用教程和一些规则&quot;&gt;¶&lt;/a&gt;记录一下QuantumultX的使用教程和一些规则&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;记录一下QuantumultX的使用教程和一些规则&quot;&gt;&lt;a href=&quot;#记录一下QuantumultX的使用教程和一些规则&quot; class=&quot;headerlink&quot; title=&quot;记录一下QuantumultX的使用教程和一些规则&quot;&gt;&lt;/a&gt;记录一下QuantumultX的使用教程和一些规则&lt;/h2&gt;</summary>
     
     
     
@@ -550,7 +537,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介-v4&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
         
       
     
